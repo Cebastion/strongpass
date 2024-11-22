@@ -1,0 +1,9 @@
+<svg width="171.000000" height="116.000000" viewBox="0 0 171 116" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Rectangle 9" d="M0 80L0 0L135 0L135 44C135 63.88 118.88 80 99 80L0 80Z" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Exclude" d="M36 80C16.1177 80 0 96.1177 0 116L0 80L36 80Z" clip-rule="evenodd" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Exclude" d="M171 0C151.118 0 135 16.1178 135 36L135 0L171 0Z" clip-rule="evenodd" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
