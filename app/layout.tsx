@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="py-5 container max-w-[1300px] mx-auto flex flex-col w-full h-screen">
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

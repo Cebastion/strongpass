@@ -4,17 +4,17 @@ import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
-    <main className="flex-1 my-14 ">
-      <h1 className="text-7xl mx-auto max-w-[1180px] max-[500px]:px-3 font-bold text-black leading-[120%] max-lg:text-5xl max-lg:mb-4">Ваша безопасность <p>начинается с паролей</p></h1>
-      <span className="text-black mx-auto max-w-[1180px] max-[500px]:px-3 text-lg font-normal hidden max-xl:inline-block max-lg:text-base">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
+    <main className="flex-1 my-14 px-5 max-md:px-[15px]">
+      <h1 className="text-7xl mx-auto max-w-[1180px]  font-bold  leading-[120%] max-lg:text-5xl max-lg:mb-4">Ваша безопасность <p>начинается с паролей</p></h1>
+      <span className=" mx-auto max-w-[1180px]  text-lg font-normal hidden max-xl:inline-block max-lg:text-base">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
       <section className="relative mx-auto max-w-[1180px] z-0 w-full bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[580px] max-[350px]:h-[490px]">
         <div
-          className="absolute max-[500px]:mx-3 inset-0 bg-[url('/bg.svg')] bg-cover bg-center z-0 rounded-[48px]"
+          className="absolute max-[500px]:mx-3 inset-0 bg-[url('/bg.png')] bg-cover bg-center z-0 rounded-[48px]"
           aria-hidden="true"
         ></div>
         <div
-          className="absolute max-[500px]:mx-3 inset-0 bg-white z-10 rounded-xl max-lg:w-[75%] max-md:w-[68%] max-md:h-[85%] max-[600px]:h-[60%] max-[450px]:w-[56%] max-[450px]:h-[47%] max-[400px]:w-[45%] max-[400px]:h-[32%] max-[350px]:h-[30%]"
+          className="absolute max-[500px]:mx-3 inset-0 bg-white z-10 rounded-xl max-lg:w-[75%] max-md:w-[68%] max-md:h-[85%] max-[600px]:h-[60%] max-[450px]:w-[56%] max-[450px]:h-[44%] max-[400px]:w-[45%] max-[400px]:h-[30%] max-[350px]:h-[30%]"
           style={{
             maskImage: "url('/Subtract.svg')",
             WebkitMaskImage: "url('/Subtract.svg')",
@@ -26,7 +26,7 @@ export default function Home() {
           aria-hidden="true"
         ></div>
         <div className="flex justify-between z-10 ">
-          <div className=" rounded-xl w-[65%] h-14 py-2 flex items-center"><span className="text-black text-lg font-normal max-xl:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
+          <div className=" rounded-xl w-[65%] h-14 pt-1 flex items-center"><span className=" text-lg font-normal max-xl:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
           <img className="relative top-[-50px] right-[-40px] max-lg:right-0 max-lg:w-[30%] z-0 max-[880px]:top-[-15px] max-[560px]:top-[-20px] max-[500px]:w-[50%]" src="___.svg" />
         </div>
         <div className="bg-white flex justify-between items-center p-4 w-60 mx-auto mb-3 rounded-xl z-10">
@@ -82,11 +82,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-28 max-w-[1180px] mx-auto max-[500px]:px-3">
-        <h2 className="text-6xl text-black font-bold max-lg:text-5xl mb-4">Продукты</h2>
-        <span className="text-black text-lg leading-[160%] max-w-[780px] inline-block font-normal max-lg:text-base">Минимизируют вероятность взлома простыми средствами, помогут реализовать надежную парольную политику, обеспечат процессы, связанные с паролями.</span>
+      <section className="mt-28 max-w-[1180px] mx-auto ">
+        <h2 className="text-6xl  font-bold max-lg:text-5xl mb-10">Продукты</h2>
+        <span className=" text-lg leading-[160%] max-w-[780px] inline-block font-normal max-lg:text-base">Минимизируют вероятность взлома простыми средствами, помогут реализовать надежную парольную политику, обеспечат процессы, связанные с паролями.</span>
         <div className="flex justify-between mt-8 items-center gap-5 w-full h-full max-lg:flex-col">
-          <div className="w-full h-[445px] p-8 bg-gray-100 rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
+          <div className="w-full h-[445px] p-8 bg-bg-custom_gray rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
             <div className="w-[80px] h-[80px] flex items-center justify-center bg-bg-custom_green rounded-xl max-lg:w-[72px] max-lg:h-[72px]">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <desc>
@@ -110,8 +110,8 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <div className="flex">
-                <button className="py-2 px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover hover:border-borderColor-hover max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px]">Подробнее</button>
-                <button className="h-12 w-12 flex items-center justify-center rounded-xl bg-text-hover max-lg:w-9 max-lg:h-9">
+                <button className="h-[41px] px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</button>
+                <button className="h-[41px] w-[41px] flex items-center justify-center rounded-xl hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <desc>
                       Created with Pixso.
@@ -123,7 +123,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-[445px] p-8 bg-gray-100 rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
+          <div className="w-full h-[445px] p-8 bg-bg-custom_gray rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
             <div className="w-[80px] h-[80px] flex items-center justify-center bg-bg-custom_green rounded-xl max-lg:w-[72px] max-lg:h-[72px]">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <desc>
@@ -147,8 +147,8 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <div className="flex">
-                <button className="py-2 px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover hover:border-borderColor-hover max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px]">Подробнее</button>
-                <button className="h-12 w-12 flex items-center justify-center rounded-xl bg-text-hover max-lg:w-9 max-lg:h-9">
+                <button className="h-[41px] px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</button>
+                <button className="h-[41px] w-[41px] flex items-center justify-center rounded-xl hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <desc>
                       Created with Pixso.
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-[445px] p-8 bg-gray-100 rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
+          <div className="w-full h-[445px] p-8 bg-bg-custom_gray rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-3 max-lg:gap-3 max-lg:max-w-full">
             <div className="w-[80px] h-[80px] flex items-center justify-center bg-bg-custom_green rounded-xl max-lg:w-[72px] max-lg:h-[72px]"><svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
               <desc>
                 Created with Pixso.
@@ -175,8 +175,8 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <div className="flex">
-                <button className="py-2 px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover hover:border-borderColor-hover max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px]">Подробнее</button>
-                <button className="h-12 w-12 flex items-center justify-center rounded-xl bg-text-hover max-lg:w-9 max-lg:h-9"><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <button className="h-[41px] px-5 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</button>
+                <button className="h-[41px] w-[41px] flex items-center justify-center hover:bg-bg-hover_primary transition-all rounded-xl bg-text-hover max-lg:w-9 max-lg:h-9"><svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                   <desc>
                     Created with Pixso.
                   </desc>
@@ -188,10 +188,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-[9rem]  bg-gray-100 rounded-[48px] p-10 max-lg:overflow-hidden max-[350px]:p-[1.25rem]">
+      <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] py-10 px-14 max-lg:overflow-hidden max-[350px]:p-[1.25rem]">
         <div className="flex justify-between items-center max-lg:flex-col">
           <span className="text-[28px] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:text-lg"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline">по данным Лаборатории Касперского</a>).</p> </span>
-          <div className="bg-[url('/image.svg')] w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
+          <div className="bg-[url('/image.png')] w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
             <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
                 <svg width="16.666748" height="20.000000" viewBox="0 0 16.6667 20" fill="none" xmlns="http://www.w3.org/2000/svg" >

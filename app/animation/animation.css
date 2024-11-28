@@ -1,0 +1,23 @@
+.btn-animation{
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-animation:hover{
+    background-color: #408077;
+}
+
+.animated-svg {
+  fill: #408077; /* Зеленый текст */
+  transition: fill 0.3s ease;
+}
+
+.btn-animation:hover .animated-svg {
+    fill: #ffffff; /* Белый текст при наведении */
+}
+
+.btn-see:hover img {
+    position: relative;
+    left: 5px;
+    transition: left 0.3s ease;
+}

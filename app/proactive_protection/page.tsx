@@ -1,12 +1,13 @@
 'use client'
+import Image from "next/image"
 import Carousel from "../components/Carousel"
 import From from "../components/From"
 
 const page = () => {
   return (
     <main className="flex-1 my-14 ">
-      <section className="flex justify-between max-lg:flex-col-reverse max-lg:items-center">
-        <div className="max-w-[680px] max-lg:text-center max-lg:mt-6">
+      <section className="flex max-w-[1180px] mx-auto justify-between max-lg:flex-col-reverse max-lg:items-center">
+        <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
           <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">Проактивная защита от использования слабых паролей</h1>
           <p className="text-lg mt-5 leading-[160%] font-normal max-lg:text-center max-md:text-base">При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля.</p>
           <div className="flex items-center mt-10 max-lg:justify-center">
@@ -52,6 +53,32 @@ const page = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="mt-20 max-w-[780px] mx-auto flex justify-between items-center max-[800px]:flex-col max-[800px]:gap-5">
+        <Image width={285} height={48} alt="image" src="/image_2.png" loading="lazy" />
+        <Image width={178} height={48} alt="image" src="/image_1.png" loading="lazy" />
+        <Image width={194} height={44} alt="image" src="/image_3.png" loading="lazy" />
+      </section>
+      <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse max-[600px]:px-3">
+        <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
+          <Image className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6" src='/bg_2.png' width={866} height={460} loading="lazy" alt="" />
+          <div className="h-[117px] w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
+            <button className="text-lg font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3">Смотреть видео</button>
+            <button className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center">
+              <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                <desc>
+                  Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Vector" d="M9.04 4.95L21.04 12.29C21.65 12.7 21.97 13.27 22 14C21.97 14.75 21.65 15.31 21.04 15.7L9.04 23.04C8.37 23.43 7.7 23.44 7.04 23.08C6.37 22.69 6.02 22.11 6 21.33L6 6.66C6.02 5.88 6.37 5.3 7.04 4.91C7.7 4.55 8.37 4.56 9.04 4.95Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="max-w-[480px]">
+          <h3 className="text-6xl font-bold leading-[120%] text-left max-[1100px]:text-3xl">Как это работает?</h3>
+          <span className="text-lg font-normal leading-[160%] text-left mt-6 inline-block max-[1100px]:text-base">В момент попытки установить новый пароль инициируется проверка надежности пароля с помощью Strongpass. Проверка производится по более чем 866 миллионам слабых паролей. При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля. Strongpass должен быть установлен на всех контроллерах домена (Windows, Linux), кроме read-only контроллеров. Для работы приложения права доменного администратора не требуются.</span>
         </div>
       </section>
       <From />

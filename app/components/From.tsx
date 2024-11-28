@@ -1,8 +1,46 @@
 import Image from "next/image"
+import { useState } from "react";
 
 const From = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    comment: '',
+  });
+
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    phone: false,
+    comment: false,
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: false }); 
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const newErrors = {
+      name: !formData.name.trim(),
+      email: !formData.email.trim(),
+      phone: !formData.phone.trim(),
+      comment: !formData.comment.trim(),
+    };
+
+    setErrors(newErrors);
+
+    if (Object.values(newErrors).every((error) => !error)) {
+      console.log('Данные формы:', formData);
+      alert('Форма отправлена!');
+    }
+  };
+
   return (
-    <section className="mt-40 h-[682px] max-lg:h-full bg-bg-custom_green rounded-[48px] p-10 max-[500px]:p-4 flex justify-between max-lg:flex-col">
+    <section id="form" className="mt-40 h-[682px] max-lg:h-full bg-bg-custom_green rounded-[48px] p-10 max-[500px]:p-4 flex justify-between max-lg:flex-col">
       <div className="flex flex-col justify-between px-[19px] py-[10px]">
         <div className="pt-[5px] pl-[5px]">
           <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px]">Остались <span className="hidden text-white max-lg:inline">вопросы?</span> <p className="mt-2 text-white max-lg:hidden">вопросы?</p></h3>
@@ -36,25 +74,82 @@ const From = () => {
           </div>
         </div>
       </div>
-      <form className="p-9 flex flex-col gap-[1.75rem] max-lg:gap-1 mx-5 my-6 max-lg:m-0 rounded-[48px] bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-full">
-        <input type="text" placeholder="Фамилия Имя Отчество" className="w-full py-3 px-6 rounded-xl border border-gray-300 border-solid text-lg font-medium" />
-        <input type="email" placeholder="Электронная почта" className="w-full py-3 px-6 rounded-xl border border-gray-300 border-solid text-lg font-medium" />
-        <input type="tel" placeholder="Телефон" className="w-full py-3 px-6 rounded-xl border border-gray-300 border-solid text-lg font-medium" />
-        <textarea name="" id="" className="w-full resize-none h-36 py-3 px-6 rounded-xl border border-gray-300 border-solid text-lg font-medium" placeholder="Комментарий"></textarea>
-        <div className="flex justify-between items-center mt-[13px] mr-[7px] max-lg:m-0">
-          <button className="w-full py-3 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover hover:border-borderColor-hover">Отправить</button>
-          <button className="h-14 w-14 flex items-center justify-center rounded-xl bg-text-hover">
-            <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
-              <desc>
-                Created with Pixso.
-              </desc>
-              <defs />
-              <path id="Vector" d="M22 15.89L19.97 15.89L19.97 9.46L7.43 22L6 20.56L18.53 8.02L12.1 8.02L12.1 6L22 6L22 15.89Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
-            </svg>
-          </button>
-        </div>
-        <span className="text-sm font-normal text-center text-gray-400 mt-4">Нажимая "отправить"  я даю согласие на обработку моих персональных данных для цели ответа на мою заявку.</span>
-      </form>
+      <form
+      onSubmit={handleSubmit}
+      className="p-9 flex flex-col gap-[1.75rem] max-lg:gap-1 mx-5 my-6 max-lg:m-0 rounded-[48px] bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-full"
+    >
+      <input
+        type="text"
+        name="name"
+        placeholder="Фамилия Имя Отчество"
+        value={formData.name}
+        onChange={handleChange}
+        className={`w-full py-3 px-6 rounded-xl border text-lg font-normal target:border-borderColor-custom ${
+          errors.name ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-gray-300'
+        }`}
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Электронная почта"
+        value={formData.email}
+        onChange={handleChange}
+        className={`w-full py-3 px-6 rounded-xl border text-lg font-normal target:border-borderColor-custom ${
+          errors.email ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-gray-300'
+        }`}
+      />
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Телефон"
+        value={formData.phone}
+        onChange={handleChange}
+        className={`w-full py-3 px-6 rounded-xl border text-lg font-normal target:border-borderColor-custom ${
+          errors.phone ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-gray-300'
+        }`}
+      />
+
+      <textarea
+        name="comment"
+        placeholder="Комментарий"
+        value={formData.comment}
+        onChange={handleChange}
+        className={`w-full resize-none h-36 py-3 px-6 rounded-xl border text-lg font-normal target:border-borderColor-custom ${
+          errors.comment ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-gray-300'
+        }`}
+      ></textarea>
+
+      <div className="flex justify-between items-center mt-[13px] mr-[7px] max-lg:m-0">
+        <button
+          type="submit"
+          className="w-full py-3 border border-solid border-borderColor-custom rounded-xl font-semibold text-lg text-text-hover transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary"
+        >
+          Отправить
+        </button>
+        <button className="h-14 w-14 flex items-center justify-center rounded-xl bg-text-hover hover:bg-bg-hover_primary transition-all">
+          <svg
+            width="28.000000"
+            height="28.000000"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Vector"
+              d="M22 15.89L19.97 15.89L19.97 9.46L7.43 22L6 20.56L18.53 8.02L12.1 8.02L12.1 6L22 6L22 15.89Z"
+              fill="#FFFFFF"
+              fillOpacity="1.000000"
+              fillRule="nonzero"
+            />
+          </svg>
+        </button>
+      </div>
+      <span className="text-sm font-normal text-center text-gray-400 mt-4">
+        Нажимая "отправить"  я даю согласие на обработку моих персональных данных для цели ответа на мою заявку.
+      </span>
+    </form>
     </section>
   )
 }

@@ -82,13 +82,13 @@ const Header = () => {
 
           {isDropdownOpen && (
             <ul className="absolute left-[-50%] top-5 bg-white shadow-lg rounded-xl mt-2 w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
-              <li className="flex text-black items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
+              <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
                 <Link href="/#">Проактивная защита</Link>
               </li>
-              <li className="flex text-black items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5 max-lg:my-2">
+              <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5 max-lg:my-2">
                 <Link href="/#">Самопроверка</Link>
               </li>
-              <li className="flex text-black items-center justify-center h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-b cursor-pointer max-lg:h-5">
+              <li className="flex  items-center justify-center h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-b cursor-pointer max-lg:h-5">
                 <Link href="/#">Almetibin</Link>
               </li>
             </ul>
@@ -112,14 +112,14 @@ const Header = () => {
       </ul>
       <div className="flex items-center">
         <button
-          className="h-11 w-40 font-semibold border border-solid border-borderColor-custom rounded-xl text-lg text-text-hover hover:border-borderColor-hover max-lg:hidden"
+          className="px-[19px] py-[9px] font-semibold border border-solid transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary border-borderColor-custom rounded-xl text-lg text-text-hover max-lg:hidden"
           onClick={() => (window.location.href = "/#")}
         >
           Задать вопрос
         </button>
         <button
           onClick={() => (window.location.href = "/#")}
-          className="h-11 w-11 flex justify-center items-center rounded-xl  bg-text-hover max-lg:hidden"
+          className="px-[12px] py-[12px] flex justify-center items-center rounded-xl  bg-text-hover hover:bg-bg-hover_primary transition-all max-lg:hidden"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <desc>
