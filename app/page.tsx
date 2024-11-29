@@ -17,12 +17,12 @@ export default function Home() {
     <Header isFormQuestion={isFormQuestion} setIsFormQuestion={setIsFormQuestion} />
     <main className="flex-1 my-14 mx-5 max-md:mx-0">
       {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
-      <h1 className="text-7xl mx-auto max-w-[1180px]  font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4">Ваша безопасность <p>начинается с паролей</p></h1>
-      <span className=" mx-auto max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-xl:inline-block max-lg:text-base">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
+      <h1 className="text-7xl mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4">Ваша безопасность <p>начинается с паролей</p></h1>
+      <span className=" mx-auto max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
-      <section className="relative mx-auto bg-[url('/bg_big.png')] max-md:w-[95%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
+      <section className="relative mx-auto bg-[url('/bg_big.png')] max-md:w-[90%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
         <span
-          className="absolute top-[-2px] left-[-2px] w-full h-full bg-white bg-cover z-[0] max-sm:hidden"
+          className="absolute top-[-2px] left-[-2px] w-[90%] h-[90%] bg-white bg-cover z-[0] max-sm:hidden"
           style={{
             maskImage: "url('/Subtract.svg')",
       WebkitMaskImage: "url('/Subtract.svg')",
@@ -62,8 +62,8 @@ export default function Home() {
           aria-hidden="true"
         ></span>
         <div className="flex justify-between z-10 ">
-          <div className=" relative top-2 rounded-xl w-[65%] h-14 flex items-center"><span className=" text-lg font-normal max-xl:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
-          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1035px]:top-[-30px] max-lg:right-0 max-lg:w-[30%] z-0 max-[880px]:top-[-15px] max-[560px]:top-[-20px] max-[500px]:w-[50%]" src="___.svg" />
+          <div className=" relative top-2 rounded-xl w-[90%] h-14 flex items-center"><span className=" text-lg font-normal max-[1150px]:text-base max-lg:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
+          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-0 max-lg:w-[40%] z-0 max-[880px]:top-[-20px] max-[630px]:top-[-25px] max-[630px]:w-[60%]" src="___.svg" />
         </div>
         <div className="bg-white flex justify-between items-center p-4 w-60 mx-auto mb-3 rounded-[28px] z-10">
           <div className="w-16 h-16 flex items-center justify-center bg-bg-custom_green rounded-[16px]">
@@ -226,10 +226,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] py-10 px-14 max-lg:overflow-hidden max-[500px]:p-[1.25rem]">
+      <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
         <div className="flex justify-between items-center max-lg:flex-col">
-          <span className="text-[28px] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:text-lg"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all">по данным Лаборатории Касперского</a>).</p> </span>
-          <div className="bg-[url('/image.png')] w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
+          <span className="text-[28px] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:text-lg max-lg:mb-10"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
+          <div className="bg-[url('/image.png')] max-md:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
             <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
                 <svg width="16.666748" height="20.000000" viewBox="0 0 16.6667 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -255,7 +255,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-between sclrollbar items-center mt-14 gap-5 max-xl:gap-4 max-lg:overflow-x-scroll max-lg:w-full">
-          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-2 max-lg:flex-shrink-0">
+          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-4 max-lg:flex-shrink-0">
             <div>
               <h3 className="text-3xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Быстрое развертывание</h3>
               <span className="text-lg font-normal leading-[160%] max-lg:text-base">Защита начинает работать сразу после установки.</span>
@@ -265,7 +265,7 @@ export default function Home() {
               <span className="text-base font-semibold text-text-hover">001</span>
             </div>
           </div>
-          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-2 max-lg:flex-shrink-0">
+          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-4 max-lg:flex-shrink-0">
             <div>
               <h3 className="text-3xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Поддержка Windows и Linux</h3>
               <span className="text-lg font-normal leading-[160%] max-lg:text-base">Поддерживаются каталоги Active Directory, FreeIPA, ALD Pro.</span>
@@ -275,7 +275,7 @@ export default function Home() {
               <span className="text-base font-semibold text-text-hover">002</span>
             </div>
           </div>
-          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-2 max-lg:flex-shrink-0">
+          <div className="w-96 h-80 p-9 rounded-3xl flex flex-col justify-between border border-solid border-[rgb(227, 229, 230)] max-lg:w-64 max-lg:h-60 max-lg:p-4 max-lg:flex-shrink-0">
             <div>
               <h3 className="text-3xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Сделано в России</h3>
               <span className="text-lg font-normal leading-[160%] max-lg:text-base">Strongpass включен в Реестр российского программного обеспечения Минцифры.</span>

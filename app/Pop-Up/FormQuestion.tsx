@@ -49,7 +49,7 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
   <path d="M22.1938 10.2938L16.9875 15.5L22.1938 20.7063C22.6021 21.2021 22.6021 21.6979 22.1938 22.1938C21.6979 22.6021 21.2021 22.6021 20.7063 22.1938L15.5 16.9875L10.2938 22.1938C9.79792 22.6021 9.30208 22.6021 8.80625 22.1938C8.39792 21.6979 8.39792 21.2021 8.80625 20.7063L14.0125 15.5L8.80625 10.2938C8.39792 9.79792 8.39792 9.30208 8.80625 8.80625C9.30208 8.39792 9.79792 8.39792 10.2938 8.80625L15.5 14.0125L20.7063 8.80625C21.2021 8.39792 21.6979 8.39792 22.1938 8.80625C22.6021 9.30208 22.6021 9.79792 22.1938 10.2938Z" fill="white" />
 </svg>
     </div>
-    <div className='fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 w-[580px] max-md:rounded-none max-md:w-full max-md:h-full max-md:p-5'>
+    <div className='fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 w-[580px] max-md:rounded-none max-md:w-full max-md:h-full max-md:p-5 max-md:overflow-y-scroll'>
         <h3 className='text-5xl font-bold leading-[120%] mb-3 max-md:mt-28 max-md:text-[26px] max-[355px]:w-[290px]'>Задать вопрос</h3>
         <span className='text-lg font-normal leading-[160%] max-md:text-base max-[355px]:inline-block max-[355px]:w-[290px]'>Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время и ответит на все вопросы.</span>
         <form

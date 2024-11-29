@@ -28,12 +28,12 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
 
   return (
     <header
-      className={`flex ${isFormQuestion ? "max-md:fixed" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-lg:m-0 max-lg:px-3 ${Active ? "fixed top-0 left-0" : ""
+      className={`flex ${isFormQuestion ? "max-md:fixed max-md:bg-white max-md:top-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed top-[15px] left-0" : ""
         }`}
     >
       <button
         onClick={handleToggle}
-        className="hidden w-11 h-11 max-lg:flex items-center justify-center bg-teal-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300 z-20 relative"
+        className="hidden w-[46px] h-[46px] max-lg:flex items-center justify-center bg-teal-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300 z-20 relative"
       >
         <div className="space-y-1">
           <span
@@ -62,12 +62,12 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           }`}
       >
         <li
-          className="relative max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5"
+          className="relative max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:p-5 max-lg:w-[50%]"
           onMouseEnter={toggleDropdown}
           onMouseLeave={closeDropdown}
           onClick={toggleDropdown}
         >
-          <span className="font-semibold text-text-primary text-base hover:text-text-hover cursor-pointer flex gap-2 items-center">
+          <span className="font-semibold text-text-primary text-base hover:text-text-hover cursor-pointer max-lg:mb-3 flex gap-2 items-center">
             <Image
               src="/menu.svg"
               width={22}
@@ -88,7 +88,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           </span>
 
           {isDropdownOpen && (
-            <ul className="absolute left-[-50%] top-5 bg-white shadow-lg rounded-xl mt-2 w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
+            <ul className="absolute left-[-50%] top-5 bg-white shadow-lg rounded-xl mt-2 w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
               <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
                 <Link href="/#">Проактивная защита</Link>
               </li>
@@ -101,19 +101,19 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
             </ul>
           )}
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5">
+        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Скачать</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5">
+        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Купить</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5">
+        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Статьи</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5">
+        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Документация</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-full max-lg:p-5">
+        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Контакты</Link>
         </li>
       </ul>

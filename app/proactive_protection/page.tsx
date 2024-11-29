@@ -2,11 +2,20 @@
 import Image from "next/image"
 import Carousel from "../components/Carousel"
 import From from "../components/From"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import { useState } from "react"
+import FormQuestion from "../Pop-Up/FormQuestion"
 
 const page = () => {
+  const [isFormQuestion, setIsFormQuestion] = useState(false);
+
   return (
+    <>
+    <Header isFormQuestion={isFormQuestion} setIsFormQuestion={setIsFormQuestion} />
     <main className="flex-1 my-14 ">
-      <section className="flex max-w-[1180px] mx-auto justify-between max-lg:flex-col-reverse max-lg:items-center">
+    {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
+      <section className="flex max-w-[1180px] mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center">
         <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
           <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">Проактивная защита от использования слабых паролей</h1>
           <p className="text-lg mt-5 leading-[160%] font-normal max-lg:text-center max-md:text-base">При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля.</p>
@@ -55,12 +64,12 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="mt-20 max-w-[780px] mx-auto flex justify-between items-center max-[800px]:flex-col max-[800px]:gap-5">
+      <section className="mt-20 max-w-[780px] mx-auto flex justify-between max-md:mx-3 items-center max-[800px]:flex-col max-[800px]:gap-5">
         <Image width={285} height={48} alt="image" src="/image_2.png" loading="lazy" />
         <Image width={178} height={48} alt="image" src="/image_1.png" loading="lazy" />
         <Image width={194} height={44} alt="image" src="/image_3.png" loading="lazy" />
       </section>
-      <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse max-[600px]:px-3">
+      <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-[600px]:px-3">
         <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
           <Image className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6" src='/bg_2.png' width={866} height={460} loading="lazy" alt="" />
           <div className="h-[117px] w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
@@ -81,7 +90,7 @@ const page = () => {
           <span className="text-lg font-normal leading-[160%] text-left mt-6 inline-block max-[1100px]:text-base">В момент попытки установить новый пароль инициируется проверка надежности пароля с помощью Strongpass. Проверка производится по более чем 866 миллионам слабых паролей. При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля. Strongpass должен быть установлен на всех контроллерах домена (Windows, Linux), кроме read-only контроллеров. Для работы приложения права доменного администратора не требуются.</span>
         </div>
       </section>
-      <section className="max-w-[1180px] mx-auto mt-20">
+      <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3">
         <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">Почему нужен <p className="text-text-hover">Strongpass <span>?</span></p></h3>
         <div className="w-full flex justify-between gap-5 max-lg:flex-col">
           <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col">
@@ -103,12 +112,131 @@ const page = () => {
             <Image className="max-md:mt-6" src='/image_4.png' width={484} height={320} loading="lazy" alt="" />
           </div>
       </section>
-      <section className="max-w-[1180px] mx-auto mt-20">
+      <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3">
         <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">Преимущества</h3>
+        <div>
+        <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/shield.png 1x, /shield@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Проактивная защита</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Проверка проводится в момент установки нового пароля. Новый пароль будет установлен только, если он соответствует всем требованиям</span>
+          </div>
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/internet.png 1x, /internet@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Не требуется доступ в интернет</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Все проверки проводятся локально, без использования облачных сервисов. Пароли никогда не покидают ваши сервера.</span>
+          </div>
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/database.png 1x, /database@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Большая база паролей</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Для проверки используется постоянно пополняемая база, содержащая на текущий момент более 866 миллионов паролей, которые встречались в публичных утечках.</span>
+          </div>
+        </div>
+        <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/sliders.png 1x, /sliders@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Минимальные затраты на управление</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Все настройки хранятся в текстовых файлах. Изменения применяются без перезагрузки сервера. Текстовый формат конфигурационных файлов позволяет легко автоматизировать управление.</span>
+          </div>
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/pass-2.png 1x, /pass-2@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Индивидуальные политики</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Возможность указать свой индивидуальный список паролей, которые не должны считаться надежными. Исключение из проверок пользователей, паролей, групп пользователей.</span>
+          </div>
+          <div className="w-96 flex flex-col gap-6">
+            <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <img srcSet="/laptop.png 1x, /laptop@2x.png 2x" width={36} height={36} loading="lazy" alt="" />
+            </div>
+            <h3 className="text-[32px] font-semibold leading-[130%] text-left">Интеграция с Windows и Свпях</h3>
+            <span className="text-lg font-normal leading-[160%] text-left">Приложение работает как с Windows (Active Directory), так и с Linux (FreeIPA, ALD Pro). Контролируются все методы установки пароля администраторами и пользователями.</span>
+          </div>
+        </div>
+        </div>
       </section>
+      <section className="bg-bg-custom_gray py-10 mt-20 rounded-[48px]">
+  <div className="max-w-6xl mx-auto px-4">
+    {/* Заголовок */}
+    <h2 className="text-3xl font-semibold text-center mb-8">
+      Сравнение с групповыми политиками
+    </h2>
+
+    {/* Таблица */}
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse bg-white rounded-lg shadow-md">
+        {/* Заголовок таблицы */}
+        <thead>
+          <tr className="bg-bg-custom_gray border-b bg-bg-custom_gray">
+            <th className="py-4 px-6 text-left bg-bg-custom_gray font-medium">Функциональность</th>
+            <th className="py-4 px-6 text-center bg-bg-custom_gray font-medium">Strongpass</th>
+            <th className="py-4 px-6 text-center bg-bg-custom_gray font-medium">Групповые политики</th>
+          </tr>
+        </thead>
+
+        {/* Тело таблицы */}
+        <tbody>
+          <tr className="border-b bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Требование использовать в пароле все 4 типа символов (символы в нижнем и верхнем регистре, цифры, спец. символы)
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+          <tr className="bg-bg-custom_gray border-b bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Запрет использования пароля из публичных утечек
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+          <tr className="border-b bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Собственный список запрещенных слов
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+          <tr className="bg-bg-custom_gray border-b bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Запрет повторяющихся символов («1111», «bbbb» и т.д.)
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+          <tr className="border-b bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Запрет последовательных символов («1234», «abcd» и т.д.)
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+          <tr className="bg-bg-custom_gray">
+            <td className="py-3 px-6 bg-bg-custom_gray">
+              Запрет последовательностей символов, расположенных на соседних клавишах («qwerty», «qazxcvb» и т.д.)
+            </td>
+            <td className="py-3 px-6 text-center text-green-600">✔</td>
+            <td className="py-3 px-6 text-center text-red-600">✘</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
       <From />
       <Carousel />
     </main>
+    <Footer setIsFormQuestion={setIsFormQuestion}/>
+    </>
   )
 }
 
