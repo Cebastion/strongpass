@@ -11,8 +11,8 @@ const page = () => {
           <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">Проактивная защита от использования слабых паролей</h1>
           <p className="text-lg mt-5 leading-[160%] font-normal max-lg:text-center max-md:text-base">При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля.</p>
           <div className="flex items-center mt-10 max-lg:justify-center">
-            <button className="w-72 h-14 text-text-hover border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base">Попробовать бесплатно</button>
-            <button className="w-14 h-14 flex items-center justify-center rounded-xl bg-text-hover">
+            <button className="w-72 h-14 text-text-hover border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Попробовать бесплатно</button>
+            <button className="w-14 h-14 flex items-center justify-center rounded-xl bg-text-hover hover:bg-bg-hover_primary transition-all">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <desc>
                   Created with Pixso.
@@ -64,8 +64,8 @@ const page = () => {
         <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
           <Image className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6" src='/bg_2.png' width={866} height={460} loading="lazy" alt="" />
           <div className="h-[117px] w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
-            <button className="text-lg font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3">Смотреть видео</button>
-            <button className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center">
+            <button className="text-lg font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть видео</button>
+            <button className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center hover:bg-bg-hover_primary transition-all">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
                 <desc>
                   Created with Pixso.
@@ -80,6 +80,31 @@ const page = () => {
           <h3 className="text-6xl font-bold leading-[120%] text-left max-[1100px]:text-3xl">Как это работает?</h3>
           <span className="text-lg font-normal leading-[160%] text-left mt-6 inline-block max-[1100px]:text-base">В момент попытки установить новый пароль инициируется проверка надежности пароля с помощью Strongpass. Проверка производится по более чем 866 миллионам слабых паролей. При наличии индивидуального списка запрещенных паролей, составленного внутри компании, проводятся дополнительные проверки. На основании проверки разрешается или запрещается установка нового пароля. Strongpass должен быть установлен на всех контроллерах домена (Windows, Linux), кроме read-only контроллеров. Для работы приложения права доменного администратора не требуются.</span>
         </div>
+      </section>
+      <section className="max-w-[1180px] mx-auto mt-20">
+        <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">Почему нужен <p className="text-text-hover">Strongpass <span>?</span></p></h3>
+        <div className="w-full flex justify-between gap-5 max-lg:flex-col">
+          <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col">
+            <Image src='/image_6.png' width={484} height={320} loading="lazy" alt="" />
+            <h4 className="text-3xl font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">Подбор паролей — одна из самых результативных атак</h4>
+            <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">По данным отчетов компаний <span className="underline text-text-hover cursor-pointer">Позитив Текнолоджиз</span> и <span className="underline text-text-hover cursor-pointer">Лаборатории Касперского</span> атаки подбора пароля были успешны в 71% случаев при проникновении во внутреннюю сеть компании снаружи и в 58% при получении максимальных привилегий. Причина такой высокой успешности атак - слабые или скомпрометированные пароли.</span>
+          </div>
+          <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col">
+            <Image src='/image_5.png' width={484} height={320} loading="lazy" alt="" />
+            <h4 className="text-3xl font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">Возможности групповых политик недостаточны</h4>
+            <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">Групповые политики позволяют настроить минимальную длину пароля, наличие букв, цифр, специальных символов. Однако, это не мешает пользователям создавать пароли, отвечающие требованиям политик, но при этом быть легко угадываемыми или часто используемыми. </span>
+          </div>
+        </div>
+        <div className="mt-5 bg-bg-custom_gray rounded-3xl p-12 flex justify-between items-center max-lg:flex-col">
+            <div className="max-w-[532px] max-lg:max-w-full">
+              <h4 className="text-3xl font-semibold leading-[130%] text-left mb-4 max-md:text-[22px]">Скомпрометированные пароли</h4>
+              <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">Скомпрометированный пароль - это пароль, ставший известным в результате публичной утечки. Такой пароль, нельзя больше использовать, даже если он сложный. Злоумышленники знают, что один и тот же пароль часто используется повторно и используют это в атаках. При использовании публичных утечек время подбора скомпрометированного пароля будет исчисляться минутами.</span>
+            </div>
+            <Image className="max-md:mt-6" src='/image_4.png' width={484} height={320} loading="lazy" alt="" />
+          </div>
+      </section>
+      <section className="max-w-[1180px] mx-auto mt-20">
+        <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">Преимущества</h3>
       </section>
       <From />
       <Carousel />

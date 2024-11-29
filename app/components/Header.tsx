@@ -1,9 +1,16 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { FC, useState } from "react";
+import '../animation/button.css'
 
-const Header = () => {
+type Props = {
+  setIsFormQuestion: React.Dispatch<React.SetStateAction<boolean>>,
+  isFormQuestion: boolean
+}
+
+
+const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
   const [Active, SetActive] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Состояние для dropdown
 
@@ -21,24 +28,24 @@ const Header = () => {
 
   return (
     <header
-      className={`flex max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-lg:m-0 max-lg:px-3 ${Active ? "fixed top-0 left-0" : ""
+      className={`flex ${isFormQuestion ? "max-md:fixed" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-lg:m-0 max-lg:px-3 ${Active ? "fixed top-0 left-0" : ""
         }`}
     >
       <button
         onClick={handleToggle}
         className="hidden w-11 h-11 max-lg:flex items-center justify-center bg-teal-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition duration-300 z-20 relative"
       >
-        <div className="space-y-2">
+        <div className="space-y-1">
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${Active ? "rotate-45 translate-y-2 translate-x-0" : ""
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 ${Active ? "rotate-45 translate-y-[0.28rem] translate-x-0" : ""
               }`}
           ></span>
           <span
-            className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${Active ? "opacity-0" : "opacity-100"
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-opacity duration-300 ${Active ? "opacity-0" : "opacity-100"
               }`}
           ></span>
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${Active ? "-rotate-45 -translate-y-2.5 translate-x-0" : ""
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 ${Active ? "-rotate-45 -translate-y-[0.5rem] translate-x-0" : ""
               }`}
           ></span>
         </div>
@@ -49,7 +56,7 @@ const Header = () => {
         </Link>
       </div>
       <ul
-        className={`flex gap-9 mr-32 max-lg:mr-0 max-lg:gap-2 ${Active
+        className={`flex gap-9 mr-32 max-[1070px]:mr-0 max-lg:gap-2 ${Active
           ? "flex z-10 fixed top-0 left-0 w-full h-screen bg-white flex-col items-center justify-center"
           : "max-lg:hidden"
           }`}
@@ -111,15 +118,15 @@ const Header = () => {
         </li>
       </ul>
       <div className="flex items-center">
-        <button
-          className="px-[19px] py-[9px] font-semibold border border-solid transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary border-borderColor-custom rounded-xl text-lg text-text-hover max-lg:hidden"
-          onClick={() => (window.location.href = "/#")}
+        <button className="flex items-center button-animation transition-all" onClick={() => setIsFormQuestion(true)}>
+        <div
+          className="px-[24px] py-[10px] font-medium border border-solidborder-borderColor-custom rounded-xl text-base leading-[150%] text-text-hover max-lg:hidden"
+          
         >
           Задать вопрос
-        </button>
-        <button
-          onClick={() => (window.location.href = "/#")}
-          className="px-[12px] py-[12px] flex justify-center items-center rounded-xl  bg-text-hover hover:bg-bg-hover_primary transition-all max-lg:hidden"
+        </div>
+        <div
+          className="px-[12px] py-[12px] flex justify-center items-center rounded-xl  bg-text-hover max-lg:hidden"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <desc>
@@ -129,9 +136,10 @@ const Header = () => {
             <path id="Vector" d="M18.85 13.62L17.11 13.62L17.11 8.11L6.37 18.85L5.14 17.62L15.88 6.88L10.37 6.88L10.37 5.14L18.85 5.14L18.85 13.62Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
           </svg>
 
+        </div>
         </button>
         <button
-          onClick={() => (window.location.href = "/#")}
+          onClick={() => setIsFormQuestion(!isFormQuestion)}
           className="w-12 h-12 rounded-xl bg-gray-100 items-center justify-center hidden max-lg:flex relative z-10"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >

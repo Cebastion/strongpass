@@ -17,6 +17,7 @@ export default {
           gray_custom: "#7A7E80",
           custom_dark_purple: "rgb(60, 15, 60)",
           custom_gray_second: "rgb(122, 126, 128)",
+          form: "rgb(122, 126, 128)",
         },
         borderColor: {
           hover_primary: "rgb(27, 107, 96)",

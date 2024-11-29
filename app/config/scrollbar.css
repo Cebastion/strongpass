@@ -1,0 +1,11 @@
+
+.sclrollbar {
+    overflow-x: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+  
+  .sclrollbar::-webkit-scrollbar {
+    display: none; 
+  }
+  

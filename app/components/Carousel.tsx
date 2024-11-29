@@ -22,24 +22,28 @@ const Carousel = () => {
       date: "20 сентября 2024",
       title: "Создание легко запоминаемых и надежных паролей",
       imgSrc: "/article.png",
+      imgSrcSet: "/article.png 1x, /article_2x.png 2x",
     },
     {
       id: 2,
       date: "20 сентября 2024",
       title: "Как создать слабый пароль или типовые шаблоны в паролях и как с ними бороться",
       imgSrc: "/article_2.png",
+      imgSrcSet: "/article_2.png 1x, /article_2_2x.png 2x",
     },
     {
       id: 3,
       date: "21 сентября 2024",
       title: "Советы по управлению корпоративными паролями",
       imgSrc: "/article_2.png",
+      imgSrcSet: "/article_2.png 1x, /article_2_2x.png 2x",
     },
     {
       id: 4,
       date: "22 сентября 2024",
       title: "Лучшие практики для работы с двухфакторной аутентификацией",
       imgSrc: "/article.png",
+      imgSrcSet: "/article.png 1x, /article_2x.png 2x",
     },
   ];
 
@@ -74,7 +78,7 @@ const Carousel = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-6xl font-bold max-lg:text-3xl">Статьи</h2>
         <div className="flex gap-2 items-center max-md:hidden">
-          <button className="h-[61px] px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть все</button>
+          <button className="h-[61px] px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть все</button>
           <button
             onClick={handlePrev}
             className="w-[54px] h-[54px] flex justify-center items-center border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold btn-animation"
@@ -109,15 +113,16 @@ const Carousel = () => {
             className={`flex-shrink-0 ${isSingleView ? "w-full" : ""
               } transition-transform duration-500 ease-in-out max-lg:mx-auto`}
           >
-            <Image
+            <img
               className="rounded-tl-[48px] rounded-tr-[48px]"
-              src={article.imgSrc}
+              
+              srcSet={article.imgSrcSet}
               alt=""
               loading="lazy"
               width={580}
               height={280}
             />
-            <div className="rounded-3xl bg-bg-custom_gray p-5 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3">
+            <div className="rounded-3xl bg-bg-custom_gray p-9 max-[500px]:p-4 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3">
               <span className="text-base text-gray-400">{article.date}</span>
               <h3 className="text-2xl font-semibold max-md:text-[20px]">{article.title}</h3>
               <span className="text-lg font-normal text-text-custom_gray_second">
@@ -142,10 +147,10 @@ const Carousel = () => {
         ))}
       </div>
       <div className=" gap-2 hidden max-md:flex">
-        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-semibold transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть все</button>
+        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть все</button>
         <button
           onClick={handlePrev}
-          className="py-3 px-2 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold btn-animation"
+          className="py-3 px-4 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold btn-animation"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <desc>
@@ -157,7 +162,7 @@ const Carousel = () => {
         </button>
         <button
           onClick={handleNext}
-          className="py-3 px-2 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold btn-animation"
+          className="py-3 px-4 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-semibold btn-animation"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <desc>
