@@ -2,14 +2,14 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "../animation/animation.css";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Carousel = () => {
-  const swiperRef = useRef(null); // Реф для хранения экземпляра Swiper
+  const swiperRef = useRef<SwiperClass | null>(null); // Реф для хранения экземпляра Swiper
 
   const articles = [
     {
