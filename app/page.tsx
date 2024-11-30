@@ -63,7 +63,7 @@ export default function Home() {
         ></span>
         <div className="flex justify-between z-10 ">
           <div className=" relative top-2 rounded-xl w-[90%] h-14 flex items-center"><span className=" text-lg font-normal max-[1150px]:text-base max-lg:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
-          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-0 max-lg:w-[40%] z-0 max-[880px]:top-[-20px] max-[630px]:top-[-20px] max-[630px]:w-[60%]" src="___.svg" />
+          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-0 max-lg:w-[40%] z-0 max-[880px]:top-[-20px] max-[630px]:top-[-15px] max-[630px]:w-[60%]" src="___.svg" />
         </div>
         <div className="bg-white flex justify-between items-center p-4 w-60 mx-auto mb-3 rounded-[28px] z-10">
           <div className="w-16 h-16 flex items-center justify-center bg-bg-custom_green rounded-[16px]">
