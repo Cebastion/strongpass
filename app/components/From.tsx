@@ -34,6 +34,8 @@ const From = () => {
 
     setErrors(newErrors);
 
+    console.log(errors.comment)
+
     if (Object.values(newErrors).every((error) => !error)) {
       console.log('Данные формы:', formData);
       alert('Форма отправлена!');
@@ -41,7 +43,7 @@ const From = () => {
   };
 
   return (
-    <section id="form" className="mt-40 h-[682px] max-lg:h-auto bg-bg-custom_green rounded-[48px] max-sm:rounded-3xl p-10 max-lg:py-10 max-lg:px-5 max-[500px]:py-4 flex justify-between max-lg:flex-col">
+    <section id="form" className="mt-40 h-[682px] max-lg:h-auto bg-bg-custom_green rounded-[48px] max-sm:rounded-3xl p-10 max-lg:py-10 max-lg:px-5 flex justify-between max-lg:flex-col">
       <div className="flex flex-col justify-between px-[19px] py-[10px] max-sm:p-0">
         <div className="pt-[5px] pl-[5px]">
         <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px] max-sm:text-[27px] hidden max-lg:inline-block">Остались вопросы?</h3>
@@ -118,9 +120,9 @@ const From = () => {
         placeholder="Комментарий"
         value={formData.comment}
         onChange={handleChange}
-        className={`w-full resize-none h-[146px] py-3 px-6 border-[#e3e5e5] text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom ${
-          errors.comment ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-[#e3e5e5] placeholder-[#7a7e80]'
-        }`}
+        className={`w-full resize-none h-[146px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom 
+          ${errors.comment ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-[#e3e5e5] placeholder-[#7a7e80]'}
+        `}        
       ></textarea>
 
       <button className="flex button-animation justify-between items-center mt-[13px] mr-[7px] max-lg:m-0">

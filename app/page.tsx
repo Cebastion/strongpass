@@ -63,7 +63,7 @@ export default function Home() {
         ></span>
         <div className="flex justify-between z-10 ">
           <div className=" relative top-2 rounded-xl w-[90%] h-14 flex items-center"><span className=" text-lg font-normal max-[1150px]:text-base max-lg:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
-          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-0 max-lg:w-[40%] z-0 max-[880px]:top-[-20px] max-[630px]:top-[-25px] max-[630px]:w-[60%]" src="___.svg" />
+          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-0 max-lg:w-[40%] z-0 max-[880px]:top-[-20px] max-[630px]:top-[-20px] max-[630px]:w-[60%]" src="___.svg" />
         </div>
         <div className="bg-white flex justify-between items-center p-4 w-60 mx-auto mb-3 rounded-[28px] z-10">
           <div className="w-16 h-16 flex items-center justify-center bg-bg-custom_green rounded-[16px]">
@@ -229,7 +229,7 @@ export default function Home() {
       <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
         <div className="flex justify-between items-center max-lg:flex-col">
           <span className="text-[28px] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:text-lg max-lg:mb-10"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
-          <div className="bg-[url('/image.png')] max-md:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
+          <div className="bg-[url('/image.png')] max-sm:bg-cover max-sm:bg-center max-sm:w-full max-[500px]:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
             <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
                 <svg width="16.666748" height="20.000000" viewBox="0 0 16.6667 20" fill="none" xmlns="http://www.w3.org/2000/svg" >

@@ -23,6 +23,7 @@ export default {
           hover_primary: "rgb(27, 107, 96)",
           custom: "rgb(64, 128, 119)",
           hover: "rgb(27, 107, 96)",
+          custom_white: "rgba(255, 255, 255, 0.4)"
         },
         bg: {
           hover_primary: "rgb(27, 107, 96)",

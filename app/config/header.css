@@ -1,0 +1,16 @@
+.fixed-header {
+    position: fixed; /* Фиксируем плашку сверху */
+    width: 100%;
+    height: 108px; /* Высота плашки */
+    background-color: white;
+    z-index: 100; /* Поверх других элементов */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для разделения */
+  }
+  
+  .scrollable-list {
+    padding: 10px 0;
+    margin-top: 110px; /* Отступ, чтобы список начинался под плашкой */
+    max-height: calc(100vh - 110px); /* Ограничиваем высоту, исключая высоту плашки */
+    overflow-y: auto; /* Включаем вертикальную прокрутку */
+  }
+  

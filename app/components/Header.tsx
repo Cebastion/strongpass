@@ -28,7 +28,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
 
   return (
     <header
-      className={`flex ${isFormQuestion ? "max-md:fixed max-md:bg-white max-md:top-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed top-[15px] left-0" : ""
+      className={`flex ${isFormQuestion ? "max-md:fixed max-md:bg-white max-md:top-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed fixed-header top-[15px] left-0" : ""
         }`}
     >
       <button
@@ -37,15 +37,15 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
       >
         <div className="space-y-1">
           <span
-            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 ${Active ? "rotate-45 translate-y-[0.28rem] translate-x-0" : ""
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 relative ${Active ? "rotate-45 top-[6px] " : ""
               }`}
           ></span>
           <span
-            className={`block w-5 h-0.5 rounded-xl bg-white transition-opacity duration-300 ${Active ? "opacity-0" : "opacity-100"
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-opacity duration-300 relative ${Active ? "opacity-0" : "opacity-100"
               }`}
           ></span>
           <span
-            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 ${Active ? "-rotate-45 -translate-y-[0.5rem] translate-x-0" : ""
+            className={`block w-5 h-0.5 rounded-xl bg-white transition-transform duration-300 relative ${Active ? "-rotate-45 top-[-6px]" : ""
               }`}
           ></span>
         </div>
@@ -55,9 +55,10 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           <Image src="/logo.svg" width={60} height={60} alt="" loading="lazy" />
         </Link>
       </div>
+      <div className={`${Active && "hidden max-lg:block fixed w-full h-screen bg-white top-0 left-0"}`}></div>
       <ul
-        className={`flex gap-9 mr-32 max-[1070px]:mr-0 max-lg:gap-2 ${Active
-          ? "flex z-10 fixed top-0 left-0 w-full h-screen bg-white flex-col items-center justify-center"
+        className={`flex gap-9 mr-32 max-[1070px]:mr-0 max-lg:gap-0 ${Active
+          ? "flex z-10 fixed top-[30%] left-0 py-3 max-lg:overflow-y-auto w-full h-full bg-white flex-col items-center justify-start max-lg:max-h-[70vh]"
           : "max-lg:hidden"
           }`}
       >
@@ -140,7 +141,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
         </button>
         <button
           onClick={() => setIsFormQuestion(!isFormQuestion)}
-          className="w-12 h-12 rounded-xl bg-gray-100 items-center justify-center hidden max-lg:flex relative z-10"
+          className="w-12 h-12 rounded-xl bg-gray-100 items-center justify-center hidden max-lg:flex relative z-[11]"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <desc>

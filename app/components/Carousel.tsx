@@ -125,7 +125,7 @@ const Carousel = () => {
                 <h3 className="text-2xl font-semibold max-md:text-[20px]">
                   {article.title}
                 </h3>
-                <span className="text-lg font-normal text-text-custom_gray_second">
+                <span className="text-lg font-normal text-text-custom_gray_second max-md:line-clamp-2">
                   Сегодня исследовательская группа Specops публикует
                   <p className="text-lg text-text-custom_gray_second">
                     новые данные о паролях VPN, украденных вредоносным...
