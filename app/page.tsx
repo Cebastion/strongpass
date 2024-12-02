@@ -18,24 +18,24 @@ export default function Home() {
     {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
     <main className={`flex-1 my-14 mx-5 max-md:mx-0 ${isFormQuestion && "max-md:hidden"}`}>
 
-      <h1 className="text-7xl mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
+      <h1 className="text-7xl relative bottom-[-1rem] max-[1060px]:bottom-0 mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
       <span className=" mx-auto max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
       <section className="relative mx-auto bg-[url('/bg_big.png')] max-md:w-[90%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
         <span
-          className="absolute top-[-2px] left-[-2px] w-[90%] h-[90%] bg-white bg-cover z-[0] max-sm:hidden"
+          className="absolute top-[-2px] left-[-2px] w-full max-[850px]:w-[90%] max-md:w-[75%] h-[90%] bg-white bg-cover z-[0] max-sm:hidden"
           style={{
             maskImage: "url('/Subtract.svg')",
       WebkitMaskImage: "url('/Subtract.svg')",
-      maskSize: "contain",
-      WebkitMaskSize: "contain",
+      maskSize: "cover",
+      WebkitMaskSize: "cover",
       maskPosition: "top",
       WebkitMaskPosition: "top",
       maskRepeat: "no-repeat",
       WebkitMaskRepeat: "no-repeat",
       // Для старых браузеров без поддержки маски
       backgroundImage: "url('/Subtract.svg')",
-      backgroundSize: "contain",
+      backgroundSize: "cover",
       backgroundPosition: "top",
       backgroundRepeat: "no-repeat",
       
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
       <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] max-md:rounded-3xl py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
         <div className="flex justify-between items-center max-lg:flex-col">
-          <span className="text-[clamp(18px,4vw,28px)] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:mb-10 max-lg:pl-[25px] max-md:pl-5"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
+          <span className="text-[clamp(18px,4vw,28px)] font-[480] w-[680px] leading-[160%] max-lg:w-full max-lg:mb-10 max-lg:pl-[25px] max-md:pl-5"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
           <div className="bg-[url('/image.png')] rounded-3xl max-sm:bg-cover max-sm:bg-center max-sm:w-full max-[500px]:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
             <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] max-md:bg-[url('/mask/mask_1_2.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
