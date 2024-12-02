@@ -152,7 +152,7 @@ const Carousel = () => {
       </Swiper>
 
       <div className=" gap-2 hidden max-md:flex justify-between">
-        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Смотреть все</button>
+        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-[360px]:px-4">Смотреть все</button>
         <div className="flex gap-2">
         <button
           onClick={() => swiperRef.current?.slidePrev()}

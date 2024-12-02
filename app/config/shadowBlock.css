@@ -1,0 +1,36 @@
+.shadowblock {
+    position: relative;
+    height: 100%; /* Высота блока установлена на 100% родительского контейнера */
+  }
+  
+  .shadowblock::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(242, 245, 244, 0) 0%, #f2f5f4 50%);
+  }
+
+
+  .hidden-overflow-y-scroll {
+    overflow-y: scroll; /* Включаем прокрутку */
+    scrollbar-width: thin; /* Для Firefox, делаем полосу тоньше */
+    scrollbar-color: transparent transparent; /* Для Firefox, устанавливаем цвет полосы в прозрачный */
+  }
+  
+  /* Для скрытия полосы прокрутки в Webkit-браузерах (Chrome, Safari) */
+  .hidden-overflow-y-scroll::-webkit-scrollbar {
+    width: 0px; /* Убираем полосу прокрутки */
+    height: 0px; /* Для горизонтальной прокрутки (если она нужна) */
+  }
+  
+  .hidden-overflow-y-scroll::-webkit-scrollbar-thumb {
+    background: transparent; /* Делаем ползунок прозрачным */
+  }
+  
+  .hidden-overflow-y-scroll::-webkit-scrollbar-track {
+    background: transparent; /* Делаем трек полосы прозрачным */
+  }

@@ -1,0 +1,42 @@
+.numbered-list {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.numbered-list li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 35px; /* Для отступа перед нумерацией */
+}
+
+.numbered-list li::before {
+  content: counter(item, decimal-leading-zero) ". "; /* Форматируем номер с ведущим нулем */
+  position: absolute;
+  left: 0;
+  color: #408077;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.dash-list {
+  list-style-type: none;
+}
+
+.dash-list li {
+    display: flex;
+    align-items: center;
+    counter-increment: item;
+    position: relative;
+    padding-left: 20px; /* Для отступа перед нумерацией */
+  }
+
+.dash-list li::before {
+    content: "";
+    border-radius: 5px;
+    display: inline;
+    width: 12px;  /* Длина линии */
+    height: 2px;  /* Толщина линии */
+    background-color: #408077;  /* Цвет линии */
+    margin-top: 3px;
+}

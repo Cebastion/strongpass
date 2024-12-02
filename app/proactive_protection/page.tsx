@@ -57,7 +57,7 @@ const page = () => {
         {isFormQuestion && (
           <FormQuestion setIsFormQuestion={setIsFormQuestion} />
         )}
-        <section className="flex max-w-[1180px] mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center">
+        <section className="flex max-w-[1180px] mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проактивная защита от использования слабых паролей
@@ -154,7 +154,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="mt-20 max-w-[780px] mx-auto flex justify-between max-md:mx-3 items-center max-[800px]:flex-col max-[800px]:gap-5">
+        <section className="mt-20 max-w-[780px] mx-auto flex justify-between max-md:mx-3 items-center max-[800px]:flex-col max-[800px]:gap-5 max-sm:px-5">
           <Image
             width={285}
             height={48}
@@ -177,7 +177,7 @@ const page = () => {
             loading="lazy"
           />
         </section>
-        <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-[600px]:px-3">
+        <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
           <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
             <Image
               className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
@@ -229,7 +229,7 @@ const page = () => {
             </span>
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3">
+        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3 max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Почему нужен{" "}
             <p className="text-text-hover">
@@ -237,7 +237,7 @@ const page = () => {
             </p>
           </h3>
           <div className="w-full flex justify-between gap-5 max-lg:flex-col">
-            <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col">
+            <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col max-sm:p-6">
               <Image
                 src="/image_6.png"
                 width={484}
@@ -263,7 +263,7 @@ const page = () => {
                 успешности атак - слабые или скомпрометированные пароли.
               </span>
             </div>
-            <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col">
+            <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col max-sm:p-6">
               <Image
                 src="/image_5.png"
                 width={484}
@@ -282,7 +282,7 @@ const page = () => {
               </span>
             </div>
           </div>
-          <div className="mt-5 bg-bg-custom_gray rounded-3xl p-12 flex justify-between items-center max-lg:flex-col">
+          <div className="mt-5 bg-bg-custom_gray rounded-3xl p-12 flex justify-between items-center max-lg:flex-col max-sm:p-6">
             <div className="max-w-[532px] max-lg:max-w-full">
               <h4 className="text-3xl font-semibold leading-[130%] text-left mb-4 max-md:text-[22px]">
                 Скомпрометированные пароли
@@ -306,13 +306,13 @@ const page = () => {
             />
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3">
+        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3 max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Преимущества
           </h3>
           <div>
             <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/shield.png 1x, /shield@2x.png 2x"
@@ -331,7 +331,7 @@ const page = () => {
                   требованиям
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/internet.png 1x, /internet@2x.png 2x"
@@ -349,7 +349,7 @@ const page = () => {
                   сервисов. Пароли никогда не покидают ваши сервера.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/database.png 1x, /database@2x.png 2x"
@@ -370,7 +370,7 @@ const page = () => {
               </div>
             </div>
             <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/sliders.png 1x, /sliders@2x.png 2x"
@@ -390,7 +390,7 @@ const page = () => {
                   управление.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/pass-2.png 1x, /pass-2@2x.png 2x"
@@ -409,7 +409,7 @@ const page = () => {
                   пользователей, паролей, групп пользователей.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6">
+              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/laptop.png 1x, /laptop@2x.png 2x"
@@ -431,7 +431,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="bg-bg-custom_gray p-16 max-md:p-10 mt-20 rounded-[48px]">
+        <section className="bg-bg-custom_gray p-16 max-md:p-10 mt-20 rounded-[48px] max-sm:px-5">
           <div className="max-w-6xl mx-auto px-4">
             {/* Заголовок */}
             <h2 className="text-[64px] font-bold leading-[120%] text-center mb-10 max-lg:text-3xl">
@@ -737,7 +737,7 @@ const page = () => {
           </div>
         </section>
         <BlockTestPass />
-        <section className="mt-20 max-w-[780px] mx-auto">
+        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
           <h3 className="font-bold text-[64px] leading-[120%] text-center">
             Возможности
           </h3>
@@ -746,7 +746,7 @@ const page = () => {
             Продукт лицензируется по количеству защищаемых учетных записей в
             домене.
           </span>
-          <div className="mt-20 flex justify-center gap-5">
+          <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
             <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
                 <svg
