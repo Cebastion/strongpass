@@ -1,6 +1,5 @@
 .shadowblock {
     position: relative;
-    height: 100%; /* Высота блока установлена на 100% родительского контейнера */
   }
   
   .shadowblock::after {
@@ -13,6 +12,12 @@
     height: 100px;
     background: linear-gradient(180deg, rgba(242, 245, 244, 0) 0%, #f2f5f4 50%);
   }
+
+  @media (max-width: 1180px) {
+    .shadowblock::after {
+        display: none; 
+    }
+}
 
 
   .hidden-overflow-y-scroll {

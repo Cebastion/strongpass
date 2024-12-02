@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import "../config/li.css";
 import "../config/shadowBlock.css";
 
-type Props = {};
+type Props = {
+  setIsCheckPass: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 const Warning = () => {
   return (
@@ -186,13 +188,13 @@ const Text = ({ current }: { current: number }) => {
   if (current === 0) {
     return (
       <>
-        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px]">
+        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px] max-sm:text-base">
           Неизвестный результат <p>проверки пароля.</p>
         </h5>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           Проверьте журнал
         </p>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           приложения
         </p>
       </>
@@ -200,13 +202,13 @@ const Text = ({ current }: { current: number }) => {
   } else if (current === 1) {
     return (
       <>
-        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px]">
+        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px] max-sm:text-base">
           Пароль ненадежный!
         </h5>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           Пароль достаточно
         </p>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           легко угадать.
         </p>
       </>
@@ -214,16 +216,16 @@ const Text = ({ current }: { current: number }) => {
   } else if (current <= 3 && current !== 1) {
     return (
       <>
-        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px]">
+        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px] max-sm:text-base">
           Пароль ненадежный!
         </h5>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           Пароль содержит
         </p>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           запрещенное слово или
         </p>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           {" "}
           комбинацию символов.
         </p>
@@ -232,13 +234,13 @@ const Text = ({ current }: { current: number }) => {
   } else if (current <= 5 && current > 3) {
     return (
       <>
-        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px]">
+        <h5 className="font-semibold text-lg text-center leading-[160%] mb-[5px] mt-[15px] max-sm:text-base">
           Хороший пароль! <p>Поздравляем!</p>
         </h5>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           Ваш пароль
         </p>
-        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80]">
+        <p className="font-normal text-base text-center leading-[150%] text-[#7a7e80] max-sm:text-[14px]">
           достаточно надежный
         </p>
       </>
@@ -246,7 +248,7 @@ const Text = ({ current }: { current: number }) => {
   }
 };
 
-const CheckPass = (props: Props) => {
+const CheckPass:FC<Props> = ({setIsCheckPass}) => {
   const [ShowPass, setShowPass] = useState(false);
   const [password, setPassword] = useState("");
   const [result, setResult] = useState<number[]>();
@@ -296,8 +298,8 @@ const CheckPass = (props: Props) => {
 
   return (
     <>
-      <div className="fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75]"></div>
-      <div className="fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green flex justify-center items-center cursor-pointer">
+      <div className="fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75] max-md:hidden"></div>
+      <div onClick={() => setIsCheckPass(false)} className="fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green flex justify-center items-center cursor-pointer max-md:hidden">
         <svg
           width="31"
           height="31"
@@ -311,20 +313,21 @@ const CheckPass = (props: Props) => {
           />
         </svg>
       </div>
-      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-md:p-5 max-[1180px]:overflow-y-scroll max-[1180px]:flex-col">
-        <div className="max-w-[560px] w-[560px] flex flex-col justify-between">
-          <h4 className="font-semibold text-[32px] leading-[130%] mb-[10px]">
+      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[7.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
+        <div className=" max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
+        <div className="max-w-[560px] w-[560px] flex flex-col justify-between max-sm:w-full max-sm:max-w-full ">
+          <h4 className="font-semibold text-[32px] leading-[130%] mb-[10px] max-md:text-[22px] max-md:leading-[140%]">
             Проверка надежности пароля
           </h4>
-          <span className="font-normal text-lg text-left leading-[160%]">
+          <span className="font-normal text-lg text-left leading-[160%] max-md:text-base max-md:leading-[150%] ">
             Публичная версия сервиса предназначена для быстрой и удобной
             проверки пароля на надежность, а так же демонстрации возможностей
             решения Strongpass для проактивной борьбы со слабыми паролями.
           </span>
-          <div className="mt-8 mb-5 w-full flex justify-between items-center gap-5">
-            <div className="relative">
+          <div className="mt-8 mb-5 w-full flex justify-between items-center gap-5 max-sm:flex-col">
+            <div className="relative max-sm:w-full">
               <input
-                className="relative border border-[#e3e5e5] rounded-2xl py-[14px] px-5 w-[371px] h-[57px] font-medium text-lg"
+                className="relative border border-[#e3e5e5] rounded-2xl py-[14px] px-5 w-[371px] h-[57px] font-medium text-lg max-sm:w-full max-sm:max-w-full "
                 type={ShowPass ? "text" : "password"}
                 placeholder="Ваш пароль"
                 value={password}
@@ -338,14 +341,14 @@ const CheckPass = (props: Props) => {
             </div>
             <button
               onClick={checkPassword}
-              className="py-[14px] px-9 rounded-xl flex justify-center items-center bg-bg-custom_green font-semibold leading-[160%] text-lg text-white"
+              className="py-[14px] px-9 rounded-xl flex justify-center items-center bg-bg-custom_green hover:bg-[#1b6b60] transition-all duration-500 font-semibold leading-[160%] text-lg text-white max-sm:w-full "
             >
               Проверить
             </button>
           </div>
-          <div className="p-[10px] border border-[#e3e5e5] rounded-2xl flex justify-between items-center gap-8">
+          <div className="p-[10px] border border-[#e3e5e5] rounded-2xl flex justify-between items-center gap-8 max-sm:flex-col ">
             {result && (
-              <div className="flex flex-col justify-center items-center px-5 py-[25px] w-full max-w-[255px] bg-[#f2f5f4] rounded-[10px]">
+              <div className="flex flex-col justify-center items-center px-5 py-[25px] w-full max-w-[255px] bg-[#f2f5f4] rounded-[10px] max-sm:w-full max-sm:max-w-full ">
               <CircularProgress
                 current={result.length}
                 total={5}
@@ -356,38 +359,38 @@ const CheckPass = (props: Props) => {
               </div>
             </div>
             )}
-            <div className=" rounded-md space-y-2 w-full max-w-[255px] mx-auto">
-              <h2 className="font-semibold text-lg leading-[160%] text-center">
+            <div className=" rounded-md space-y-2 w-full max-w-[255px] mx-auto max-sm:w-full max-sm:max-w-full max-sm:flex max-sm:flex-col max-sm:items-center ">
+              <h2 className="font-semibold text-lg leading-[160%] text-center max-sm:text-base">
                 Требования к паролю:
               </h2>
-              <ul className="pl-5 text-gray-600 list-none">
-                <li className="font-medium text-lg leading-[160%] relative pl-8">
+              <ul className="pl-5 text-gray-600 list-none max-sm:mr-7">
+                <li className="font-medium text-lg leading-[160%] relative pl-8 max-sm:text-base">
                   {validLength ? <Positive /> : <Negative />} Не менее 9
                   символов
                 </li>
-                <li className="font-medium text-lg leading-[160%] relative pl-8">
+                <li className="font-medium text-lg leading-[160%] relative pl-8 max-sm:text-base">
                   {validUppercase ? <Positive /> : <Negative />} Заглавная буква
                 </li>
-                <li className="font-medium text-lg leading-[160%] relative pl-8">
+                <li className="font-medium text-lg leading-[160%] relative pl-8 max-sm:text-base">
                   {validLowercase ? <Positive /> : <Negative />} Строчная буква
                 </li>
-                <li className="font-medium text-lg leading-[160%] relative pl-8">
+                <li className="font-medium text-lg leading-[160%] relative pl-8 max-sm:text-base">
                   {validNumber ? <Positive /> : <Negative />} Цифра
                 </li>
-                <li className="font-medium text-lg leading-[160%] relative pl-8">
+                <li className="font-medium text-lg leading-[160%] relative pl-8 max-sm:text-base">
                   {validSpecialChar ? <Positive /> : <Negative />} Спецсимвол
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="p-9  h-[100%] shadowblock rounded-[36px] max-w-[560px] w-full bg-[#f2f5f4] overflow-hidden">
-          <div className="h-full pb-[70px] max-h-[500px] overflow-y-auto hidden-overflow-y-scroll">
-            <h6 className="flex text-lg font-semibold leading-[160%] mb-[10px]">
+        <div className="p-9  h-full shadowblock rounded-[36px] max-w-[560px] w-full bg-[#f2f5f4] overflow-hidden max-[1180px]:overflow-visible max-[1180px]:h-full max-sm:w-full  max-sm:p-5">
+          <div className="h-full pb-[70px] max-h-[500px] overflow-y-auto hidden-overflow-y-scroll max-[1180px]:h-full max-[1180px]:max-h-full max-[1180px]:pb-0 ">
+            <h6 className="flex text-lg font-semibold leading-[160%] mb-[10px] max-sm:text-base max-sm:leading-[150%]">
               <Warning /> Мы никак не собираем и не храним пароли, которые
               вы вводите.
             </h6>
-            <span className="text-lg font-normal leading-[160%] mb-[10px] inline-block">
+            <span className="text-lg font-normal leading-[160%] mb-[10px] inline-block max-sm:text-base">
               Если у вас есть сомнения относительно использования общедоступной
               версии сервиса, вы можете развернуть его в своей инфраструктуре.
               Все проверки проводятся локально. Доступ в интернет не требуется.
@@ -396,28 +399,29 @@ const CheckPass = (props: Props) => {
               следующие требования:
             </span>
             <ol className="numbered-list">
-              <li className="text-lg font-normal leading-[160%] mb-[2px]">
+              <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
                 Длина пароля должна быть не менее 9 символов.
               </li>
-              <li className="text-lg font-normal leading-[160%] mb-[2px]">
+              <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
                 Пароль должен включать в себя символы из всех следующих наборов:
                 <ul className="dash-list">
-                  <li className="text-lg font-normal leading-[160%] mb-[2px]">
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
                     латинские заглавные буквы (от A до Z).
                   </li>
-                  <li className="text-lg font-normal leading-[160%]mb-[2px]">
+                  <li className="text-lg font-normal leading-[160%]mb-[2px] max-sm:text-base">
                     латинские строчные буквы (от a до z).
                   </li>
-                  <li className="text-lg font-normal leading-[160%] mb-[2px]">
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
                     цифры (от 0 до 9).
                   </li>
-                  <li className="text-lg font-normal leading-[160%]">
+                  <li className="text-lg font-normal leading-[160%] max-sm:text-base">
                     специальные символы (например: !, $, #, %).
                   </li>
                 </ul>
               </li>
             </ol>
           </div>
+        </div>
         </div>
       </div>
     </>

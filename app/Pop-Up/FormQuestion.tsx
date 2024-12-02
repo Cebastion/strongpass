@@ -104,7 +104,7 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
         >
           Отправить
         </div>
-        <div className="h-14 w-14 flex items-center justify-center rounded-xl bg-text-hover hover:bg-bg-hover_primary transition-all">
+        <div className="h-14 w-14 flex items-center justify-center rounded-xl bg-text-hover transition-all">
           <svg
             width="28.000000"
             height="28.000000"

@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import FormQuestion from "../Pop-Up/FormQuestion";
 import BlockTestPass from "../components/BlockTestPass";
+import CheckPass from "../Pop-Up/CheckPass";
+import '../config/scrollbar.css'
+import '../animation/button.css'
 
 const Negative = () => {
   return (
@@ -46,6 +49,7 @@ const Positive = () => {
 
 const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
+  const [isCheckPass, setIsCheckPass] = useState(false);
 
   return (
     <>
@@ -53,10 +57,13 @@ const page = () => {
         isFormQuestion={isFormQuestion}
         setIsFormQuestion={setIsFormQuestion}
       />
-      <main className="flex-1 my-14 ">
-        {isFormQuestion && (
+      {isFormQuestion && (
           <FormQuestion setIsFormQuestion={setIsFormQuestion} />
         )}
+        {isCheckPass && (
+          <CheckPass setIsCheckPass={setIsCheckPass} />
+        )}
+      <main className={`flex-1 my-14 ${isFormQuestion || isCheckPass && "max-md:hidden"}`}>
         <section className="flex max-w-[1180px] mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
@@ -68,11 +75,11 @@ const page = () => {
               На основании проверки разрешается или запрещается установка нового
               пароля.
             </p>
-            <div className="flex items-center mt-10 max-lg:justify-center">
-              <button className="w-72 h-14 text-text-hover border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
+            <button onClick={() => setIsCheckPass(true)} className="flex items-center mt-10 max-lg:justify-center button-animation">
+              <div className="w-72 h-14 text-text-hover flex items-center justify-center border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base transition-all hover:text-text-hover_primary">
                 Попробовать бесплатно
-              </button>
-              <button className="w-14 h-14 flex items-center justify-center rounded-xl bg-text-hover hover:bg-bg-hover_primary transition-all">
+              </div>
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-text-hover transition-all">
                 <svg
                   width="28.000000"
                   height="28.000000"
@@ -90,14 +97,14 @@ const page = () => {
                     fill-rule="nonzero"
                   />
                 </svg>
-              </button>
-            </div>
+              </div>
+            </button>
           </div>
           <div className="w-96 h-[540px] bg-[url('/bg2.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
               <div className="bg-[url('/mask/mask_2.svg')] w-[171px] h-[116px] max-sm:w-[120px] max-sm:h-[85px] bg-cover bg-center ">
                 <svg
-                  className="ml-3 max-sm:w-[60px] max-sm:h-[70px]"
+                  className="ml-3 max-sm:w-[60px] max-sm:h-[70px] relative top-[-10px]"
                   width="91.624512"
                   height="110.000000"
                   viewBox="0 0 91.6245 110"
@@ -187,11 +194,11 @@ const page = () => {
               loading="lazy"
               alt=""
             />
-            <div className="h-[117px] w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
-              <button className="text-lg font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
+            <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
+              <div className="text-lg  flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
                 Смотреть видео
-              </button>
-              <button className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center hover:bg-bg-hover_primary transition-all">
+              </div>
+              <div className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center hover:bg-bg-hover_primary transition-all">
                 <svg
                   width="28.000000"
                   height="28.000000"
@@ -209,8 +216,8 @@ const page = () => {
                     fill-rule="nonzero"
                   />
                 </svg>
-              </button>
-            </div>
+              </div>
+            </button>
           </div>
           <div className="max-w-[480px]">
             <h3 className="text-6xl font-bold leading-[120%] text-left max-[1100px]:text-3xl">
@@ -439,8 +446,8 @@ const page = () => {
             </h2>
 
             {/* Таблица */}
-            <div className="overflow-x-scroll">
-              <table className="w-[1180px]  max-md:w-[664px] border-collapse bg-white rounded-lg shadow-md">
+            <div className="max-[1250px]:overflow-x-scroll max-[1250px]:sclrollbar">
+              <table className="w-[1180px]  max-md:w-[664px] border-collapse bg-white rounded-lg">
                 {/* Заголовок таблицы */}
                 <thead>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
@@ -736,7 +743,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <BlockTestPass />
+        <BlockTestPass setIsCheckPass={setIsCheckPass} />
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
           <h3 className="font-bold text-[64px] leading-[120%] text-center">
             Возможности
@@ -803,7 +810,7 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center">
+              <button className="mt-[30px] flex items-center button-animation">
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
                   Попробовать бесплатно
                 </div>
@@ -869,7 +876,7 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center">
+              <button className="mt-[30px] flex items-center button-animation">
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
                   Попробовать бесплатно
                 </div>

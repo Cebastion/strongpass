@@ -15,8 +15,9 @@ export default function Home() {
   return (
     <>
     <Header isFormQuestion={isFormQuestion} setIsFormQuestion={setIsFormQuestion} />
-    <main className="flex-1 my-14 mx-5 max-md:mx-0">
-      {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
+    {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
+    <main className={`flex-1 my-14 mx-5 max-md:mx-0 ${isFormQuestion && "max-md:hidden"}`}>
+
       <h1 className="text-7xl mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
       <span className=" mx-auto max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
@@ -119,7 +120,7 @@ export default function Home() {
       </section>
 
       <section className="mt-28 max-w-[1180px] mx-auto max-md:px-[15px] max-[500px]:mx-2">
-        <h2 className="text-6xl  font-bold max-lg:text-5xl mb-6">Продукты</h2>
+        <h2 className="text-[64px] leading-[120%] font-bold max-lg:text-5xl max-md:text-[30px] mb-6">Продукты</h2>
         <span className=" text-lg leading-[160%] max-w-[780px] inline-block font-normal max-lg:text-base">Минимизируют вероятность взлома простыми средствами, помогут реализовать надежную парольную политику, обеспечат процессы, связанные с паролями.</span>
         <div className="flex justify-between mt-8 items-center gap-5 w-full h-full max-lg:flex-col">
           <div className="w-full h-[445px] p-8 bg-bg-custom_gray rounded-xl flex flex-col justify-between gap-4 max-w-sm max-h-[445px] max-lg:w-full max-lg:h-80 max-lg:p-6 max-lg:gap-3 max-lg:max-w-full max-md:h-full">
@@ -140,14 +141,14 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h3 className="text-4xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Проактивная защита</h3>
+              <h3 className="text-[32px] font-semibold mb-3 leading-[130%] max-lg:text-2xl">Проактивная защита</h3>
               <span className="text-lg leading-[160%] max-lg:text-base"><span className="max-[350px]:block">Проверка пароля в момент</span> <span className="max-[350px]:block">установки и блокировка операции,</span> <span className="max-[350px]:block">если новый пароль считается</span> <span className="max-[350px]:block"> слабым или скомпрометированным.</span></span>
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <button className="flex button-animation">
-                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
-                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-xl hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
+                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
+                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <desc>
                       Created with Pixso.
@@ -177,14 +178,14 @@ export default function Home() {
               </svg>
             </div>
             <div className="h-[55%]">
-              <h3 className="text-4xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Самопроверка</h3>
+              <h3 className="text-[32px] font-semibold mb-3 leading-[130%] max-lg:text-2xl">Самопроверка</h3>
               <span className="text-lg leading-[160%] max-lg:text-base"><span className="max-[350px]:block">Сервис самостоятельной проверки</span><span className="max-[350px]:block"> пароля на надежность.</span></span>
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <button className="flex button-animation">
-                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
-                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-xl hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
+                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px]  max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
+                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <desc>
                       Created with Pixso.
@@ -205,14 +206,14 @@ export default function Home() {
               <path id="Vector" d="M28 0L28 5.83L22.16 5.83L22.16 3.5L24.08 3.5C23.24 2.76 22.16 2.33 21 2.33C18.83 2.33 17.02 3.82 16.49 5.83L14.1 5.83C14.66 2.52 17.53 0 21 0C22.77 0 24.4 0.65 25.66 1.78L25.66 0L28 0ZM21 11.66C19.84 11.66 18.74 11.23 17.91 10.5L19.83 10.5L19.83 8.16L14 8.16L14 14L16.33 14L16.33 12.21C17.59 13.34 19.24 14 21 14C24.46 14 27.33 11.47 27.89 8.16L25.5 8.16C24.97 10.17 23.16 11.66 21 11.66ZM17.5 15.64C18.23 15.94 19.01 16.15 19.83 16.25L19.83 23.08C19.83 26.31 14.84 28 9.91 28C4.98 28 0 26.31 0 23.08L0 5.25C0 5.02 0.14 4.33 0.14 4.33C0.92 1.8 4.85 0 9.91 0C11.51 0 12.99 0.18 14.29 0.51C13.7 1.12 13.19 1.81 12.78 2.57C11.91 2.42 10.96 2.33 9.91 2.33C5.28 2.33 2.33 4.06 2.33 5.25C2.33 6.43 5.28 8.16 9.91 8.16C10.53 8.16 11.11 8.13 11.66 8.07L11.66 10.41C11.09 10.46 10.52 10.5 9.91 10.5C6.8 10.5 4.12 9.81 2.33 8.7L2.33 11.08C2.33 12.27 5.28 14 9.91 14C10.53 14 11.11 13.96 11.66 13.91L11.66 16.25C11.09 16.3 10.51 16.33 9.91 16.33C6.8 16.33 4.12 15.64 2.33 14.53L2.33 16.91C2.33 18.1 5.28 19.83 9.91 19.83C14.54 19.83 17.5 18.1 17.5 16.91L17.5 15.64ZM17.5 23.08L17.5 20.36C15.7 21.48 13.02 22.16 9.91 22.16C6.8 22.16 4.12 21.48 2.33 20.36L2.33 23.08C2.33 23.95 5 25.66 9.91 25.66C14.82 25.66 17.5 23.95 17.5 23.08Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
             </svg></div>
             <div className="h-[55%]">
-              <h3 className="text-4xl font-semibold mb-3 leading-[130%] max-lg:text-2xl">Almetibin</h3>
+              <h3 className="text-[32px] font-semibold mb-3 leading-[130%] max-lg:text-2xl">Almetibin</h3>
               <span className="text-lg leading-[160%] max-lg:text-base"><span className="max-[350px]:block">Безопасный обмен паролями,</span> <span className="max-[350px]:block">чувствительной информацией</span> <span className="max-[350px]:block">с контрагентами или внутри</span> <span className="max-[350px]:block"> компании.</span></span>
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
               <button className="flex button-animation">
-                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
-                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-xl hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
+                <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
+                <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
                     <desc>
                       Created with Pixso.
@@ -226,10 +227,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
+      <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] max-md:rounded-3xl py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
         <div className="flex justify-between items-center max-lg:flex-col">
-          <span className="text-[28px] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:text-lg max-lg:mb-10"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
-          <div className="bg-[url('/image.png')] max-sm:bg-cover max-sm:bg-center max-sm:w-full max-[500px]:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
+          <span className="text-[clamp(18px,4vw,28px)] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:mb-10"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
+          <div className="bg-[url('/image.png')] rounded-3xl max-sm:bg-cover max-sm:bg-center max-sm:w-full max-[500px]:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
             <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
                 <svg width="16.666748" height="20.000000" viewBox="0 0 16.6667 20" fill="none" xmlns="http://www.w3.org/2000/svg" >

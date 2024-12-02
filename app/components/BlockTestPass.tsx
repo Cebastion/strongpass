@@ -1,12 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import CheckPass from "../Pop-Up/CheckPass";
 
-type Props = {};
+type Props = {
+  setIsCheckPass: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
-const BlockTestPass = (props: Props) => {
+const BlockTestPass:FC<Props> = ({setIsCheckPass}) => {
   return (
     <section className="bg-[#262f33] rounded-[48px] p-16 mt-20 max-[1085px]:p-5 max-md:rounded-3xl">
-      <CheckPass/>
       <div className="flex justify-between max-[1085px]:flex-col max-[1085px]:items-center">
         <div className="max-w-[580px] flex flex-col justify-between max-[1085px]:mb-[37px]">
           <div>
@@ -19,7 +20,7 @@ const BlockTestPass = (props: Props) => {
               Технологии Strongpass доступны онлайн.
             </span>
           </div>
-          <button className="flex items-center max-[1085px]:mt-5">
+          <button className="flex items-center max-[1085px]:mt-5" onClick={() => setIsCheckPass(true)}>
             <div className="py-[14px] px-9 rounded-xl flex justify-center items-center border border-solid border-borderColor-custom_white font-semibold leading-[160%] text-lg text-white max-sm:text-base">Проверить пароль</div>
             <div className="rounded-xl bg-white w-[57px] h-[57px] flex items-center justify-center max-sm:h-[54px] max-sm:w-[54px]">
               <svg

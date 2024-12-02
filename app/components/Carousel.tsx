@@ -44,7 +44,7 @@ const Carousel = () => {
   ];
 
   return (
-    <section className="mt-32 max-w-[1180px] mx-auto max-md:mt-20 max-[500px]:px-5">
+    <section className="mt-32 max-w-[1180px] mx-auto max-md:mt-20 max-md:px-5">
       <div className="flex justify-between items-center">
         <h2 className="text-6xl font-bold max-lg:text-3xl">Статьи</h2>
         <div className="flex gap-2 items-center max-md:hidden">
