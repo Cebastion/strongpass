@@ -80,7 +80,7 @@ const From = () => {
       </div>
       <form
       onSubmit={handleSubmit}
-      className="p-9 flex flex-col gap-[0.75rem] max-lg:gap-[8px] mx-5 my-6 max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-h-auto"
+      className="p-9 flex flex-col gap-[8px] max-lg:gap-[8px] mx-5 my-6 max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-h-auto"
     >
       <input
         type="text"
@@ -125,7 +125,7 @@ const From = () => {
         `}        
       ></textarea>
 
-      <button className="flex button-animation justify-between items-center mt-[13px] max-lg:m-0">
+      <button className="flex button-animation justify-between items-center max-lg:m-0">
         <div
           className="w-[93%] py-3 border border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-lg:w-[94%]"
         >
