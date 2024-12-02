@@ -229,9 +229,9 @@ export default function Home() {
       </section>
       <section className="mt-[9rem]  bg-bg-custom_gray rounded-[48px] max-md:rounded-3xl py-10 px-14 max-lg:overflow-hidden max-lg:py-10 max-lg:px-5">
         <div className="flex justify-between items-center max-lg:flex-col">
-          <span className="text-[clamp(18px,4vw,28px)] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:mb-10"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
+          <span className="text-[clamp(18px,4vw,28px)] font-medium w-[680px] leading-[160%] max-lg:w-full max-lg:mb-10 max-md:pl-5"><p>Использование слабых и скомпрометированных</p> <p>паролей - один из основных способов</p> <p>проникновения злоумышленников</p> <p>в инфраструктуру.  Внедрение надежной</p> <p>парольной политики и безопасной работы</p> <p>с паролями снижает вероятность взлома</p> <p>на 60% (<a href="#" className="text-text-hover underline hover:text-black transition-all duration-500">по данным Лаборатории Касперского</a>).</p> </span>
           <div className="bg-[url('/image.png')] rounded-3xl max-sm:bg-cover max-sm:bg-center max-sm:w-full max-[500px]:bg-[url('/image_bg.png')]  w-[380px] h-[400px] flex items-end justify-end max-lg:mt-3 max-md:w-[320px] max-md:h-[340px] max-md:rounded-3xl">
-            <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
+            <div className="w-[188px] h-[116px] bg-[url('/mask/mask_1.svg')] max-md:bg-[url('/mask/mask_1_2.svg')] flex gap-2 items-end justify-end max-md:w-[158px] max-md:h-[97px]">
               <div className="flex justify-center items-center h-16 w-16 rounded-xl bg-white max-md:w-12 max-md:h-12">
                 <svg width="16.666748" height="20.000000" viewBox="0 0 16.6667 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
                   <desc>

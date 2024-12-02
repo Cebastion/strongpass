@@ -48,7 +48,7 @@ const From = () => {
         <div className="pt-[5px] pl-[5px]">
         <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px] max-sm:text-[27px] hidden max-lg:inline-block">Остались вопросы?</h3>
           <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px] max-lg:hidden">Остались <p className="mt-2 text-white max-lg:hidden">вопросы?</p></h3>
-          <span className="text-base text-white max-lg:inline-block">Заполните форму и наши специалисты <p className="mt-1 text-white">свяжутся с вами в ближайшее время.</p></span>
+          <span className="text-base text-white max-lg:block">Заполните форму и наши специалисты <p className="mt-1 text-white">свяжутся с вами в ближайшее время.</p></span>
         </div>
         <div className="flex gap-2 pb-[5px] pl-[5px] max-lg:my-10">
           <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-white">
@@ -80,7 +80,7 @@ const From = () => {
       </div>
       <form
       onSubmit={handleSubmit}
-      className="p-9 flex flex-col gap-[0.75rem] max-lg:gap-[1rem] mx-5 my-6 max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-h-auto"
+      className="p-9 flex flex-col gap-[0.75rem] max-lg:gap-[8px] mx-5 my-6 max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-h-auto"
     >
       <input
         type="text"
@@ -125,9 +125,9 @@ const From = () => {
         `}        
       ></textarea>
 
-      <button className="flex button-animation justify-between items-center mt-[13px] mr-[7px] max-lg:m-0">
+      <button className="flex button-animation justify-between items-center mt-[13px] max-lg:m-0">
         <div
-          className="w-full py-3 border border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary"
+          className="w-[93%] py-3 border border-solid border-borderColor-custom rounded-xl font-medium text-lg text-text-hover transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-lg:w-[94%]"
         >
           Отправить
         </div>

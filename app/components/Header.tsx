@@ -50,7 +50,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           ></span>
         </div>
       </button>
-      <div className="z-20 relative">
+      <div className="z-20 relative max-[1005px]:mx-auto">
         <Link href="/">
           <Image src="/logo.svg" width={60} height={60} alt="" loading="lazy" />
         </Link>
