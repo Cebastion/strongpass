@@ -64,7 +64,7 @@ const page = () => {
           <CheckPass setIsCheckPass={setIsCheckPass} />
         )}
       <main className={`flex-1 my-14 ${isFormQuestion || isCheckPass && "max-md:hidden"}`}>
-        <section className="flex max-w-[1180px] mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+        <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проактивная защита от использования слабых паролей
@@ -184,7 +184,7 @@ const page = () => {
             loading="lazy"
           />
         </section>
-        <section className="mt-[120px] flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
+        <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
           <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
             <Image
               className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
@@ -236,7 +236,7 @@ const page = () => {
             </span>
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3 max-sm:px-5">
+        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-md:mx-3 max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Почему нужен{" "}
             <p className="text-text-hover">
@@ -313,7 +313,7 @@ const page = () => {
             />
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-20 max-md:mx-3 max-sm:px-5">
+        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-md:mx-3 max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Преимущества
           </h3>
