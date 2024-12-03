@@ -11,6 +11,42 @@ import Image from "next/image";
 
 type Props = {};
 
+const Negative = () => {
+    return (
+      <svg
+        className="w-8 h-8 absolute left-0"
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.6938 9.79375L16.4875 15L21.6938 20.2063C22.1021 20.7021 22.1021 21.1979 21.6938 21.6938C21.1979 22.1021 20.7021 22.1021 20.2063 21.6938L15 16.4875L9.79375 21.6938C9.29792 22.1021 8.80208 22.1021 8.30625 21.6938C7.89792 21.1979 7.89792 20.7021 8.30625 20.2063L13.5125 15L8.30625 9.79375C7.89792 9.29792 7.89792 8.80208 8.30625 8.30625C8.80208 7.89792 9.29792 7.89792 9.79375 8.30625L15 13.5125L20.2063 8.30625C20.7021 7.89792 21.1979 7.89792 21.6938 8.30625C22.1021 8.80208 22.1021 9.29792 21.6938 9.79375Z"
+          fill="#E64545"
+        />
+      </svg>
+    );
+  };
+  
+  const Positive = () => {
+    return (
+      <svg
+        className="w-8 h-8 absolute left-0"
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M24.7191 8.31461C25.1686 8.82397 25.1686 9.31835 24.7191 9.79775L12.854 21.6629C12.3746 22.1124 11.8802 22.1124 11.3708 21.6629L5.25845 15.5506C4.83898 15.0712 4.83898 14.5768 5.25845 14.0674C5.76782 13.6479 6.27718 13.6479 6.78654 14.0674L12.1349 19.4157L23.236 8.31461C23.7453 7.89513 24.2397 7.89513 24.7191 8.31461Z"
+          fill="#408077"
+        />
+      </svg>
+    );
+  };
+
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isCheckPass, setIsCheckPass] = useState(false);
@@ -70,9 +106,9 @@ const page = (props: Props) => {
           </div>
           <div className="w-96 h-[540px] bg-[url('/almetibin.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
-              <div className="bg-[url('/mask/mask_4.svg')] w-[116px] h-[171px] max-sm:w-[120px] max-sm:h-[85px] bg-cover bg-center ">
+              <div className="bg-[url('/mask/mask_4.svg')] w-[116px] h-[171px] max-sm:w-[70px] max-sm:h-[103px] bg-cover bg-center ">
                 <svg
-                  className="relative top-[10px] left-[-10px]"
+                  className="relative top-[10px] left-[-10px] max-sm:w-[66px] max-sm:h-[66px]"
                   width="110"
                   height="110"
                   viewBox="0 0 110 110"
@@ -91,7 +127,7 @@ const page = (props: Props) => {
         <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
           <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
             <img
-              className="absolute top-[70%] translate-y-[-50%] left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
+              className="absolute top-[70%] translate-y-[-50%] max-[500px]:translate-y-0 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
               srcSet="/almetibin_bg.png x1, /almetibin_bg@2x.png 2x"
               width={866}
               height={460}
@@ -215,6 +251,165 @@ const page = (props: Props) => {
                   процессах.
                 </span>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
+          <h3 className="font-bold text-[64px] leading-[120%] text-center">
+            Возможности
+          </h3>
+          <br />
+          <span className="text-center inline-block w-full text-lg leading-[160%]">
+            Продукт лицензируется по количеству защищаемых учетных записей в
+            домене.
+          </span>
+          <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+              <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
+                <svg
+                  width="120"
+                  height="37"
+                  viewBox="0 0 120 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z"
+                    fill="#3C0F3C"
+                  />
+                  <path
+                    d="M53.5942 36.3964L44.7639 30.0155L52.4713 20.9803L40.8846 17.8664L44.2534 7.50388L55.3296 12.0471L54.564 0H65.4871L64.7214 12.0471L75.7466 7.50388L79.1154 17.8664L67.5798 20.9803L75.2361 30.0155L66.4058 36.3964L60.0255 26.3912L53.5942 36.3964Z"
+                    fill="#3C0F3C"
+                  />
+                  <path
+                    d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z"
+                    fill="#3C0F3C"
+                  />
+                </svg>
+              </span>
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+                  Стандарт
+                </h4>
+                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
+                  По запросу
+                </span>
+              </div>
+              <ul className="mt-[30px] flex flex-col gap-[8px]">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive /> Проверка по базе скомпрометированных паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Список запрещенных паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Исключения из проверок по имени пользователя, группы
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  "Белый" список паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Strongpass. Самопроверка
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Техническая поддержка
+                </li>
+              </ul>
+              <button className="mt-[30px] flex items-center button-animation">
+                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+                  Попробовать бесплатно
+                </div>
+                <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
+                  <svg
+                    width="28.000000"
+                    height="28.000000"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M22 15.89L19.97 15.89L19.97 9.46L7.43 22L6 20.56L18.53 8.02L12.1 8.02L12.1 6L22 6L22 15.89Z"
+                      fill="#FFFFFF"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+              <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
+              <svg width="120" height="37" viewBox="0 0 120 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z" fill="#408077" />
+  <path d="M53.5942 36.3964L44.7639 30.0155L52.4713 20.9803L40.8846 17.8664L44.2534 7.50388L55.3296 12.0471L54.564 0H65.4871L64.7214 12.0471L75.7466 7.50388L79.1154 17.8664L67.5798 20.9803L75.2361 30.0155L66.4058 36.3964L60.0255 26.3912L53.5942 36.3964Z" fill="#408077" />
+  <path d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z" fill="#408077" />
+</svg>
+              </span>
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+                КОРП
+                </h4>
+                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
+                  По запросу
+                </span>
+              </div>
+              <ul className="mt-[30px] flex flex-col gap-[8px]">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive /> Проверка по базе скомпрометированных паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Список запрещенных паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Исключения из проверок по имени пользователя, группы
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  "Белый" список паролей
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Strongpass. Самопроверка
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Техническая поддержка
+                </li>
+              </ul>
+              <button className="mt-[30px] flex items-center button-animation">
+                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+                  Попробовать бесплатно
+                </div>
+                <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
+                  <svg
+                    width="28.000000"
+                    height="28.000000"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <desc>Created with Pixso.</desc>
+                    <defs />
+                    <path
+                      id="Vector"
+                      d="M22 15.89L19.97 15.89L19.97 9.46L7.43 22L6 20.56L18.53 8.02L12.1 8.02L12.1 6L22 6L22 15.89Z"
+                      fill="#FFFFFF"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
         </section>

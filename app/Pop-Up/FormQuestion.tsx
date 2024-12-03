@@ -43,8 +43,8 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
       };
   return (
     <>
-    <div className='fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75]'></div>
-    <div className='fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green flex justify-center items-center cursor-pointer' onClick={() => setIsFormQuestion(false)}>
+    <div onClick={() => setIsFormQuestion(false)} className='fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75]'></div>
+    <div className='fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green hover:bg-[#1B6B60] transition-all flex justify-center items-center cursor-pointer' onClick={() => setIsFormQuestion(false)}>
     <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M22.1938 10.2938L16.9875 15.5L22.1938 20.7063C22.6021 21.2021 22.6021 21.6979 22.1938 22.1938C21.6979 22.6021 21.2021 22.6021 20.7063 22.1938L15.5 16.9875L10.2938 22.1938C9.79792 22.6021 9.30208 22.6021 8.80625 22.1938C8.39792 21.6979 8.39792 21.2021 8.80625 20.7063L14.0125 15.5L8.80625 10.2938C8.39792 9.79792 8.39792 9.30208 8.80625 8.80625C9.30208 8.39792 9.79792 8.39792 10.2938 8.80625L15.5 14.0125L20.7063 8.80625C21.2021 8.39792 21.6979 8.39792 22.1938 8.80625C22.6021 9.30208 22.6021 9.79792 22.1938 10.2938Z" fill="white" />
 </svg>

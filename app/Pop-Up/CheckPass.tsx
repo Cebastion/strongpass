@@ -298,8 +298,8 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
 
   return (
     <>
-      <div className="fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75] max-md:hidden"></div>
-      <div onClick={() => setIsCheckPass(false)} className="fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green flex justify-center items-center cursor-pointer max-md:hidden">
+      <div onClick={() => setIsCheckPass(false)} className="fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75] max-md:hidden"></div>
+      <div onClick={() => setIsCheckPass(false)} className="fixed top-4 z-[60] right-4 w-[57px] h-[57px] rounded-xl bg-bg-custom_green hover:bg-[#1B6B60] transition-all flex justify-center items-center cursor-pointer max-md:hidden">
         <svg
           width="31"
           height="31"
