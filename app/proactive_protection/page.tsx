@@ -102,7 +102,7 @@ const page = () => {
           </div>
           <div className="w-96 h-[540px] bg-[url('/bg2.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
-              <div className="bg-[url('/mask/mask_2.svg')] w-[171px] h-[116px] max-sm:w-[120px] max-sm:h-[85px] bg-cover bg-center ">
+              <div className="bg-[url('/mask/mask_2.svg')] max-sm:bg-[url('/mask/mask_2_bg.svg')] w-[171px] h-[116px] max-sm:w-[46%] max-sm:h-[93%] bg-cover bg-center ">
                 <svg
                   className="ml-3 max-sm:w-[60px] max-sm:h-[70px] relative top-[-10px]"
                   width="91.624512"

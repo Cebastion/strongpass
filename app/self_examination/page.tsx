@@ -66,9 +66,9 @@ const page = (props: Props) => {
           </div>
           <div className="w-96 h-[480px] bg-[url('/bg_3.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
-              <div className="bg-[url('/mask/mask_4.svg')] w-[116px] h-[171px] max-sm:w-[120px] max-sm:h-[85px] bg-cover bg-center ">
+              <div className="bg-[url('/mask/mask_4.svg')] max-sm:bg-[url('/mask/mask_4_bg.svg')] w-[116px] h-[171px] max-sm:w-[70px] max-sm:h-[103px] bg-cover bg-center ">
                 <svg
-                  className="relative left-[-20px] top-2"
+                  className="relative left-[-20px] top-2 max-sm:w-[66px] max-sm:h-[66px] max-sm:top-0 max-sm:left-[-10px]"
                   width="110"
                   height="110"
                   viewBox="0 0 110 110"
@@ -83,8 +83,9 @@ const page = (props: Props) => {
               </div>
             </div>
             <div className="w-full mb-3">
-              <div className=" h-[72px] w-[272px] p-3 bg-white rounded-3xl flex items-center gap-3 ml-5">
+              <div className=" h-[72px] w-[272px] max-sm:w-[174px] max-sm:h-[43px] max-sm:rounded-[15px] p-2 bg-white rounded-3xl flex items-center gap-3 ml-5">
                 <svg
+                className="max-sm:w-[29px] max-sm:h-[29px]"
                   width="48"
                   height="48"
                   viewBox="0 0 48 48"
