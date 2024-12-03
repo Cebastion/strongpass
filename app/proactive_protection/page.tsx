@@ -128,7 +128,7 @@ const page = () => {
                 <span className="leading-[150%] text-base font-semibold mb-4 inline-block max-sm:text-[10px]">
                   Автоматическая проверка
                 </span>
-                <div className="bg-bg-custom_beige rounded-xl flex gap-2 p-1">
+                <div className="bg-bg-custom_beige rounded-xl max-sm:rounded-[8px] flex gap-2 p-1">
                   <svg
                     className="w-11 h-7 max-sm:w-7"
                     width="21.000000"
