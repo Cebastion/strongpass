@@ -58,17 +58,17 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
       <div className={`${Active && "hidden max-lg:block fixed w-full h-screen bg-white top-0 left-0"}`}></div>
       <ul
         className={`flex gap-9 mr-32 max-[1070px]:mr-0 max-lg:gap-0 ${Active
-          ? "flex z-10 fixed top-[30%] left-0 py-3 max-lg:overflow-y-auto w-full h-full bg-white flex-col items-center justify-start max-lg:max-h-[70vh]"
+          ? "flex z-10 fixed top-[30%] left-0 py-4 max-lg:overflow-y-auto w-full h-full bg-white flex-col items-center justify-start max-lg:max-h-[70vh]"
           : "max-lg:hidden"
           }`}
       >
         <li
-          className="relative max-lg:flex py-3 max-lg:py-0 max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:p-5 max-lg:w-[50%]"
+          className="relative max-lg:flex max-lg:flex-col py-4 max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:p-5 max-lg:w-[50%]"
           onMouseEnter={toggleDropdown}
           onMouseLeave={closeDropdown}
           onClick={toggleDropdown}
         >
-          <span className="font-semibold text-text-primary text-base hover:text-text-hover cursor-pointer max-lg:mb-3 flex gap-2 items-center">
+          <span className={`font-semibold text-text-primary text-base hover:text-text-hover ${isDropdownOpen && 'text-text-hover'} cursor-pointer max-lg:mb-3 flex gap-2 items-center`}>
             <Image
               src="/menu.svg"
               width={22}
@@ -77,19 +77,19 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
               loading="lazy"
             />
             Продукты
-            <Image
-              className={`transition-all duration-300 ease-in-out transform ${isDropdownOpen ? "rotate-180" : "rotate-0"
-                }`}
-              src="/arrow_2.svg"
-              width={10}
-              height={6}
-              alt=""
-              loading="lazy"
-            />
+            <svg width="10.000000" height="6.051514" viewBox="0 0 10 6.05151" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-all duration-300 ease-in-out transform ${isDropdownOpen ? "rotate-180" : "rotate-0"
+                }`}>
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector" d="M5 6.05L0 1.05L1.05 0L5 3.94L8.94 0L10 1.05L5 6.05Z" fill={isDropdownOpen ? '#408077' : "#262F33"} fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
+
           </span>
 
           {isDropdownOpen && (
-            <ul className="absolute left-[-50%] top-1 mt-10 bg-white shadow-lg rounded-xl w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
+            <ul className="absolute left-[-50%] top-12 mt-2 bg-white shadow-lg rounded-xl w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
               <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
                 <Link href="/proactive_protection">Проактивная защита</Link>
               </li>
@@ -102,19 +102,19 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
             </ul>
           )}
         </li>
-        <li className="font-semibold py-3 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Скачать</Link>
         </li>
-        <li className="font-semibold py-3 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Купить</Link>
         </li>
-        <li className="font-semibold py-3 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Статьи</Link>
         </li>
-        <li className="font-semibold py-3 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Документация</Link>
         </li>
-        <li className="font-semibold py-3 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Контакты</Link>
         </li>
       </ul>
