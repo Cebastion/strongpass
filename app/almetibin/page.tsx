@@ -485,7 +485,7 @@ const page = (props: Props) => {
           </div>
         </section>
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5 max-[785px]:max-w-full max-[785px]:px-5">
-          <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-[480px]:text-[30px]">
+          <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-md:text-[26px]">
             Часто задаваемые вопросы
           </h3>
           <div className="space-y-4">
@@ -520,7 +520,7 @@ const page = (props: Props) => {
                 </button>
                 {activeIndex === index && (
                   <div className="pl-[35px] pt-[18px]">
-                    <p className="text-lg leading-[160%] font-normal">{faq.answer}</p>
+                    <p className="text-lg leading-[160%] font-normal max-md:text-base">{faq.answer}</p>
                   </div>
                 )}
               </div>
