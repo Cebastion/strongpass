@@ -438,8 +438,8 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="bg-bg-custom_gray p-16 max-md:p-10 mt-20 rounded-[48px] max-sm:px-5">
-          <div className="max-w-6xl mx-auto">
+        <section className="bg-bg-custom_gray p-[60px] max-md:p-10 mt-20 rounded-[48px] max-sm:px-5">
+          <div className=" ">
             {/* Заголовок */}
             <h2 className="text-[64px] font-bold leading-[120%] text-center mb-10 max-lg:text-3xl">
               Сравнение с групповыми политиками
@@ -466,7 +466,7 @@ const page = () => {
                 {/* Тело таблицы */}
                 <tbody>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[0.1rem] text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
+                    <td className="py-[0.5rem] text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
                       Требование использовать в пароле все 4 типа символов
                       (символы в нижнем и верхнем регистре, цифры, спец.
                       символы)
@@ -513,7 +513,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.05rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет использования пароля из публичных утечек
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -558,7 +558,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.05rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Собственный список запрещенных слов
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -603,7 +603,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
-                    <td className="py-[1.05rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет повторяющихся символов («1111», «bbbb» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -648,7 +648,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.05rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
                       Запрет последовательных символов («1234», «abcd» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -693,7 +693,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray">
-                    <td className="py-[0.1rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
+                    <td className="py-[0.5rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
                       Запрет последовательностей символов, расположенных на
                       соседних клавишах («qwerty», «qazxcvb» и т.д.)
                     </td>

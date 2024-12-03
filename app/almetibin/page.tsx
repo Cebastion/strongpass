@@ -496,7 +496,7 @@ const page = (props: Props) => {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left flex gap-2 items-center p-4"
+                  className="w-full text-left flex gap-2 items-center pt-4"
                 >
                   <span
                     className={`transform transition-transform ${
@@ -516,11 +516,11 @@ const page = (props: Props) => {
                       />
                     </svg>
                   </span>
-                  <span>{faq.question}</span>
+                  <span className="text-[20px] font-semibold leading-[140%]">{faq.question}</span>
                 </button>
                 {activeIndex === index && (
-                  <div className="p-4">
-                    <p>{faq.answer}</p>
+                  <div className="pl-[35px] pt-[18px]">
+                    <p className="text-lg leading-[160%] font-normal">{faq.answer}</p>
                   </div>
                 )}
               </div>
