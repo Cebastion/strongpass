@@ -492,13 +492,11 @@ const page = (props: Props) => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`border-t  rounded-lg overflow-hidden ${
-                  activeIndex === index ? "border-green-500" : "border-gray-300"
-                }`}
+                className={`border-t overflow-hidden`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left flex gap-2 items-center p-4 bg-gray-50"
+                  className="w-full text-left flex gap-2 items-center p-4"
                 >
                   <span
                     className={`transform transition-transform ${
@@ -521,7 +519,7 @@ const page = (props: Props) => {
                   <span>{faq.question}</span>
                 </button>
                 {activeIndex === index && (
-                  <div className="p-4 bg-white">
+                  <div className="p-4">
                     <p>{faq.answer}</p>
                   </div>
                 )}
