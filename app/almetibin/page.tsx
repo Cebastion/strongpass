@@ -12,40 +12,40 @@ import Image from "next/image";
 type Props = {};
 
 const Negative = () => {
-    return (
-      <svg
-        className="w-8 h-8 absolute left-0"
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M21.6938 9.79375L16.4875 15L21.6938 20.2063C22.1021 20.7021 22.1021 21.1979 21.6938 21.6938C21.1979 22.1021 20.7021 22.1021 20.2063 21.6938L15 16.4875L9.79375 21.6938C9.29792 22.1021 8.80208 22.1021 8.30625 21.6938C7.89792 21.1979 7.89792 20.7021 8.30625 20.2063L13.5125 15L8.30625 9.79375C7.89792 9.29792 7.89792 8.80208 8.30625 8.30625C8.80208 7.89792 9.29792 7.89792 9.79375 8.30625L15 13.5125L20.2063 8.30625C20.7021 7.89792 21.1979 7.89792 21.6938 8.30625C22.1021 8.80208 22.1021 9.29792 21.6938 9.79375Z"
-          fill="#E64545"
-        />
-      </svg>
-    );
-  };
-  
-  const Positive = () => {
-    return (
-      <svg
-        className="w-8 h-8 absolute left-0"
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M24.7191 8.31461C25.1686 8.82397 25.1686 9.31835 24.7191 9.79775L12.854 21.6629C12.3746 22.1124 11.8802 22.1124 11.3708 21.6629L5.25845 15.5506C4.83898 15.0712 4.83898 14.5768 5.25845 14.0674C5.76782 13.6479 6.27718 13.6479 6.78654 14.0674L12.1349 19.4157L23.236 8.31461C23.7453 7.89513 24.2397 7.89513 24.7191 8.31461Z"
-          fill="#408077"
-        />
-      </svg>
-    );
-  };
+  return (
+    <svg
+      className="w-8 h-8 absolute left-0"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21.6938 9.79375L16.4875 15L21.6938 20.2063C22.1021 20.7021 22.1021 21.1979 21.6938 21.6938C21.1979 22.1021 20.7021 22.1021 20.2063 21.6938L15 16.4875L9.79375 21.6938C9.29792 22.1021 8.80208 22.1021 8.30625 21.6938C7.89792 21.1979 7.89792 20.7021 8.30625 20.2063L13.5125 15L8.30625 9.79375C7.89792 9.29792 7.89792 8.80208 8.30625 8.30625C8.80208 7.89792 9.29792 7.89792 9.79375 8.30625L15 13.5125L20.2063 8.30625C20.7021 7.89792 21.1979 7.89792 21.6938 8.30625C22.1021 8.80208 22.1021 9.29792 21.6938 9.79375Z"
+        fill="#E64545"
+      />
+    </svg>
+  );
+};
+
+const Positive = () => {
+  return (
+    <svg
+      className="w-8 h-8 absolute left-0"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24.7191 8.31461C25.1686 8.82397 25.1686 9.31835 24.7191 9.79775L12.854 21.6629C12.3746 22.1124 11.8802 22.1124 11.3708 21.6629L5.25845 15.5506C4.83898 15.0712 4.83898 14.5768 5.25845 14.0674C5.76782 13.6479 6.27718 13.6479 6.78654 14.0674L12.1349 19.4157L23.236 8.31461C23.7453 7.89513 24.2397 7.89513 24.7191 8.31461Z"
+        fill="#408077"
+      />
+    </svg>
+  );
+};
 
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
@@ -55,23 +55,28 @@ const page = (props: Props) => {
   const faqs = [
     {
       question: "Как лицензируется продукт?",
-      answer: "Продукт лицензируется по количеству пользователей, имеющих право создавать pastes. Количество пользователей, которые могут просматривать заметки, не ограничено.",
+      answer:
+        "Продукт лицензируется по количеству пользователей, имеющих право создавать pastes. Количество пользователей, которые могут просматривать заметки, не ограничено.",
     },
     {
       question: "Что произойдет после окончания временной тестовой лицензии?",
-      answer: "После окончания временной тестовой лицензии вам потребуется приобрести полную версию продукта.",
+      answer:
+        "После окончания временной тестовой лицензии вам потребуется приобрести полную версию продукта.",
     },
     {
       question: "Каким способом можно оплатить лицензию?",
-      answer: "Вы можете оплатить лицензию через банковскую карту, электронные кошельки или банковский перевод.",
+      answer:
+        "Вы можете оплатить лицензию через банковскую карту, электронные кошельки или банковский перевод.",
     },
     {
       question: "Как поставляется продукт и лицензия?",
-      answer: "Продукт и лицензия поставляются в электронном виде через email после подтверждения оплаты.",
+      answer:
+        "Продукт и лицензия поставляются в электронном виде через email после подтверждения оплаты.",
     },
     {
       question: "Как осуществляется техническая поддержка?",
-      answer: "Техническая поддержка предоставляется через email или телефон, указанный на сайте.",
+      answer:
+        "Техническая поддержка предоставляется через email или телефон, указанный на сайте.",
     },
   ];
 
@@ -284,7 +289,7 @@ const page = (props: Props) => {
         </section>
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
           <h3 className="font-bold text-[64px] leading-[120%] text-center max-[480px]:text-[30px]">
-          Редакции
+            Редакции
           </h3>
           <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
             <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
@@ -312,12 +317,12 @@ const page = (props: Props) => {
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
-                Бесплатная
+                  Бесплатная
                 </h4>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Positive /> Ограничение срока хранения	
+                  <Positive /> Ограничение срока хранения
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Negative />
@@ -352,10 +357,13 @@ const page = (props: Props) => {
                   Создание заметок через API
                 </li>
               </ul>
-              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">Максимальное количество пользователей: <span className="font-medium text-[#262f33]">10</span></span>
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">
+                Максимальное количество пользователей:{" "}
+                <span className="font-medium text-[#262f33]">10</span>
+              </span>
               <button className="mt-[30px] flex items-center button-animation w-full">
                 <div className="border border-solid w-[83%] border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
-                Скачать бесплатно
+                  Скачать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
                   <svg
@@ -380,20 +388,35 @@ const page = (props: Props) => {
             </div>
             <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
-              <svg width="120" height="37" viewBox="0 0 120 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z" fill="#408077" />
-  <path d="M53.5942 36.3964L44.7639 30.0155L52.4713 20.9803L40.8846 17.8664L44.2534 7.50388L55.3296 12.0471L54.564 0H65.4871L64.7214 12.0471L75.7466 7.50388L79.1154 17.8664L67.5798 20.9803L75.2361 30.0155L66.4058 36.3964L60.0255 26.3912L53.5942 36.3964Z" fill="#408077" />
-  <path d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z" fill="#408077" />
-</svg>
+                <svg
+                  width="120"
+                  height="37"
+                  viewBox="0 0 120 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z"
+                    fill="#408077"
+                  />
+                  <path
+                    d="M53.5942 36.3964L44.7639 30.0155L52.4713 20.9803L40.8846 17.8664L44.2534 7.50388L55.3296 12.0471L54.564 0H65.4871L64.7214 12.0471L75.7466 7.50388L79.1154 17.8664L67.5798 20.9803L75.2361 30.0155L66.4058 36.3964L60.0255 26.3912L53.5942 36.3964Z"
+                    fill="#408077"
+                  />
+                  <path
+                    d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z"
+                    fill="#408077"
+                  />
+                </svg>
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
-                Бизнес
+                  Бизнес
                 </h4>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Positive /> Ограничение срока хранения	
+                  <Positive /> Ограничение срока хранения
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
@@ -428,7 +451,12 @@ const page = (props: Props) => {
                   Создание заметок через API
                 </li>
               </ul>
-              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">Максимальное количество пользователей: <span className="font-medium text-[#262f33]">согласно лицензии</span></span>
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">
+                Максимальное количество пользователей:{" "}
+                <span className="font-medium text-[#262f33]">
+                  согласно лицензии
+                </span>
+              </span>
               <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full">
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
@@ -457,43 +485,50 @@ const page = (props: Props) => {
           </div>
         </section>
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
-        <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-[480px]:text-[30px]">
-        Часто задаваемые вопросы
+          <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-[480px]:text-[30px]">
+            Часто задаваемые вопросы
           </h3>
           <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className={`border rounded-lg overflow-hidden ${
-              activeIndex === index ? 'border-green-500' : 'border-gray-300'
-            }`}
-          >
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full text-left flex gap-2 items-center p-4 bg-gray-50"
-            >
-              <span
-                className={`transform transition-transform ${
-                  activeIndex === index ? 'rotate-90' : 'rotate-0'
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className={`border-t  rounded-lg overflow-hidden ${
+                  activeIndex === index ? "border-green-500" : "border-gray-300"
                 }`}
               >
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M18.8417 14L10.8417 22L9.15918 20.3175L15.4767 14L9.15918 7.68247L10.8417 6L18.8417 14Z" fill="#408077" />
-</svg>
-              </span>
-              <span>{faq.question}</span>
-              
-            </button>
-            {activeIndex === index && (
-              <div className="p-4 bg-white">
-                <p>{faq.answer}</p>
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full text-left flex gap-2 items-center p-4 bg-gray-50"
+                >
+                  <span
+                    className={`transform transition-transform ${
+                      activeIndex === index ? "rotate-90" : "rotate-0"
+                    }`}
+                  >
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.8417 14L10.8417 22L9.15918 20.3175L15.4767 14L9.15918 7.68247L10.8417 6L18.8417 14Z"
+                        fill="#408077"
+                      />
+                    </svg>
+                  </span>
+                  <span>{faq.question}</span>
+                </button>
+                {activeIndex === index && (
+                  <div className="p-4 bg-white">
+                    <p>{faq.answer}</p>
+                  </div>
+                )}
               </div>
-            )}
+            ))}
           </div>
-        ))}
-      </div>
         </section>
-        <BlockTestPass setIsCheckPass={setIsCheckPass} />
         <From />
         <Carousel />
       </main>
