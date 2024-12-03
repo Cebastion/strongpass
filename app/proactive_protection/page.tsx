@@ -124,7 +124,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full mb-3">
-              <div className="px-6 py-5 mx-auto bg-white rounded-3xl max-w-[340px] max-sm:px-2 max-sm:py-3 max-sm:w-[214px]">
+              <div className="px-6 py-5 mx-auto bg-white rounded-3xl max-sm:rounded-[15px] max-w-[340px] max-sm:px-2 max-sm:py-3 max-sm:w-[214px]">
                 <span className="leading-[150%] text-base font-semibold mb-4 inline-block max-sm:text-[10px]">
                   Автоматическая проверка
                 </span>
