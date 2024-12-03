@@ -45,9 +45,9 @@ const From = () => {
   return (
     <section id="form" className="mt-40 h-[682px] max-lg:h-auto bg-bg-custom_green rounded-[48px] max-sm:rounded-3xl p-10 max-lg:py-10 max-lg:px-5 flex justify-between max-lg:flex-col">
       <div className="flex flex-col justify-between px-[19px] py-[10px] max-sm:p-0">
-        <div className="pt-[5px] pl-[5px]">
+        <div className="pt-[5px] pl-[5px] mt-3">
         <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px] max-sm:text-[27px] hidden max-lg:inline-block">Остались вопросы?</h3>
-          <h3 className="text-6xl font-bold text-white mb-5 max-lg:text-[48px] max-lg:hidden">Остались <p className="mt-2 text-white max-lg:hidden">вопросы?</p></h3>
+          <h3 className="text-6xl font-bold text-white mb-6 max-lg:text-[48px] max-lg:hidden">Остались <p className="mt-2 text-white max-lg:hidden">вопросы?</p></h3>
           <span className="text-base text-white max-lg:block">Заполните форму и наши специалисты <p className="mt-1 text-white">свяжутся с вами в ближайшее время.</p></span>
         </div>
         <div className="flex gap-2 pb-[5px] pl-[5px] max-lg:my-10">

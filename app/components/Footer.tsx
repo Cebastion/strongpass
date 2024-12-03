@@ -25,7 +25,7 @@ const Footer:FC<Props> = ({setIsFormQuestion}) => {
   const Past = Now - 1
 
   return (
-    <footer className="flex flex-col gap-[2.25rem] mt-20 w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-md:mt-10 max-sm:px-5">
+    <footer className="flex flex-col gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5">
       <div className="flex justify-between flex-wrap max-[500px]:justify-between">
         <Link className="max-lg:hidden" href="/">
           <Image src="/logo-gray.svg" alt="logo" width={60} height={60} loading="lazy" />

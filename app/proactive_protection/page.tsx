@@ -466,7 +466,7 @@ const page = () => {
                 {/* Тело таблицы */}
                 <tbody>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-4 text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
+                    <td className="py-4 text-[20px] max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
                       Требование использовать в пароле все 4 типа символов
                       (символы в нижнем и верхнем регистре, цифры, спец.
                       символы)
@@ -513,7 +513,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-[20px] max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет использования пароля из публичных утечек
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -558,7 +558,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-[20px] max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Собственный список запрещенных слов
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -603,7 +603,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
-                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-[20px] max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет повторяющихся символов («1111», «bbbb» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -648,7 +648,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-[20px] max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
                       Запрет последовательных символов («1234», «abcd» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -693,7 +693,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray">
-                    <td className="py-4 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
+                    <td className="py-4 text-[20px] max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
                       Запрет последовательностей символов, расположенных на
                       соседних клавишах («qwerty», «qazxcvb» и т.д.)
                     </td>
@@ -744,7 +744,7 @@ const page = () => {
           </div>
         </section>
         <BlockTestPass setIsCheckPass={setIsCheckPass} />
-        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
+        <section className="mt-[120px] max-w-[780px] mx-auto max-sm:px-5">
           <h3 className="font-bold text-[64px] leading-[120%] text-center max-[480px]:text-[30px]">
             Возможности
           </h3>
@@ -778,7 +778,7 @@ const page = () => {
                 </svg>
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold">
                   Стандарт
                 </h4>
                 <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
@@ -844,7 +844,7 @@ const page = () => {
 </svg>
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold">
                 КОРП
                 </h4>
                 <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
