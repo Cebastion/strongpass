@@ -50,7 +50,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           ></span>
         </div>
       </button>
-      <div className="z-20 relative max-[1005px]:mx-auto">
+      <div className="z-20 relative max-lg:mx-auto">
         <Link href="/">
           <Image src="/logo.svg" width={60} height={60} alt="" loading="lazy" />
         </Link>
@@ -63,7 +63,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           }`}
       >
         <li
-          className="relative max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:p-5 max-lg:w-[50%]"
+          className="relative max-lg:flex py-2 max-lg:py-0 max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:p-5 max-lg:w-[50%]"
           onMouseEnter={toggleDropdown}
           onMouseLeave={closeDropdown}
           onClick={toggleDropdown}
@@ -89,7 +89,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           </span>
 
           {isDropdownOpen && (
-            <ul className="absolute left-[-50%] top-4 bg-white shadow-lg rounded-xl mt-2 w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
+            <ul className="absolute left-[-50%] top-1 mt-9 bg-white shadow-lg rounded-xl w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
               <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
                 <Link href="/proactive_protection">Проактивная защита</Link>
               </li>
@@ -102,19 +102,19 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
             </ul>
           )}
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-2 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Скачать</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-2 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Купить</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-2 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Статьи</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-2 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Документация</Link>
         </li>
-        <li className="font-semibold text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
+        <li className="font-semibold py-2 max-lg:py-0 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Контакты</Link>
         </li>
       </ul>

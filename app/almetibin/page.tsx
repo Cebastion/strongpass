@@ -289,40 +289,50 @@ const page = (props: Props) => {
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
-                  Стандарт
+                Бесплатная
                 </h4>
-                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
-                  По запросу
-                </span>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Positive /> Проверка по базе скомпрометированных паролей
+                  <Positive /> Ограничение срока хранения	
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Negative />
-                  Список запрещенных паролей
+                  Обязательный пароль.
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Negative />
-                  Исключения из проверок по имени пользователя, группы
-                </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Negative />
-                  "Белый" список паролей
-                </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Negative />
-                  Strongpass. Самопроверка
+                  Удаление после прочтения.
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  Техническая поддержка
+                  Локальная аутентификация
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  LDAP
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Единый вход (SAML)
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Изменение текста верхней полосы
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Автоматическое создание пароля
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Negative />
+                  Создание заметок через API
                 </li>
               </ul>
+              <span className="mt-[30px] inline-block">Максимальное количество пользователей: <span>10</span></span>
               <button className="mt-[30px] flex items-center button-animation">
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
-                  Попробовать бесплатно
+                Скачать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
                   <svg
@@ -355,35 +365,44 @@ const page = (props: Props) => {
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
-                КОРП
+                Бизнес
                 </h4>
-                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
-                  По запросу
-                </span>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
-                  <Positive /> Проверка по базе скомпрометированных паролей
+                  <Positive /> Ограничение срока хранения	
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  Список запрещенных паролей
+                  Обязательный пароль.
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  Исключения из проверок по имени пользователя, группы
+                  Удаление после прочтения.
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  "Белый" список паролей
+                  Локальная аутентификация
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  Strongpass. Самопроверка
+                  LDAP
                 </li>
                 <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
                   <Positive />
-                  Техническая поддержка
+                  Единый вход (SAML)
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Изменение текста верхней полосы
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Автоматическое создание пароля
+                </li>
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                  <Positive />
+                  Создание заметок через API
                 </li>
               </ul>
               <button className="mt-[30px] flex items-center button-animation">
