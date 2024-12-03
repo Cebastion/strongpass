@@ -468,8 +468,8 @@ const page = () => {
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
                     <td className="py-[0.5rem] text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
                       Требование использовать в пароле все 4 типа символов
-                      (символы в нижнем и верхнем регистре, цифры, спец.
-                      символы)
+                      <span>(</span>символы в нижнем 
+                      <p>и верхнем регистре, цифры, спец. символы)</p>
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg

@@ -484,7 +484,7 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
+        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5 max-[785px]:max-w-full max-[785px]:px-5">
           <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-[480px]:text-[30px]">
             Часто задаваемые вопросы
           </h3>
