@@ -64,9 +64,9 @@ const page = () => {
           <CheckPass setIsCheckPass={setIsCheckPass} />
         )}
       <main className={`flex-1 my-14 ${isFormQuestion || isCheckPass && "max-md:hidden"}`}>
-        <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
-          <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
-            <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
+        <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+          <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
+            <h1 className="text-[62px] leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проактивная защита от использования слабых паролей
             </h1>
             <p className="text-lg mt-5 leading-[160%] font-normal max-lg:text-center max-md:text-base">
@@ -124,7 +124,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full mb-3">
-              <div className="px-6 py-5 mx-auto bg-white rounded-3xl max-sm:rounded-[15px] max-w-[340px] max-sm:px-2 max-sm:py-3 max-sm:w-[214px]">
+              <div className="px-6 py-5 mx-auto bg-white rounded-3xl max-sm:rounded-[15px] max-w-[340px] max-sm:px-2 max-sm:py-4 max-sm:w-[214px]">
                 <span className="leading-[150%] text-base font-semibold mb-4 inline-block max-sm:text-[10px]">
                   Автоматическая проверка
                 </span>
@@ -161,7 +161,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="mt-20 max-w-[780px] mx-auto flex justify-between max-md:mx-3 items-center max-[800px]:flex-col max-[800px]:gap-5 max-sm:px-5">
+        <section className="mt-20 max-w-[780px] mx-auto flex justify-between  items-center max-[800px]:flex-col max-[800px]:gap-5 max-sm:px-5">
           <Image
             width={285}
             height={48}
@@ -184,18 +184,18 @@ const page = () => {
             loading="lazy"
           />
         </section>
-        <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
-          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
-            <Image
+        <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse   max-sm:px-5">
+          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[300px] max-[500px]:h-[320px]">
+            <img
               className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
-              src="/bg_2.png"
+              srcSet="/bg_2.png x1, /bg_2@2x.png 2x"
               width={866}
               height={460}
               loading="lazy"
               alt=""
             />
             <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
-              <div className="text-lg  flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-3 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
+              <div className="text-lg  flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-4 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
                 Смотреть видео
               </div>
               <div className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center hover:bg-bg-hover_primary transition-all">
@@ -236,8 +236,8 @@ const page = () => {
             </span>
           </div>
         </section>
-        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-md:mx-3 max-sm:px-5">
-          <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
+        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-sm:px-3">
+          <h3 className="text-6xl font-bold leading-[120%] text-left tracking-[2%] mb-16 max-md:text-3xl max-md:mb-7">
             Почему нужен{" "}
             <p className="text-text-hover">
               Strongpass <span>?</span>
@@ -252,7 +252,7 @@ const page = () => {
                 loading="lazy"
                 alt=""
               />
-              <h4 className="text-3xl font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">
+              <h4 className="text-[32px] font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">
                 Подбор паролей — одна из самых результативных атак
               </h4>
               <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">
@@ -278,7 +278,7 @@ const page = () => {
                 loading="lazy"
                 alt=""
               />
-              <h4 className="text-3xl font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">
+              <h4 className="text-[32px] font-semibold leading-[130%] text-left mt-6 mb-4 max-md:text-[22px]">
                 Возможности групповых политик недостаточны
               </h4>
               <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">
@@ -291,7 +291,7 @@ const page = () => {
           </div>
           <div className="mt-5 bg-bg-custom_gray rounded-3xl p-12 flex justify-between items-center max-lg:flex-col max-sm:p-6">
             <div className="max-w-[532px] max-lg:max-w-full">
-              <h4 className="text-3xl font-semibold leading-[130%] text-left mb-4 max-md:text-[22px]">
+              <h4 className="text-[32px] font-semibold leading-[130%] text-left mb-4 max-md:text-[22px]">
                 Скомпрометированные пароли
               </h4>
               <span className="text-lg font-normal leading-[160%] text-left max-md:text-base">
@@ -313,13 +313,13 @@ const page = () => {
             />
           </div>
         </section>
-        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-md:mx-3 max-sm:px-5">
-          <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
+        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-[120px]  max-sm:px-5">
+          <h3 className="text-[62px] font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Преимущества
           </h3>
           <div>
             <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/shield.png 1x, /shield@2x.png 2x"
@@ -329,16 +329,16 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <h3 className="text-[32px] font-semibold leading-[130%] text-left">
+                <h3 className="text-[32px] font-semibold leading-[130%] text-left max-sm:text-[22px]">
                   Проактивная защита
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Проверка проводится в момент установки нового пароля. Новый
                   пароль будет установлен только, если он соответствует всем
                   требованиям
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/internet.png 1x, /internet@2x.png 2x"
@@ -348,15 +348,15 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <h3 className="text-[32px] font-semibold leading-[130%] text-left">
+                <h3 className="text-[32px] font-semibold leading-[130%] text-left max-sm:text-[22px]">
                   Не требуется доступ в интернет
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Все проверки проводятся локально, без использования облачных
                   сервисов. Пароли никогда не покидают ваши сервера.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/database.png 1x, /database@2x.png 2x"
@@ -366,10 +366,10 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <h3 className="text-[32px] font-semibold leading-[130%] text-left">
+                <h3 className="text-[32px] font-semibold leading-[130%] text-left max-sm:text-[22px]">
                   Большая база паролей
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Для проверки используется постоянно пополняемая база,
                   содержащая на текущий момент более 866 миллионов паролей,
                   которые встречались в публичных утечках.
@@ -377,7 +377,7 @@ const page = () => {
               </div>
             </div>
             <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/sliders.png 1x, /sliders@2x.png 2x"
@@ -387,18 +387,18 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <h3 className="text-[32px] font-semibold leading-[130%] text-left">
+                <h3 className="text-[32px] font-semibold leading-[130%] text-left max-sm:text-[22px]">
                   Минимальные затраты на управление
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Все настройки хранятся в текстовых файлах. Изменения
                   применяются без перезагрузки сервера. Текстовый формат
                   конфигурационных файлов позволяет легко автоматизировать
                   управление.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center max-sm:text-[22px]">
                   <img
                     srcSet="/pass-2.png 1x, /pass-2@2x.png 2x"
                     width={36}
@@ -410,13 +410,13 @@ const page = () => {
                 <h3 className="text-[32px] font-semibold leading-[130%] text-left">
                   Индивидуальные политики
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Возможность указать свой индивидуальный список паролей,
                   которые не должны считаться надежными. Исключение из проверок
                   пользователей, паролей, групп пользователей.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-6 max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/laptop.png 1x, /laptop@2x.png 2x"
@@ -426,10 +426,10 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <h3 className="text-[32px] font-semibold leading-[130%] text-left">
+                <h3 className="text-[32px] font-semibold leading-[130%] text-left max-sm:text-[22px]">
                   Интеграция с Windows и Свпях
                 </h3>
-                <span className="text-lg font-normal leading-[160%] text-left">
+                <span className="text-lg font-normal leading-[160%] text-left max-sm:text-base">
                   Приложение работает как с Windows (Active Directory), так и с
                   Linux (FreeIPA, ALD Pro). Контролируются все методы установки
                   пароля администраторами и пользователями.
@@ -439,7 +439,7 @@ const page = () => {
           </div>
         </section>
         <section className="bg-bg-custom_gray p-16 max-md:p-10 mt-20 rounded-[48px] max-sm:px-5">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
             {/* Заголовок */}
             <h2 className="text-[64px] font-bold leading-[120%] text-center mb-10 max-lg:text-3xl">
               Сравнение с групповыми политиками
@@ -466,12 +466,12 @@ const page = () => {
                 {/* Тело таблицы */}
                 <tbody>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
+                    <td className="py-4 text-lg max-lg:text-base font-normal leading-[160%] bg-bg-custom_gray max-w-[680px] max-md:pr-5 max-md:max-w-[264px] inline-block">
                       Требование использовать в пароле все 4 типа символов
                       (символы в нижнем и верхнем регистре, цифры, спец.
                       символы)
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -491,7 +491,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center text-red-600">
+                    <td className="py-4 px-6 text-center text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -513,10 +513,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет использования пароля из публичных утечек
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -536,7 +536,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center text-red-600">
+                    <td className="py-4 px-6 text-center text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -558,10 +558,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Собственный список запрещенных слов
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -581,7 +581,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center text-red-600">
+                    <td className="py-4 px-6 text-center text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -603,10 +603,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет повторяющихся символов («1111», «bbbb» и т.д.)
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -626,7 +626,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center text-red-600">
+                    <td className="py-4 px-6 text-center text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -648,10 +648,10 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.9rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
                       Запрет последовательных символов («1234», «abcd» и т.д.)
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -671,7 +671,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center text-red-600">
+                    <td className="py-4 px-6 text-center text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -693,11 +693,11 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray">
-                    <td className="py-3 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
+                    <td className="py-4 text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray max-w-[680px] inline-block">
                       Запрет последовательностей символов, расположенных на
                       соседних клавишах («qwerty», «qazxcvb» и т.д.)
                     </td>
-                    <td className="py-3 px-6 text-center bg-bg-custom_green rounded-es-3xl rounded-ee-3xl  text-green-600">
+                    <td className="py-4 px-6 text-center bg-bg-custom_green rounded-es-3xl rounded-ee-3xl  text-green-600">
                       <svg
                         className="mx-auto"
                         width="20.112305"
@@ -717,7 +717,7 @@ const page = () => {
                         />
                       </svg>
                     </td>
-                    <td className="py-3 px-6 text-center align-middle text-red-600">
+                    <td className="py-4 px-6 text-center align-middle text-red-600">
                       <svg
                         className="mx-auto"
                         width="28.000000"
@@ -745,16 +745,16 @@ const page = () => {
         </section>
         <BlockTestPass setIsCheckPass={setIsCheckPass} />
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
-          <h3 className="font-bold text-[64px] leading-[120%] text-center">
+          <h3 className="font-bold text-[64px] leading-[120%] text-center max-[480px]:text-[30px]">
             Возможности
           </h3>
           <br />
-          <span className="text-center inline-block w-full text-lg leading-[160%]">
+          <span className="text-center inline-block w-full text-lg leading-[160%] max-[480px]:text-base">
             Продукт лицензируется по количеству защищаемых учетных записей в
             домене.
           </span>
           <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
-            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
                 <svg
                   width="120"
@@ -777,7 +777,7 @@ const page = () => {
                   />
                 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
                   Стандарт
                 </h4>
@@ -810,8 +810,8 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center button-animation">
-                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full">
+                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
@@ -835,7 +835,7 @@ const page = () => {
                 </div>
               </button>
             </div>
-            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
               <svg width="120" height="37" viewBox="0 0 120 37" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z" fill="#408077" />
@@ -843,7 +843,7 @@ const page = () => {
   <path d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z" fill="#408077" />
 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
                 КОРП
                 </h4>
@@ -876,8 +876,8 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center button-animation">
-                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+              <button className="mt-[30px] flex items-center button-animation  max-[480px]:w-full">
+                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">

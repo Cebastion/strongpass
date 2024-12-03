@@ -70,6 +70,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
         >
           <span className={`font-semibold text-text-primary text-base hover:text-text-hover ${isDropdownOpen && 'text-text-hover'} cursor-pointer max-lg:mb-3 flex gap-2 items-center`}>
             <Image
+            className="relative left-[7px]"
               src="/menu.svg"
               width={22}
               height={22}

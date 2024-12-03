@@ -50,6 +50,34 @@ const Negative = () => {
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isCheckPass, setIsCheckPass] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const faqs = [
+    {
+      question: "Как лицензируется продукт?",
+      answer: "Продукт лицензируется по количеству пользователей, имеющих право создавать pastes. Количество пользователей, которые могут просматривать заметки, не ограничено.",
+    },
+    {
+      question: "Что произойдет после окончания временной тестовой лицензии?",
+      answer: "После окончания временной тестовой лицензии вам потребуется приобрести полную версию продукта.",
+    },
+    {
+      question: "Каким способом можно оплатить лицензию?",
+      answer: "Вы можете оплатить лицензию через банковскую карту, электронные кошельки или банковский перевод.",
+    },
+    {
+      question: "Как поставляется продукт и лицензия?",
+      answer: "Продукт и лицензия поставляются в электронном виде через email после подтверждения оплаты.",
+    },
+    {
+      question: "Как осуществляется техническая поддержка?",
+      answer: "Техническая поддержка предоставляется через email или телефон, указанный на сайте.",
+    },
+  ];
+
+  const toggleFAQ = (index: any) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
     <>
@@ -64,8 +92,8 @@ const page = (props: Props) => {
           isFormQuestion || (isCheckPass && "max-md:hidden")
         }`}
       >
-        <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
-          <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6">
+        <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+          <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Безопасный и удобный способ обмена паролями
             </h1>
@@ -124,10 +152,10 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse  max-md:mx-3 max-sm:px-5">
-          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[320px] max-[500px]:h-[320px]">
+        <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse   max-sm:px-5">
+          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[300px] max-[500px]:h-[320px]">
             <img
-              className="absolute top-[70%] translate-y-[-50%] max-[500px]:translate-y-0 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
+              className="absolute top-1/2 translate-y-[-50%] max-[500px]:translate-y-0 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-9 max-[500px]:left-6"
               srcSet="/almetibin_bg.png x1, /almetibin_bg@2x.png 2x"
               width={866}
               height={460}
@@ -148,7 +176,7 @@ const page = (props: Props) => {
             </span>
           </div>
         </section>
-        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-md:mx-3 max-sm:px-5">
+        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20  max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left mb-16 max-md:text-3xl max-md:mb-7">
             Преимущества
           </h3>
@@ -255,16 +283,11 @@ const page = (props: Props) => {
           </div>
         </section>
         <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
-          <h3 className="font-bold text-[64px] leading-[120%] text-center">
-            Возможности
+          <h3 className="font-bold text-[64px] leading-[120%] text-center max-[480px]:text-[30px]">
+          Редакции
           </h3>
-          <br />
-          <span className="text-center inline-block w-full text-lg leading-[160%]">
-            Продукт лицензируется по количеству защищаемых учетных записей в
-            домене.
-          </span>
           <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
-            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
                 <svg
                   width="120"
@@ -287,7 +310,7 @@ const page = (props: Props) => {
                   />
                 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
                 Бесплатная
                 </h4>
@@ -329,9 +352,9 @@ const page = (props: Props) => {
                   Создание заметок через API
                 </li>
               </ul>
-              <span className="mt-[30px] inline-block">Максимальное количество пользователей: <span>10</span></span>
-              <button className="mt-[30px] flex items-center button-animation">
-                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">Максимальное количество пользователей: <span className="font-medium text-[#262f33]">10</span></span>
+              <button className="mt-[30px] flex items-center button-animation w-full">
+                <div className="border border-solid w-[83%] border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                 Скачать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
@@ -355,7 +378,7 @@ const page = (props: Props) => {
                 </div>
               </button>
             </div>
-            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px]">
+            <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
               <svg width="120" height="37" viewBox="0 0 120 37" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.7095 36.3964L3.87922 30.0155L11.5866 20.9803L0 17.8664L3.3688 7.50388L14.445 12.0471L13.6794 0H24.6024L23.8368 12.0471L34.8619 7.50388L38.2307 17.8664L26.6952 20.9803L34.3515 30.0155L25.5212 36.3964L19.1409 26.3912L12.7095 36.3964Z" fill="#408077" />
@@ -363,7 +386,7 @@ const page = (props: Props) => {
   <path d="M94.4788 36.3964L85.6485 30.0155L93.3559 20.9803L81.7693 17.8664L85.1381 7.50388L96.2143 12.0471L95.4486 0H106.372L105.606 12.0471L116.631 7.50388L120 17.8664L108.464 20.9803L116.121 30.0155L107.29 36.3964L100.91 26.3912L94.4788 36.3964Z" fill="#408077" />
 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px]">
+              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
                 <h4 className="text-center text-[32px] leading-[130%] font-semibold">
                 Бизнес
                 </h4>
@@ -405,8 +428,9 @@ const page = (props: Props) => {
                   Создание заметок через API
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center button-animation">
-                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold">
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">Максимальное количество пользователей: <span className="font-medium text-[#262f33]">согласно лицензии</span></span>
+              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full">
+                <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>
                 <div className="flex items-center justify-center w-[57px] h-[57px] bg-bg-custom_green rounded-xl">
@@ -431,6 +455,43 @@ const page = (props: Props) => {
               </button>
             </div>
           </div>
+        </section>
+        <section className="mt-20 max-w-[780px] mx-auto max-sm:px-5">
+        <h3 className="font-bold text-[48px] leading-[120%] text-center mb-[60px] max-[480px]:text-[30px]">
+        Часто задаваемые вопросы
+          </h3>
+          <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className={`border rounded-lg overflow-hidden ${
+              activeIndex === index ? 'border-green-500' : 'border-gray-300'
+            }`}
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full text-left flex gap-2 items-center p-4 bg-gray-50"
+            >
+              <span
+                className={`transform transition-transform ${
+                  activeIndex === index ? 'rotate-90' : 'rotate-0'
+                }`}
+              >
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18.8417 14L10.8417 22L9.15918 20.3175L15.4767 14L9.15918 7.68247L10.8417 6L18.8417 14Z" fill="#408077" />
+</svg>
+              </span>
+              <span>{faq.question}</span>
+              
+            </button>
+            {activeIndex === index && (
+              <div className="p-4 bg-white">
+                <p>{faq.answer}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
         </section>
         <BlockTestPass setIsCheckPass={setIsCheckPass} />
         <From />
