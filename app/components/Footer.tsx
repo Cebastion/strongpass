@@ -32,8 +32,8 @@ const Footer:FC<Props> = ({setIsFormQuestion}) => {
         </Link>
         <ul className="flex flex-col gap-2">
           <li className="text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">Продукты и решения</li>
-          <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm"><Link href="/#">Strongpass. <span className="max-lg:block">Проактивная защита.</span> </Link></li>
-          <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm"><Link href="/#">Strongpass. <span className="max-lg:block">Самопроверка.</span></Link></li>
+          <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm"><Link href="/proactive_protection">Strongpass. <span className="max-lg:block">Проактивная защита.</span> </Link></li>
+          <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm"><Link href="/self_examination">Strongpass. <span className="max-lg:block">Самопроверка.</span></Link></li>
           <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm"><Link href="/#">Almetibin.</Link></li>
         </ul>
         <ul className="flex-col flex gap-[0.6rem]">

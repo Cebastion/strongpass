@@ -91,10 +91,10 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
           {isDropdownOpen && (
             <ul className="absolute left-[-50%] top-5 bg-white shadow-lg rounded-xl mt-2 w-72 max-lg:border max-lg:border-gray-200 z-10 max-lg:relative max-lg:top-0 max-lg:shadow-none max-lg:left-0  max-lg:border-none max-lg:flex max-lg:flex-col max-lg:gap-3 max-lg:items-center max-lg:justify-center">
               <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5">
-                <Link href="/#">Проактивная защита</Link>
+                <Link href="/proactive_protection">Проактивная защита</Link>
               </li>
               <li className="flex  items-center justify-center border-b-2 border-b-gray-50 border-solid h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-t cursor-pointer max-lg:border-b-0 max-lg:h-5 max-lg:my-2">
-                <Link href="/#">Самопроверка</Link>
+                <Link href="/self_examination">Самопроверка</Link>
               </li>
               <li className="flex  items-center justify-center h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-b cursor-pointer max-lg:h-5">
                 <Link href="/#">Almetibin</Link>
