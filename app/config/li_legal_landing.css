@@ -1,0 +1,31 @@
+.dash-list {
+  list-style-type: none;
+}
+
+.dash-list li {
+  display: flex;
+  align-items: center;
+  counter-increment: item;
+  position: relative;
+  padding-left: 20px; /* Для отступа перед нумерацией */
+  margin-left: 15px;
+}
+
+.dash-list li::before {
+  content: "";
+  border-radius: 5px;
+  display: inline;
+  width: 12px;
+  height: 2px;
+  background-color: #408077;
+  margin-top: 3px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+@media screen and (max-width: 640px) {
+  .dash-list li{
+    margin-left: 10px;
+  }
+}

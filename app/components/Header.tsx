@@ -6,11 +6,15 @@ import '../animation/button.css'
 
 type Props = {
   setIsFormQuestion: React.Dispatch<React.SetStateAction<boolean>>,
-  isFormQuestion: boolean
+  isFormQuestion: boolean,
+  setIsCheckPass?: React.Dispatch<React.SetStateAction<boolean>>,
+  isCheckPass?: boolean,
+  setIsFormFreeLicense?: React.Dispatch<React.SetStateAction<boolean>>,
+  isFormFreeLicense?: boolean,
 }
 
 
-const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
+const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion, setIsCheckPass, isCheckPass, setIsFormFreeLicense, isFormFreeLicense}) => {
   const [Active, SetActive] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Состояние для dropdown
 
@@ -26,9 +30,15 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion}) => {
     SetActive(!Active);
   };
 
+  const handleClosePop = () => { 
+    setIsCheckPass && setIsCheckPass(false)
+    setIsFormFreeLicense &&setIsFormFreeLicense(false)
+    setIsFormQuestion(false)
+  }
+
   return (
     <header
-      className={`flex ${isFormQuestion ? "max-md:fixed max-md:bg-white max-md:top-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed fixed-header top-[15px] left-0" : ""
+      className={`flex container max-w-[1180px] mx-auto  ${isFormQuestion || isCheckPass || isFormFreeLicense ? "max-md:fixed max-md:bg-white max-md:top-0 max-md:mt-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed fixed-header top-[15px] left-0" : ""
         }`}
     >
       <button

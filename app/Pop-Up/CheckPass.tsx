@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import "../config/li.css";
 import "../config/shadowBlock.css";
 
@@ -296,6 +296,10 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
     setResult(validChecks);
   };
 
+  useEffect(() => {
+    checkPassword()
+  },[password])
+
   return (
     <>
       <div onClick={() => setIsCheckPass(false)} className="fixed top-0 z-[60] left-0 w-full h-full bg-[#262f33] opacity-[0.75] max-md:hidden"></div>
@@ -340,8 +344,10 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
               )}
             </div>
             <button
-              onClick={checkPassword}
-              className="py-[14px] px-9 rounded-xl flex justify-center items-center bg-bg-custom_green hover:bg-[#1b6b60] transition-all duration-500 font-semibold leading-[160%] text-lg text-white max-sm:w-full "
+            disabled={result?.length !== 5}
+            className={`py-[14px] px-9 rounded-xl flex justify-center items-center transition-all bg-bg-custom_green duration-500 font-semibold leading-[160%] text-lg text-white max-sm:w-full ${
+              result?.length === 5 ? 'cursor-pointer hover:bg-[#1b6b60]' : 'cursor-not-allowed'
+            }`}
             >
               Проверить
             </button>
@@ -416,6 +422,42 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
                   </li>
                   <li className="text-lg font-normal leading-[160%] max-sm:text-base">
                     специальные символы (например: !, $, #, %).
+                  </li>
+                </ul>
+              </li>
+              <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+                Запрещено использование в пароле:
+                <ul className="dash-list">
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+                  Названий месяцев года.
+                  </li>
+                  <li className="text-lg font-normal leading-[160%]mb-[2px] max-sm:text-base">
+                  повторяющихся подряд 3-х и более одинаковых символов ("111", "bbb" и т.д.)
+                  </li>
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+                  последовательностей из 3-х и более элементов("123", "321", "1234", "abc", "abcd" и т.д. )
+                  </li>
+                  <li className="text-lg font-normal leading-[160%] max-sm:text-base">
+                  последовательностей символов, расположенных на соседних клавишах и состоящих из 3х и более элементов ("qwe", "qwerty", "qaz" и т.д.).
+                  </li>
+                  <li className="text-lg font-normal leading-[160%] max-sm:text-base">
+                  последовательностей символов, расположенных на соседних клавишах и состоящих из 3х и более элементов ("qwe", "qwerty", "qaz" и т.д.).
+                  </li>
+                  слова "strongpass" (см. <a href="https://doc.strongpass.ru/passwords.html#nechetkij-poisk">Нечеткий поиск</a>)
+                </ul>
+              </li>
+              <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+              Отсутствие в базе паролей из публичных утечек.
+              <span>Примеры слабых паролей: </span>
+                <ul className="dash-list">
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+                  $Tr0ngpass1
+                  </li>
+                  <li className="text-lg font-normal leading-[160%]mb-[2px] max-sm:text-base">
+                  P@ssw0rd1234567
+                  </li>
+                  <li className="text-lg font-normal leading-[160%] mb-[2px] max-sm:text-base">
+                  N0vember20!0
                   </li>
                 </ul>
               </li>

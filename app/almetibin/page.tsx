@@ -4,10 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import From from "../components/From";
 import Carousel from "../components/Carousel";
-import BlockTestPass from "../components/BlockTestPass";
-import CheckPass from "../Pop-Up/CheckPass";
 import FormQuestion from "../Pop-Up/FormQuestion";
-import Image from "next/image";
+import FreeLicense from "../Pop-Up/FreeLicense";
 
 type Props = {};
 
@@ -49,7 +47,7 @@ const Positive = () => {
 
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
-  const [isCheckPass, setIsCheckPass] = useState(false);
+  const [isFormFreeLicense, setIsFormFreeLicense] = useState(true);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -89,12 +87,14 @@ const page = (props: Props) => {
       <Header
         setIsFormQuestion={setIsFormQuestion}
         isFormQuestion={isFormQuestion}
+        isFormFreeLicense={isFormFreeLicense}
+        setIsFormFreeLicense={setIsFormFreeLicense}
       />
       {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
-      {isCheckPass && <CheckPass setIsCheckPass={setIsCheckPass} />}
+      {isFormFreeLicense && <FreeLicense setIsFormFreeLicense={setIsFormFreeLicense} />}
       <main
-        className={`flex-1 my-14 ${
-          isFormQuestion || (isCheckPass && "max-md:hidden")
+        className={`flex-1 my-14 container max-w-[1300px] mx-auto ${
+          isFormQuestion || (isFormFreeLicense && "max-md:hidden")
         }`}
       >
         <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">

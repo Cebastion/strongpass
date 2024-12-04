@@ -1,16 +1,16 @@
 .numbered-list {
   list-style-type: none;
-  counter-reset: item;
+  counter-reset: numbered-item;
 }
 
 .numbered-list li {
-  counter-increment: item;
+  counter-increment: numbered-item;
   position: relative;
   padding-left: 35px; /* Для отступа перед нумерацией */
 }
 
 .numbered-list li::before {
-  content: counter(item, decimal-leading-zero) ". "; /* Форматируем номер с ведущим нулем */
+  content: counter(numbered-item, decimal-leading-zero) ". "; /* Форматируем номер с ведущим нулем */
   position: absolute;
   left: 0;
   color: #408077;

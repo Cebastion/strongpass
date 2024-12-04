@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <Header isFormQuestion={isFormQuestion} setIsFormQuestion={setIsFormQuestion} />
     {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
-    <main className={`flex-1 my-14 mx-5 max-md:mx-0 ${isFormQuestion && "max-md:hidden"}`}>
+    <main className={`flex-1 container max-w-[1300px] mx-auto my-14 max-md:mx-0 ${isFormQuestion && "max-md:hidden"}`}>
 
       <h1 className="text-7xl relative bottom-[-1rem] max-[1060px]:bottom-0 mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
       <span className=" mx-auto max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>

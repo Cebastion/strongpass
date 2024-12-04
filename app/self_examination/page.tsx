@@ -19,11 +19,13 @@ const page = (props: Props) => {
       <Header
         setIsFormQuestion={setIsFormQuestion}
         isFormQuestion={isFormQuestion}
+        isCheckPass={isCheckPass}
+        setIsCheckPass={setIsCheckPass}
       />
       {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
       {isCheckPass && <CheckPass setIsCheckPass={setIsCheckPass} />}
       <main
-        className={`flex-1 my-14 ${
+        className={`flex-1 my-14 container max-w-[1300px] mx-auto ${
           isFormQuestion || (isCheckPass && "max-md:hidden")
         }`}
       >

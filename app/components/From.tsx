@@ -83,6 +83,7 @@ const From = () => {
       className="p-9 flex flex-col gap-[8px] max-lg:gap-[8px] mx-5 my-6 max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] h-[562px] max-lg:mx-auto max-lg:w-full max-lg:h-h-auto"
     >
       <input
+      required
         type="text"
         name="name"
         placeholder="Фамилия Имя Отчество"
@@ -94,6 +95,7 @@ const From = () => {
       />
 
       <input
+      required
         type="email"
         name="email"
         placeholder="Электронная почта"
@@ -116,11 +118,12 @@ const From = () => {
       />
 
       <textarea
+      required
         name="comment"
         placeholder="Комментарий"
         value={formData.comment}
         onChange={handleChange}
-        className={`w-full resize-none h-[146px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom 
+        className={`w-full resize-none h-[174px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom 
           ${errors.comment ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-[#e3e5e5] placeholder-[#7a7e80]'}
         `}        
       ></textarea>

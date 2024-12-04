@@ -56,6 +56,7 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
       onSubmit={handleSubmit}
       className="flex flex-col gap-[0.75rem] mt-8 max-[355px]:w-[290px]">
       <input
+      required
         type="text"
         name="name"
         placeholder="Фамилия Имя Отчество"
@@ -67,6 +68,7 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
       />
 
       <input
+      required
         type="email"
         name="email"
         placeholder="Электронная почта"
@@ -89,11 +91,12 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
       />
 
       <textarea
+      required
         name="comment"
         placeholder="Комментарий"
         value={formData.comment}
         onChange={handleChange}
-        className={`w-full resize-none h-[146px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom ${
+        className={`w-full resize-none h-[174px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom ${
           errors.comment ? 'border-[#E54545] text-[#E54545] placeholder-[#E54545]' : 'border-gray-300'
         }`}
       ></textarea>

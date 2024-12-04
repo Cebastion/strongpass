@@ -1,0 +1,5 @@
+.tip{}
+
+.tip:hover + .tip_block {
+    display: block;
+}

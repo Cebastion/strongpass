@@ -97,7 +97,7 @@ const Carousel = () => {
       </div>
       <Swiper
       className="mt-10"
-        spaceBetween={50}
+        spaceBetween={20}
         slidesPerView={1}
         loop
         breakpoints={{
