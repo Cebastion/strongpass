@@ -120,6 +120,37 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
       alert("Форма отправлена!");
     }
   };
+
+  const formatPhoneNumber = (value: any) => {
+    const cleaned = value.replace(/\D/g, ''); // Удаляем все нецифровые символы
+    const match = cleaned.match(/^(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})$/);
+
+    if (cleaned.length <= 1) {
+      return `+${cleaned}`;
+    }
+    if (match) {
+      return `+${match[1]} (${match[2]}) ${match[3]}-${match[4]}-${match[5]}`;
+    } else {
+      // Строим номер частично, если пользователь еще не закончил ввод
+      if (cleaned.length <= 4) return `+7 (${cleaned.slice(1)}`;
+      if (cleaned.length <= 7)
+        return `+7 (${cleaned.slice(1, 4)}) ${cleaned.slice(4)}`;
+      if (cleaned.length <= 9)
+        return `+7 (${cleaned.slice(1, 4)}) ${cleaned.slice(4, 7)}-${cleaned.slice(
+          7
+        )}`;
+      return `+7 (${cleaned.slice(1, 4)}) ${cleaned.slice(4, 7)}-${cleaned.slice(
+        7,
+        9
+      )}-${cleaned.slice(9, 11)}`;
+    }
+  };
+
+  const handleChangePhone = (e: any) => {
+    const formattedValue = formatPhoneNumber(e.target.value);
+    setFormData({ ...formData, phone: formattedValue });
+  };
+
   return (
     <>
       <div
@@ -227,7 +258,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
                 name="name"
                 placeholder="+7 (___) ___-__-__"
                 value={formData.phone}
-                onChange={handleChange}
+                onChange={handleChangePhone}
                 className={`w-full py-3 px-6 rounded-xl border text-lg font-normal text-text-form target:border-borderColor-custom`}
               />
             </div>

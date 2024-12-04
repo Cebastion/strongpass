@@ -47,7 +47,7 @@ const Positive = () => {
 
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
-  const [isFormFreeLicense, setIsFormFreeLicense] = useState(true);
+  const [isFormFreeLicense, setIsFormFreeLicense] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
@@ -110,7 +110,7 @@ const page = (props: Props) => {
               почта, мессенджеры, текстовые сообщения.
             </p>
             <button
-              onClick={() => setIsCheckPass(true)}
+              onClick={() => setIsFormFreeLicense(true)}
               className="flex items-center mt-10 max-lg:justify-center button-animation"
             >
               <div className="w-72 h-14 text-text-hover flex items-center justify-center border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base transition-all hover:text-text-hover_primary">
