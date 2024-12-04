@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../config/li_legal_landing.css";
+import FormQuestion from "../Pop-Up/FormQuestion";
 
 type Props = {};
 
@@ -15,6 +16,7 @@ const page = (props: Props) => {
         isFormQuestion={isFormQuestion}
         setIsFormQuestion={setIsFormQuestion}
       />
+      {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
       <main
         className={`flex-1 my-14 ${
           isFormQuestion || (isFormQuestion && "max-md:hidden")
