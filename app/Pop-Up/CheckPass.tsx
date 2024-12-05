@@ -317,6 +317,23 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
           />
         </svg>
       </div>
+      <div
+        className="fixed hidden max-md:flex top-24 z-[70] right-0 w-[57px] h-[57px] justify-center items-center cursor-pointer"
+        onClick={() => setIsCheckPass(false)}
+      >
+        <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21.6938 9.79375L16.4875 15L21.6938 20.2063C22.1021 20.7021 22.1021 21.1979 21.6938 21.6938C21.1979 22.1021 20.7021 22.1021 20.2063 21.6938L15 16.4875L9.79375 21.6938C9.29792 22.1021 8.80208 22.1021 8.30625 21.6938C7.89792 21.1979 7.89792 20.7021 8.30625 20.2063L13.5125 15L8.30625 9.79375C7.89792 9.29792 7.89792 8.80208 8.30625 8.30625C8.80208 7.89792 9.29792 7.89792 9.79375 8.30625L15 13.5125L20.2063 8.30625C20.7021 7.89792 21.1979 7.89792 21.6938 8.30625C22.1021 8.80208 22.1021 9.29792 21.6938 9.79375Z"
+            fill="#262F33"
+          />
+        </svg>
+      </div>
       <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[7.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
         <div className=" max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
         <div className="max-w-[560px] w-[560px] flex flex-col justify-between max-sm:w-full max-sm:max-w-full ">

@@ -30,12 +30,6 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion, setIsCheckPass, is
     SetActive(!Active);
   };
 
-  const handleClosePop = () => { 
-    setIsCheckPass && setIsCheckPass(false)
-    setIsFormFreeLicense &&setIsFormFreeLicense(false)
-    setIsFormQuestion(false)
-  }
-
   return (
     <header
       className={`flex container max-w-[1180px] mx-auto  ${isFormQuestion || isCheckPass || isFormFreeLicense ? "max-md:fixed max-md:bg-white max-md:top-0 max-md:mt-0" : ""} max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 max-md:z-[70] max-md:mt-[15px] max-lg:m-0 max-lg:px-3 ${Active ? "fixed fixed-header top-[15px] left-0" : ""
@@ -151,7 +145,7 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion, setIsCheckPass, is
         </div>
         </button>
         <button
-          onClick={() => setIsFormQuestion(!isFormQuestion)}
+          onClick={() => setIsFormQuestion(true)}
           className="w-12 h-12 rounded-xl bg-gray-100 items-center justify-center hidden max-lg:flex relative z-[11]"
         >
           <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
