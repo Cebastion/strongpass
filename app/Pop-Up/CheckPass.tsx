@@ -317,8 +317,11 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
           />
         </svg>
       </div>
-      <div
-        className="fixed hidden max-md:flex top-24 z-[70] right-0 w-[57px] h-[57px] justify-center items-center cursor-pointer"
+      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[5.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
+        <div className=" max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
+        <div className="max-w-[560px] w-[560px] flex flex-col justify-between max-sm:w-full max-sm:max-w-full ">
+        <div
+        className="relative hidden max-md:flex top-0 right-[-90%] z-[70] w-[30px] h-[30px] justify-center items-center cursor-pointer"
         onClick={() => setIsCheckPass(false)}
       >
         <svg
@@ -334,9 +337,6 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
           />
         </svg>
       </div>
-      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[7.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
-        <div className=" max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
-        <div className="max-w-[560px] w-[560px] flex flex-col justify-between max-sm:w-full max-sm:max-w-full ">
           <h4 className="font-semibold text-[32px] leading-[130%] mb-[10px] max-md:text-[22px] max-md:leading-[140%]">
             Проверка надежности пароля
           </h4>
