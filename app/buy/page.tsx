@@ -399,7 +399,7 @@ const page = (props: Props) => {
             информированное и сознательное согласие на обработку и хранение
             ваших персональных данных и соглашаетесь с{" "}
             <a
-              href="#"
+              href="/privacy_policy"
               className="text-text-hover underline hover:text-text-hover_primary transition-all"
             >
               Политикой конфиденциальности

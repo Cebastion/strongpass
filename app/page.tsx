@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
-              <button className="flex button-animation">
+              <button className="flex button-animation" onClick={() => window.location.assign("/proactive_protection")}>
                 <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
                 <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
-              <button className="flex button-animation">
+              <button className="flex button-animation" onClick={() => window.location.assign("/self_examination")}>
                 <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px]  max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
                 <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-center max-md:mt-2">
               <span className="text-text-custom_dark_purple font-bold">***</span>
-              <button className="flex button-animation">
+              <button className="flex button-animation" onClick={() => window.location.assign("/almetibin")}>
                 <div className="h-[41px] px-5 border flex justify-center items-center border-solid border-borderColor-custom rounded-lg font-semibold text-base leading-[140%] text-text-hover  max-lg:px-0 max-lg:py-0 max-lg:w-[131px] max-lg:h-[38px] transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">Подробнее</div>
                 <div className="h-[41px] w-[41px] flex items-center justify-center rounded-lg hover:bg-bg-hover_primary transition-all bg-text-hover max-lg:w-9 max-lg:h-9">
                   <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >

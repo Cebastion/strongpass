@@ -126,7 +126,7 @@ const FormQuestion:FC<Props> = ({setIsFormQuestion}) => {
         </div>
       </button>
       <span className="text-sm font-normal text-center text-gray-400 mt-4">
-      Нажимая кнопку «Отправить», вы даете свое конкретное, информированное и сознательное согласие на обработку и хранение ваших персональных данных и соглашаетесь с <a href="#" className='text-text-hover hover:text-text-hover_primary transition-all'>Политикой конфиденциальности</a>.
+      Нажимая кнопку «Отправить», вы даете свое конкретное, информированное и сознательное согласие на обработку и хранение ваших персональных данных и соглашаетесь с <a href="/privacy_policy" className='text-text-hover hover:text-text-hover_primary transition-all'>Политикой конфиденциальности</a>.
       </span>
     </form>
     </div>

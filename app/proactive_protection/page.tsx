@@ -10,6 +10,7 @@ import BlockTestPass from "../components/BlockTestPass";
 import CheckPass from "../Pop-Up/CheckPass";
 import '../config/scrollbar.css'
 import '../animation/button.css'
+import FreeLicense from "../Pop-Up/FreeLicense";
 
 const Negative = () => {
   return (
@@ -50,6 +51,7 @@ const Positive = () => {
 const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isCheckPass, setIsCheckPass] = useState(false);
+  const [isFormFreeLicense, setIsFormFreeLicense] = useState(false);
 
   return (
     <>
@@ -58,6 +60,8 @@ const page = () => {
         setIsFormQuestion={setIsFormQuestion}
         isCheckPass={isCheckPass}
         setIsCheckPass={setIsCheckPass}
+        setIsFormFreeLicense={setIsFormFreeLicense}
+        isFormFreeLicense={isFormFreeLicense}
       />
       {isFormQuestion && (
           <FormQuestion setIsFormQuestion={setIsFormQuestion} />
@@ -65,7 +69,8 @@ const page = () => {
         {isCheckPass && (
           <CheckPass setIsCheckPass={setIsCheckPass} />
         )}
-      <main className={`flex-1 my-14 container max-w-[1300px] mx-auto ${isFormQuestion || isCheckPass && "max-md:hidden"}`}>
+        {isFormFreeLicense && <FreeLicense setIsFormFreeLicense={setIsFormFreeLicense} />}
+      <main className={`flex-1 my-14 container max-w-[1300px] mx-auto ${isFormQuestion || isCheckPass || isFormFreeLicense && "max-md:hidden"}`}>
         <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
             <h1 className="text-[62px] leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
@@ -812,7 +817,7 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full">
+              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full"  onClick={() => setIsFormFreeLicense(true)}>
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>
@@ -878,7 +883,7 @@ const page = () => {
                   Техническая поддержка
                 </li>
               </ul>
-              <button className="mt-[30px] flex items-center button-animation  max-[480px]:w-full">
+              <button className="mt-[30px] flex items-center button-animation  max-[480px]:w-full" onClick={() => setIsFormFreeLicense(true)}>
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>

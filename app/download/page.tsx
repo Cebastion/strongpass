@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import FormQuestion from "../Pop-Up/FormQuestion";
 import Footer from "../components/Footer";
+import FreeLicense from "../Pop-Up/FreeLicense";
 
 type Props = {};
 
@@ -26,16 +27,21 @@ const GreenIconDownload = () => {
 
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
+  const [isFormFreeLicense, setIsFormFreeLicense] = useState(false);
+
   return (
     <>
       <Header
         setIsFormQuestion={setIsFormQuestion}
         isFormQuestion={isFormQuestion}
+        isFormFreeLicense={isFormFreeLicense}
+        setIsFormFreeLicense={setIsFormFreeLicense}
       />
       {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
+      {isFormFreeLicense && <FreeLicense setIsFormFreeLicense={setIsFormFreeLicense} />}
       <main
         className={`flex-1 my-14 container max-w-[1300px] mx-auto ${
-          isFormQuestion && "max-md:hidden"
+          isFormQuestion || isFormFreeLicense && "max-md:hidden"
         }`}
       >
         <h2 className="text-7xl text-center mb-10 leading-[120%] font-bold max-sm:text-[30px]">
@@ -43,7 +49,7 @@ const page = (props: Props) => {
         </h2>
         <span className="text-lg font-normal leading-[160%] text-center block max-w-[780px] mx-auto max-sm:px-5 max-sm:text-base">
           Если у вас нет купленной лицензии Strongpass, пожалуйста{" "}
-          <span className="text-text-hover underline cursor-pointer hover:text-text-hover_primary transition-all">
+          <span className="text-text-hover underline cursor-pointer hover:text-text-hover_primary transition-all" onClick={() => setIsFormFreeLicense(true)}>
             заполните форму
           </span>{" "}
           для получения временной полнофункциональной лицензии. Временная
@@ -83,7 +89,7 @@ const page = (props: Props) => {
                   новый пароль считается слабым или скомпрометированным.
                 </span>
                 <a
-                  href="/#"
+                  href="/legal_landing"
                   className="text-text-hover underline cursor-pointer text-lg font-medium leading-[160%] hover:text-text-hover_primary transition-all"
                 >
                   Документация

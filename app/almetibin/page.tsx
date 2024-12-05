@@ -361,7 +361,7 @@ const page = (props: Props) => {
                 Максимальное количество пользователей:{" "}
                 <span className="font-medium text-[#262f33]">10</span>
               </span>
-              <button className="mt-[30px] flex items-center button-animation w-full">
+              <button className="mt-[30px] flex items-center button-animation w-full" onClick={() => setIsFormFreeLicense(true)}>
                 <div className="border border-solid w-[83%] border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Скачать бесплатно
                 </div>
@@ -457,7 +457,7 @@ const page = (props: Props) => {
                   согласно лицензии
                 </span>
               </span>
-              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full">
+              <button className="mt-[30px] flex items-center button-animation max-[425px]:w-full" onClick={() => setIsFormFreeLicense(true)}>
                 <div className="border border-solid border-borderColor-hover rounded-xl py-[14px] px-[20px] leading-[160%] text-lg flex justify-center items-center text-text-hover font-semibold max-[425px]:text-[14px] max-[425px]:h-[57px] max-[425px]:w-[83%] max-[425px]:p-0">
                   Попробовать бесплатно
                 </div>

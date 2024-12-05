@@ -54,7 +54,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 </Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Almetibin.</Link>
+                <Link href="/almetibin">Almetibin.</Link>
               </li>
             </ul>
             <ul className="flex-col flex gap-[0.6rem]">
@@ -62,19 +62,19 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 Информация
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Скачать</Link>
+                <Link href="/download">Скачать</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Купить</Link>
+                <Link href="/buy">Купить</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
                 <Link href="/#">Статьи</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Документация</Link>
+                <Link href="/legal_landing">Документация</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Контакты</Link>
+                <Link href="/contact">Контакты</Link>
               </li>
             </ul>
             <ul className="text-right flex flex-col gap-3 max-lg:hidden">
@@ -123,7 +123,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               © {Past}-{Now}
             </span>
             <a
-              href="#"
+              href="/privacy_policy"
               className="max-lg:text-sm hover:opacity-[0.8] transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
             >
               Политика конфиденциальности
@@ -174,7 +174,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               </Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Almetibin.</Link>
+              <Link href="/almetibin">Almetibin.</Link>
             </li>
           </ul>
           <ul className="flex-col flex gap-[0.6rem]">
@@ -182,19 +182,19 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               Информация
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Скачать</Link>
+              <Link href="/download">Скачать</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Купить</Link>
+              <Link href="/buy">Купить</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
               <Link href="/#">Статьи</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Документация</Link>
+              <Link href="/legal_landing">Документация</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Контакты</Link>
+              <Link href="/contact">Контакты</Link>
             </li>
           </ul>
           <ul className="text-right flex flex-col gap-3 max-lg:hidden">
@@ -243,7 +243,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
             © {Past}-{Now}
           </span>
           <a
-            href="#"
+            href="/privacy_policy"
             className="max-lg:text-sm hover:opacity-[0.8] transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
           >
             Политика конфиденциальности

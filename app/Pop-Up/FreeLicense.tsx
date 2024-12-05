@@ -348,7 +348,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
             информированное и сознательное согласие на обработку и хранение
             ваших персональных данных и соглашаетесь с{" "}
             <a
-              href="#"
+              href="/privacy_policy"
               className="text-text-hover hover:text-text-hover_primary transition-all"
             >
               Политикой конфиденциальности

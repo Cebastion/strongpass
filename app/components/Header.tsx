@@ -108,25 +108,25 @@ const Header:FC<Props> = ({setIsFormQuestion, isFormQuestion, setIsCheckPass, is
                 <Link href="/self_examination">Самопроверка</Link>
               </li>
               <li className="flex  items-center justify-center h-16 font-semibold text-base hover:bg-text-hover hover:text-white rounded-b cursor-pointer max-lg:h-5">
-                <Link href="/#">Almetibin</Link>
+                <Link href="/almetibin">Almetibin</Link>
               </li>
             </ul>
           )}
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
-          <Link href="/#">Скачать</Link>
+          <Link href="/download">Скачать</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
-          <Link href="/#">Купить</Link>
+          <Link href="/buy">Купить</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/#">Статьи</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
-          <Link href="/#">Документация</Link>
+          <Link href="/legal_landing">Документация</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
-          <Link href="/#">Контакты</Link>
+          <Link href="/contact">Контакты</Link>
         </li>
       </ul>
       <div className="flex items-center">
