@@ -441,7 +441,7 @@ const page = (props: Props) => {
                       />
                     </svg>
                   </span>
-                  <span className="text-[20px] font-semibold leading-[140%]">{faq.question}</span>
+                  <span className="text-[20px] font-semibold leading-[140%] max-sm:text-lg">{faq.question}</span>
                 </button>
                 {activeIndex === index && (
                   <div className="pl-[35px] pt-[18px]">

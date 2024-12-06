@@ -12,7 +12,7 @@ type Props = {};
 const Negative = () => {
   return (
     <svg
-      className="w-8 h-8 absolute left-0"
+      className="w-8 h-8 absolute left-0 max-sm:-top-[4px]"
       width="30"
       height="30"
       viewBox="0 0 30 30"
@@ -30,7 +30,7 @@ const Negative = () => {
 const Positive = () => {
   return (
     <svg
-      className="w-8 h-8 absolute left-0"
+      className="w-8 h-8 absolute left-0 max-sm:-top-[4px]"
       width="30"
       height="30"
       viewBox="0 0 30 30"

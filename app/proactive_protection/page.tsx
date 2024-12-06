@@ -15,7 +15,7 @@ import FreeLicense from "../Pop-Up/FreeLicense";
 const Negative = () => {
   return (
     <svg
-      className="w-8 h-8 absolute left-0"
+      className="w-8 h-8 absolute left-0 max-sm:-top-[4px]"
       width="30"
       height="30"
       viewBox="0 0 30 30"
@@ -33,7 +33,7 @@ const Negative = () => {
 const Positive = () => {
   return (
     <svg
-      className="w-8 h-8 absolute left-0"
+      className="w-8 h-8 absolute left-0 max-sm:-top-[4px]"
       width="30"
       height="30"
       viewBox="0 0 30 30"
@@ -785,34 +785,34 @@ const page = () => {
                 </svg>
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold">
+                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold max-sm:text-[22px]">
                   Стандарт
                 </h4>
-                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
+                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full max-sm:text-base">
                   По запросу
                 </span>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive /> Проверка по базе скомпрометированных паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Список запрещенных паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Исключения из проверок по имени пользователя, группы
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   "Белый" список паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Strongpass. Самопроверка
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Техническая поддержка
                 </li>
@@ -851,34 +851,34 @@ const page = () => {
 </svg>
               </span>
               <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold">
+                <h4 className="text-center text-[32px] mb-1 leading-[130%] font-semibold max-sm:text-[22px]">
                 КОРП
                 </h4>
-                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full">
+                <span className="text-lg font-semibold leading-[160%] text-center text-[#7a7e80] inline-block w-full max-sm:text-base">
                   По запросу
                 </span>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive /> Проверка по базе скомпрометированных паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Список запрещенных паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Исключения из проверок по имени пользователя, группы
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   "Белый" список паролей
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Strongpass. Самопроверка
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Техническая поддержка
                 </li>
