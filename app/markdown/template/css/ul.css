@@ -1,0 +1,22 @@
+/* Класс для списка с полосками слева от элементов */
+.custom-ul {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding: 0;
+  }
+  
+  .custom-ul li {
+    position: relative;
+    padding-left: 20px; /* Отступ слева, чтобы полоска не перекрывала текст */
+  }
+  
+  .custom-ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 10px; /* Ширина полоски */
+    height: 2px; /* Толщина полоски */
+    background-color: #408077; /* Цвет полоски */
+    transform: translateY(-50%); /* Центрируем полоску по вертикали */
+  }
+  

@@ -1,0 +1,18 @@
+/* Класс для нумерации с ведущими нулями и зелёным цветом */
+.custom-ol {
+  list-style-type: none; /* Убираем стандартную нумерацию */
+  counter-reset: list-item; /* Инициализируем счётчик */
+}
+
+.custom-ol li {
+  counter-increment: list-item; /* Увеличиваем счётчик для каждого li */
+}
+
+.custom-ol li::before {
+  content: "0" counter(list-item, decimal) "."; /* Форматируем вывод числа с ведущим нулём */
+  color: #408077; /* Зеленый цвет нумерации */
+  margin-right: 10px; /* Отступ между номером и текстом */
+  font-weight: 600; /* Жирный шрифт для номера */
+  line-height: 160%;
+  font-size: 18px;
+}

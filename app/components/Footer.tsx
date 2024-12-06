@@ -20,7 +20,8 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
     pathname === "/buy" ||
     pathname === "/privacy_policy" ||
     pathname === "/contact" ||
-    pathname === "/download"
+    pathname === "/download" ||
+    pathname === '/articles'
   ) {
     return (
       <footer
@@ -68,7 +69,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 <Link href="/buy">Купить</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-                <Link href="/#">Статьи</Link>
+                <Link href="/articles">Статьи</Link>
               </li>
               <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
                 <Link href="/legal_landing">Документация</Link>
@@ -188,7 +189,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               <Link href="/buy">Купить</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
-              <Link href="/#">Статьи</Link>
+              <Link href="/articles">Статьи</Link>
             </li>
             <li className="text-base font-medium hover:opacity-[0.8] transition-all max-lg:text-sm">
               <Link href="/legal_landing">Документация</Link>

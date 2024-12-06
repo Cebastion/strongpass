@@ -146,7 +146,7 @@ const Header: FC<Props> = ({
           <Link href="/buy">Купить</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
-          <Link href="/#">Статьи</Link>
+          <Link href="/articles">Статьи</Link>
         </li>
         <li className="font-semibold py-4 text-base text-text-primary hover:text-text-hover cursor-pointer max-lg:flex max-lg:flex-col max-lg:items-center max-lg:border-b max-lg:border-gray-200 max-lg:w-[50%] max-lg:p-5">
           <Link href="/legal_landing">Документация</Link>

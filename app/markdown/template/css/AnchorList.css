@@ -1,0 +1,25 @@
+.AnchorList {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding: 0;
+    @apply flex flex-col gap-y-[5px];
+  }
+
+  .AnchorList li {
+    position: relative;
+  }
+  
+  .AnchorList li span {
+    font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+
+  }
+  
+  .AnchorList li::before {
+    content: "";
+    position: absolute;
+    width: 10px; /* Ширина полоски */
+    height: 2px; /* Толщина полоски */
+    transform: translateY(-50%); /* Центрируем полоску по вертикали */
+  }
+  
