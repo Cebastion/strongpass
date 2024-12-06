@@ -3,11 +3,17 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
-  const { id } = params; // Получение параметра id из маршрута
+// Используем правильную сигнатуру для обработки GET запроса
+export async function  GET(request: Request) {
+  const url = new URL(request.url);
+
+  // Получаем параметр id из query
+  const id = url.searchParams.get('id');
+
+  // Если параметр id не найден, возвращаем ошибку
+  if (!id) {
+    return NextResponse.json({ error: 'ID is required' }, { status: 400 });
+  }
 
   // Путь к файлу MDX
   const filePath = path.join(process.cwd(), 'app/markdown', `article_${id}.mdx`);
@@ -21,8 +27,6 @@ export async function GET(
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContent);
 
-  // Возвращаем метаданные и контент статьи
-  return NextResponse.json({
-    content,
-  });
+  // Возвращаем контент статьи
+  return NextResponse.json({ content });
 }
