@@ -82,15 +82,15 @@ const page = (props: Props) => {
                 height={280}
               />
               <div className="rounded-3xl bg-bg-custom_gray p-9 max-[500px]:p-4 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3 max-[1030px]:max-w-full">
-                <span className="text-base text-gray-400">{article.date}</span>
+                <span className="text-base text-gray-400 max-sm:text-sm">{article.date}</span>
                 <h3 className="text-2xl font-semibold max-md:text-[20px] line-clamp-2">
                   {article.title}
                 </h3>
-                <span className="text-lg font-normal text-text-custom_gray_second line-clamp-2">
+                <span className="text-lg font-normal text-text-custom_gray_second line-clamp-2 max-sm:text-base">
                   {article.text}
                 </span>
                 <Link
-                  className="flex gap-4 items-center text-text-hover text-lg font-semibold btn-see"
+                  className="flex gap-4 items-center text-text-hover text-lg font-semibold btn-see max-sm:text-base"
                   href={`/articles/${index + 1}`}
                 >
                   Читать статью

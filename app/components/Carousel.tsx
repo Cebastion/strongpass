@@ -33,7 +33,7 @@ const Carousel = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-6xl font-bold max-lg:text-3xl">Статьи</h2>
         <div className="flex gap-2 items-center max-md:hidden">
-          <button className="h-[61px] px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
+          <button className="h-[61px] px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary" onClick={() => window.location.href = "/articles"}>
             Смотреть все
           </button>
           <button
@@ -106,15 +106,15 @@ const Carousel = () => {
               height={280}
             />
             <div className="rounded-3xl bg-bg-custom_gray p-9 max-[500px]:p-4 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3 max-[1030px]:max-w-full">
-              <span className="text-base text-gray-400">{article.date}</span>
+              <span className="text-base text-gray-400 max-sm:text-sm">{article.date}</span>
               <h3 className="text-2xl font-semibold max-md:text-[20px] line-clamp-2">
                 {article.title}
               </h3>
-              <span className="text-lg font-normal text-text-custom_gray_second line-clamp-2">
+              <span className="text-lg font-normal text-text-custom_gray_second line-clamp-2 max-sm:text-base">
                 {article.text}
               </span>
               <Link
-                className="flex gap-4 items-center text-text-hover text-lg font-semibold btn-see"
+                className="flex gap-4 items-center text-text-hover text-lg font-semibold btn-see max-sm:text-base"
                 href="#"
               >
                 Читать статью
@@ -134,7 +134,7 @@ const Carousel = () => {
       </Swiper>
 
       <div className=" gap-2 hidden max-md:flex justify-between max-sm:px-1">
-        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-[360px]:px-4">
+        <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-[360px]:px-4" onClick={() => window.location.href = "/articles"}>
           Смотреть все
         </button>
         <div className="flex gap-2">
