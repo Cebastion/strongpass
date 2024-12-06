@@ -22,7 +22,7 @@ const page = () => {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`/api/article/${id}`)
+    fetch(`/api/article?id=${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch article");

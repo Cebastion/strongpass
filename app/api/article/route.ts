@@ -3,8 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-// Используем правильную сигнатуру для обработки GET запроса
-export async function  GET(request: Request) {
+export async function GET(request: Request) {
   const url = new URL(request.url);
 
   // Получаем параметр id из query
@@ -28,5 +27,7 @@ export async function  GET(request: Request) {
   const { data, content } = matter(fileContent);
 
   // Возвращаем контент статьи
-  return NextResponse.json({ content });
+  return NextResponse.json({
+    content,
+  });
 }
