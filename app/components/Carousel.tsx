@@ -98,7 +98,7 @@ const Carousel = () => {
             className={`flex-shrink-0 transition-transform duration-500 ease-in-out max-lg:mx-auto`}
           >
             <img
-              className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full"
+              className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
               srcSet={article.img}
               alt={article.title || "Статья"}
               loading="lazy"
@@ -133,7 +133,7 @@ const Carousel = () => {
         ))}
       </Swiper>
 
-      <div className=" gap-2 hidden max-md:flex justify-between">
+      <div className=" gap-2 hidden max-md:flex justify-between max-sm:px-1">
         <button className="py-4 px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-base text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary max-[360px]:px-4">
           Смотреть все
         </button>

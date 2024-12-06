@@ -123,7 +123,7 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-20 max-[1180px]:px-5 max-md:p-0">
+        <section className="max-w-[1180px] mx-auto mt-24 max-[1180px]:px-5 max-md:p-0">
           <div className="w-full grid grid-cols-4 gap-x-5 gap-y-10 max-[1150px]:grid-cols-2">
             <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
               <img alt="" className='w-12 h-12'  srcSet="electro.png x1, electro@2x.png 2x" />

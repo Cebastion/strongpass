@@ -74,7 +74,7 @@ const page = (props: Props) => {
               className={` max-w-[580px] max-h-[531px] max-lg:mx-auto`}
             >
               <img
-                className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full"
+                className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
                 srcSet={article.img}
                 alt={article.title || "Статья"}
                 loading="lazy"

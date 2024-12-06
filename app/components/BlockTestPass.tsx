@@ -7,7 +7,7 @@ type Props = {
 
 const BlockTestPass:FC<Props> = ({setIsCheckPass}) => {
   return (
-    <section className="bg-[#262f33] rounded-[48px] p-16 mt-20 max-[1085px]:p-5 max-md:rounded-3xl">
+    <section className="bg-[#262f33] rounded-[48px] p-16 mt-24 max-[1085px]:p-5 max-md:rounded-3xl">
       <div className="flex justify-between max-[1085px]:flex-col max-[1085px]:items-center">
         <div className="max-w-[580px] flex flex-col justify-between max-[1085px]:mb-[37px]">
           <div>

@@ -99,7 +99,7 @@ const page = (props: Props) => {
       >
         <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
-            <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
+            <h1 className="text-[62px] leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Безопасный и удобный способ обмена паролями
             </h1>
             <p className="text-lg mt-5 leading-[160%] font-normal max-lg:text-center max-md:text-base">
@@ -169,7 +169,7 @@ const page = (props: Props) => {
             />
           </div>
           <div className="max-w-[480px]">
-            <h3 className="text-6xl font-bold leading-[120%] text-left max-[1100px]:text-3xl">
+            <h3 className="text-[58px] font-bold leading-[120%] text-left max-[1100px]:text-3xl">
               Как это работает?
             </h3>
             <span className="text-lg font-normal leading-[160%] text-left mt-6 inline-block max-[1100px]:text-base">
@@ -216,6 +216,7 @@ const page = (props: Props) => {
                   Все заметки шифруются и дешифруются в браузере клиента. На
                   сервере заметки хранятся только в зашифрованном виде. При этом
                   ключи шифрования никогда не известны серверу и не хранятся на
+                  <br />
                   сервере.
                 </span>
               </div>
@@ -232,7 +233,9 @@ const page = (props: Props) => {
                 <span className="text-[clamp(16px,4vw,18px)] font-normal leading-[160%] text-left max-[1160px]:flex-row max-[1160px]:w-[90%] max-[420px]:w-[70%]">
                   Создавать заметки могут только зарегистрированные
                   пользователи. Это предотвращает использование сервиса
-                  вредоносным ПО или в нелегитимных целях.
+                  вредоносным ПО или в нелегитимных 
+                  <br />
+                  целях.
                 </span>
               </div>
             </div>
@@ -291,7 +294,7 @@ const page = (props: Props) => {
           <h3 className="font-bold text-[64px] leading-[120%] text-center max-[480px]:text-[30px]">
             Редакции
           </h3>
-          <div className="mt-20 flex justify-center gap-5 max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
+          <div className="mt-20 flex justify-center gap-5 max-[800px]:mt-[50px] max-[800px]:flex-col max-[800px]:items-center max-[800px]:gap-10">
             <div className="relative py-10 px-8 rounded-3xl bg-[#f2f5f4] max-w-[380px] max-[480px]:w-full max-[425px]:px-4">
               <span className="absolute top-[-20px] left-[50%] translate-x-[-50%]">
                 <svg
@@ -315,49 +318,49 @@ const page = (props: Props) => {
                   />
                 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+              <div className="border-b border-solid border-[#e3e5e5] pb-[30px] w-[320px] max-[480px]:w-full">
+                <h4 className="text-center text-[32px] leading-[130%] font-semibold max-sm:text-[22px]">
                   Бесплатная
                 </h4>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base ">
                   <Positive /> Ограничение срока хранения
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Обязательный пароль.
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Удаление после прочтения.
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Локальная аутентификация
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   LDAP
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Единый вход (SAML)
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Изменение текста верхней полосы
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Автоматическое создание пароля
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Negative />
                   Создание заметок через API
                 </li>
               </ul>
-              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80] max-sm:text-base">
                 Максимальное количество пользователей:{" "}
                 <span className="font-medium text-[#262f33]">10</span>
               </span>
@@ -409,49 +412,49 @@ const page = (props: Props) => {
                   />
                 </svg>
               </span>
-              <div className="border-b border-solid border-[#e3e5e5] pb-5 w-[320px] max-[480px]:w-full">
-                <h4 className="text-center text-[32px] leading-[130%] font-semibold">
+              <div className="border-b border-solid border-[#e3e5e5] pb-[30px] w-[320px] max-[480px]:w-full">
+                <h4 className="text-center text-[32px] leading-[130%] font-semibold max-sm:text-[22px]">
                   Бизнес
                 </h4>
               </div>
               <ul className="mt-[30px] flex flex-col gap-[8px]">
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive /> Ограничение срока хранения
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Обязательный пароль.
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Удаление после прочтения.
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Локальная аутентификация
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   LDAP
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Единый вход (SAML)
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Изменение текста верхней полосы
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Автоматическое создание пароля
                 </li>
-                <li className="flex gap-2 text-lg leading-[160%] relative pl-8">
+                <li className="flex gap-2 text-lg leading-[160%] relative pl-8  max-sm:text-base">
                   <Positive />
                   Создание заметок через API
                 </li>
               </ul>
-              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80]">
+              <span className="mt-[30px] inline-block text-lg font-normal leading-[160%] text-[#7a7e80] max-sm:text-base">
                 Максимальное количество пользователей:{" "}
                 <span className="font-medium text-[#262f33]">
                   согласно лицензии
@@ -516,7 +519,7 @@ const page = (props: Props) => {
                       />
                     </svg>
                   </span>
-                  <span className="text-[20px] font-semibold leading-[140%]">{faq.question}</span>
+                  <span className="text-[20px] font-semibold leading-[140%] max-sm:text-lg">{faq.question}</span>
                 </button>
                 {activeIndex === index && (
                   <div className="pl-[35px] pt-[18px]">
