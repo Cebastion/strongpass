@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import YandexMetrika from "./YandexMetrika/YandexMetrika";
 
 export const metadata: Metadata = {
   title: "strongpass",
@@ -34,6 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <YandexMetrika/>
       <body className="py-5  flex flex-col w-full h-screen">
         {children}
       </body>
