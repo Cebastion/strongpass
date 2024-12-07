@@ -9,10 +9,6 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { ArticlePage } from "@/app/markdown/template/ArticlePage";
 import Link from "next/link";
 
-interface ArticleData {
-  content: string;
-}
-
 const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [Article, setArticle] = useState<MDXRemoteSerializeResult | null>(null);

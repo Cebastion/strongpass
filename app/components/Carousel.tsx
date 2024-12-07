@@ -115,7 +115,7 @@ const Carousel = () => {
               </span>
               <Link
                 className="flex gap-4 items-center text-text-hover text-lg font-semibold btn-see max-sm:text-base"
-                href="#"
+                href={`/articles/${index + 1}`}
               >
                 Читать статью
                 <Image

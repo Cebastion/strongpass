@@ -6,17 +6,20 @@
   
   .custom-ul li {
     position: relative;
+    display: flex;
+    align-items: baseline;
     padding-left: 20px; /* Отступ слева, чтобы полоска не перекрывала текст */
   }
   
   .custom-ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 20%;
-    width: 10px; /* Ширина полоски */
-    height: 2px; /* Толщина полоски */
-    background-color: #408077; /* Цвет полоски */
-    transform: translateY(-50%); /* Центрируем полоску по вертикали */
+    content: "-";
+    position: relative;
+    left: -10px;
+    color: #408077;
+    /*top: 20%;
+    /*width: 10px; 
+    height: 2px; 
+    background-color: #408077;  
+    transform: translateY(-50%); */
   }
   
