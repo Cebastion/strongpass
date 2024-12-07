@@ -169,7 +169,7 @@ const page = (props: Props) => {
             />
           </div>
           <div className="max-w-[480px]">
-            <h3 className="text-[58px] font-bold leading-[120%] text-left max-[1100px]:text-3xl">
+            <h3 className="text-6xl font-bold leading-[120%] text-left max-[1100px]:text-3xl">
               Как это работает?
             </h3>
             <span className="text-lg font-normal leading-[160%] text-left mt-6 inline-block max-[1100px]:text-base">

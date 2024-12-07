@@ -48,7 +48,7 @@ const From = () => {
         <div className="pt-[5px] pl-[5px] mt-3">
         <h3 className="text-[64px] leading-[120%] font-bold text-white mb-5 max-lg:text-[48px] max-sm:text-[30px] hidden max-lg:inline-block max-sm:mb-6">Остались вопросы?</h3>
           <h3 className="text-[64px] leading-[120%] font-bold text-white mb-6 max-lg:text-[48px] max-lg:hidden">Остались <p className=" text-white max-lg:hidden">вопросы?</p></h3>
-          <span className="text-lg leading-[160%] text-white max-lg:block max-sm:text-base">Заполните форму и наши специалисты <p className=" text-white">свяжутся с вами в ближайшее время.</p></span>
+          <span className="text-lg mt-1 leading-[160%] text-white max-lg:block max-sm:text-base">Заполните форму и наши специалисты <p className=" text-white">свяжутся с вами в ближайшее время.</p></span>
         </div>
         <div className="flex gap-2 pb-[5px] pl-[5px] max-lg:my-10">
           <div className="w-16 h-16 rounded-xl flex items-center justify-center bg-white">
