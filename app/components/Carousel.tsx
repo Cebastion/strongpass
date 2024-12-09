@@ -110,7 +110,7 @@ const Carousel = () => {
               <h3 className="text-2xl font-semibold max-md:text-[20px] line-clamp-2">
                 {article.title}
               </h3>
-              <span className="text-lg font-[350] text-text-custom_gray_second line-clamp-2 max-sm:text-base">
+              <span className="text-lg font-[300] text-text-custom_gray_second line-clamp-2 max-sm:text-base">
                 {article.text}
               </span>
               <Link
