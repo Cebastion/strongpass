@@ -98,7 +98,7 @@ const Carousel = () => {
             className={`flex-shrink-0 max-h-[531px] transition-transform duration-500 ease-in-out max-lg:mx-auto`}
           >
             <img
-              className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
+              className="rounded-tl-[36px] rounded-tr-[36px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
               srcSet={article.img}
               alt={article.title || "Статья"}
               loading="lazy"
@@ -107,7 +107,7 @@ const Carousel = () => {
             />
             <div className="rounded-3xl bg-bg-custom_gray p-9 max-[500px]:p-4 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3 max-[1030px]:max-w-full">
               <span className="text-base text-gray-400 max-sm:text-sm">{article.date}</span>
-              <h3 className="text-2xl font-semibold max-md:text-[20px] line-clamp-2">
+              <h3 className="text-2xl font-medium max-md:text-[20px] line-clamp-2">
                 {article.title}
               </h3>
               <span className="text-lg font-[275] text-text-custom_gray_second line-clamp-2 max-sm:text-base">

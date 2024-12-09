@@ -245,7 +245,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
           </span>
           <a
             href="/privacy_policy"
-            className="max-lg:text-sm hover:opacity-[0.8] transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
+            className="max-lg:text-sm hover:opacity-[0.8] ml-[28px] max-lg:ml-0 transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
           >
             Политика конфиденциальности
           </a>
