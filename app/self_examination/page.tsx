@@ -70,7 +70,7 @@ const page = (props: Props) => {
             <div className="flex justify-start items-start">
               <div className="bg-[url('/mask/mask_4.svg')] max-sm:bg-[url('/mask/mask_4_bg.svg')] w-[116px] h-[171px] max-sm:w-[70px] max-sm:h-[103px] bg-cover bg-center ">
                 <svg
-                  className="relative left-[-20px] top-2 max-sm:w-[66px] max-sm:h-[66px] max-sm:top-0 max-sm:left-[-10px]"
+                  className="relative left-[-16px] top-2 max-sm:w-[66px] max-sm:h-[66px] max-sm:top-0 max-sm:left-[-10px]"
                   width="110"
                   height="110"
                   viewBox="0 0 110 110"
@@ -125,7 +125,7 @@ const page = (props: Props) => {
         </section>
         <section className="max-w-[1180px] mx-auto mt-[120px] max-[1200px]:px-5">
           <div className="w-full grid grid-cols-4 gap-x-5 gap-y-10 max-[1150px]:grid-cols-2">
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -136,7 +136,7 @@ const page = (props: Props) => {
                 Работает автономно.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -148,7 +148,7 @@ const page = (props: Props) => {
                 доступа в Интернет.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 className="w-12 h-12"
                 alt=""
@@ -158,7 +158,7 @@ const page = (props: Props) => {
                 Не зависит от операционной системы.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -169,7 +169,7 @@ const page = (props: Props) => {
                 Развертывание в собственной инфраструктуре.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -181,7 +181,7 @@ const page = (props: Props) => {
                 Проактивная защита.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -193,7 +193,7 @@ const page = (props: Props) => {
                 "Strongpass. Проактивная защита".
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"
@@ -204,7 +204,7 @@ const page = (props: Props) => {
                 Простое обучение пользователей созданию надежных паролей
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+            <div className="w-[280px] h-[155px] max-[1150px]:h-auto flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img
                 alt=""
                 className="w-12 h-12"

@@ -121,7 +121,7 @@ const page = (props: Props) => {
           </svg>
         </div>
         <svg
-          className="absolute right-1/2 translate-y-[-50%] bottom-[-19px]"
+          className="absolute right-1/2 translate-y-[-50%] bottom-[-19px] max-md:bottom-[-29px] max-md:right-[93%]"
           width="28"
           height="20"
           viewBox="0 0 28 20"

@@ -95,7 +95,7 @@ const Carousel = () => {
         {articleData && articleData.map((article, index) => (
           <SwiperSlide key={index}>
           <div
-            className={`flex-shrink-0 transition-transform duration-500 ease-in-out max-lg:mx-auto`}
+            className={`flex-shrink-0 max-h-[531px] transition-transform duration-500 ease-in-out max-lg:mx-auto`}
           >
             <img
               className="rounded-tl-[48px] rounded-tr-[48px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
@@ -110,7 +110,7 @@ const Carousel = () => {
               <h3 className="text-2xl font-semibold max-md:text-[20px] line-clamp-2">
                 {article.title}
               </h3>
-              <span className="text-lg font-normal text-text-custom_gray_second line-clamp-2 max-sm:text-base">
+              <span className="text-lg font-[350] text-text-custom_gray_second line-clamp-2 max-sm:text-base">
                 {article.text}
               </span>
               <Link
