@@ -29,7 +29,7 @@ const page = (props: Props) => {
           isFormQuestion || (isCheckPass && "max-md:hidden")
         }`}
       >
-        <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+        <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проверка <p>надежности пароля</p>
@@ -123,7 +123,7 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-[120px] max-[1180px]:px-5">
+        <section className="max-w-[1180px] mx-auto mt-[120px] max-[1200px]:px-5">
           <div className="w-full grid grid-cols-4 gap-x-5 gap-y-10 max-[1150px]:grid-cols-2">
             <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
               <img

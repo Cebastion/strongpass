@@ -21,10 +21,10 @@ const page = (props: Props) => {
           isFormQuestion || (isFormQuestion && "max-md:hidden")
         }`}
       >
-        <h2 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[30px]">
+        <h2 className="text-7xl max-[1200px]:px-5  text-center leading-[120%] font-bold max-sm:text-[30px]">
           Политика <br /> приватности
         </h2>
-        <span className="text-lg leading-[160%] font-normal block mt-[60px] max-w-[780px] w-full mx-auto max-sm:text-base max-sm:px-5">
+        <span className="text-lg max-[1200px]:px-5 leading-[160%] font-normal block mt-[60px] max-w-[780px] w-full mx-auto max-sm:text-base max-sm:px-5">
           Но внедрение современных методик создаёт предпосылки для кластеризации
           усилий. Ясность нашей позиции очевидна: высокотехнологичная концепция
           общественного уклада говорит о возможностях укрепления моральных

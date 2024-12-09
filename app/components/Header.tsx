@@ -77,7 +77,7 @@ const Header: FC<Props> = ({
         }`}
       ></div>
       <ul
-        className={`flex gap-9 mr-32 max-[1070px]:mr-0 max-lg:gap-0 ${
+        className={`flex gap-9 mr-32 max-[1110px]:mr-20 max-[1070px]:mr-0 max-lg:gap-0 ${
           Active
             ? "flex z-10 fixed top-[30%] left-0 py-4 max-lg:overflow-y-auto w-full h-full bg-white flex-col items-center justify-start max-lg:max-h-[70vh]"
             : "max-lg:hidden"

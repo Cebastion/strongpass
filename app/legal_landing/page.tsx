@@ -22,10 +22,10 @@ const page = (props: Props) => {
           isFormQuestion || (isFormQuestion && "max-md:hidden")
         }`}
       >
-        <h2 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[30px]">
+        <h2 className="text-7xl max-[1200px]:px-5  text-center leading-[120%] font-bold max-sm:text-[30px]">
           Проактивная защита <br /> от использования <br /> слабых паролей
         </h2>
-        <span className="text-lg leading-[160%] font-normal block mt-[60px] max-w-[780px] w-full mx-auto max-sm:text-base max-sm:px-5 max-sm:mt-10">
+        <span className="text-lg max-[1200px]:px-5  leading-[160%] font-normal block mt-[60px] max-w-[780px] w-full mx-auto max-sm:text-base max-sm:px-5 max-sm:mt-10">
           Программа для ЭВМ «Strongpass» (далее - Strongpass) - это инструмент
           проактивной защиты от использования слабых паролей. В момент, когда
           пользователь или администратор пытается установить новый пароль для
@@ -57,7 +57,7 @@ const page = (props: Props) => {
             </li>
           </ul>
         </span>
-        <div className="max-w-[780px] w-full mx-auto mt-10 max-sm:px-5">
+        <div className="max-w-[780px] max-[785px]:px-5  w-full mx-auto mt-10 max-sm:px-5">
           <h5 className="mb-5 text-2xl font-semibold leading-[140%] max-sm:text-[20px]">
             Документы
           </h5>
