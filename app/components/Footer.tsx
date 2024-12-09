@@ -159,7 +159,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               loading="lazy"
             />
           </Link>
-          <ul className="flex flex-col gap-2 pl-6 max-lg:p-0">
+          <ul className="flex flex-col gap-2 pl-2 max-lg:p-0">
             <li className="text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Продукты и решения
             </li>

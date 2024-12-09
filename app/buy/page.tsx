@@ -55,7 +55,7 @@ const page = (props: Props) => {
 
   const Spoiler = () => {
     return (
-      <div className="absolute hidden group-hover:block p-5 rounded-2xl shadow-lg bg-white w-[532px] -top-[25rem] max-md:-top-[25.5rem] max-[535px]:-top-[26rem] -right-[16.9rem] max-md:-right-[31rem] max-[535px]:w-[300px]">
+      <div className="absolute hidden group-hover:block p-5 rounded-2xl shadow-lg bg-white w-[532px] -top-[25rem] max-md:-top-[25.5rem] max-[535px]:-top-[35.5rem] -right-[16.9rem] max-md:-right-[31rem] max-[535px]:w-[300px]">
         <span className="font-normal text-base leading-[150%] max-[535px]:text-sm">
           Для расчета стоимости лицензии нам необходимо знать количество
           активных учетных записей, которые вы хотите защитить.
