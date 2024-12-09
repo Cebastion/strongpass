@@ -147,7 +147,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
   } else {
     return (
       <footer
-        className={`flex container max-[1200px]:px-5 flex-col gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5`}
+        className={`flex container max-[1200px]:px-5 flex-col pt-[60px] max-md:pt-10 gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5`}
       >
         <div className="flex justify-between flex-wrap max-[500px]:justify-between">
           <Link className="max-lg:hidden" href="/">
@@ -159,7 +159,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               loading="lazy"
             />
           </Link>
-          <ul className="flex flex-col gap-2 pl-10 max-lg:p-0">
+          <ul className="flex flex-col gap-2 pl-6 max-lg:p-0">
             <li className="text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Продукты и решения
             </li>
