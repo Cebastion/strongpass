@@ -38,7 +38,7 @@ const Header: FC<Props> = ({
 
   return (
     <header
-  className={`flex container max-w-[1180px] mx-auto justify-between items-center w-full transition-transform duration-300 z-50 
+  className={`flex container max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between items-center w-full transition-transform duration-300 z-50 
     max-md:z-[70] max-md:pt-[15px] max-lg:m-0 max-lg:px-3 max-md:px-5
     ${Active ? "fixed fixed-header top-[15px] left-0" : ""}
     ${isFormQuestion || isCheckPass || isFormFreeLicense ? "max-md:fixed max-md:bg-white max-md:top-0 max-md:mt-0" : ""}`}

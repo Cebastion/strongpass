@@ -25,7 +25,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
   ) {
     return (
       <footer
-        className={` w-full border-t border-[#e3e5e5] pb-5 max-lg:px-3 max-sm:px-5`}
+        className={` w-full max-[1200px]:px-5 border-t border-[#e3e5e5] pb-5  max-sm:px-5`}
       >
         <div className="flex flex-col gap-[2.25rem] max-w-[1180px] mx-auto pt-[60px]">
           <div className="flex justify-between flex-wrap max-[500px]:justify-between">
@@ -147,7 +147,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
   } else {
     return (
       <footer
-        className={`flex container  flex-col gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5`}
+        className={`flex container max-[1200px]:px-5 flex-col gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5`}
       >
         <div className="flex justify-between flex-wrap max-[500px]:justify-between">
           <Link className="max-lg:hidden" href="/">

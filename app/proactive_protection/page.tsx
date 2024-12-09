@@ -71,7 +71,7 @@ const page = () => {
         )}
         {isFormFreeLicense && <FreeLicense setIsFormFreeLicense={setIsFormFreeLicense} />}
       <main className={`flex-1 my-14 container max-w-[1300px] mx-auto ${isFormQuestion || isCheckPass || isFormFreeLicense && "max-md:hidden"}`}>
-        <section className="flex max-w-[1180px] max-[1200px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+        <section className="flex max-w-[1180px] max-[1180px]:gap-x-[10px] max-[1200px]:px-5 mx-auto justify-between  max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
             <h1 className="text-[62px] leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проактивная защита от использования слабых паролей
@@ -131,7 +131,7 @@ const page = () => {
               </div>
             </div>
             <div className="w-full mb-3">
-              <div className="px-6 py-5 mx-auto bg-white rounded-3xl max-sm:rounded-[15px] max-w-[340px] max-sm:px-2 max-sm:py-4 max-sm:w-[214px]">
+              <div className="px-6 py-5 max-[1100px]:px-4 max-[1100px]:py-3 max-[1100px]:mx-2 max-lg:mx-auto mx-auto bg-white rounded-3xl max-sm:rounded-[15px] max-w-[340px] max-sm:px-2 max-sm:py-4 max-sm:w-[214px]">
                 <span className="leading-[150%] text-base font-semibold mb-4 inline-block max-sm:text-[10px]">
                   Автоматическая проверка
                 </span>
@@ -169,25 +169,25 @@ const page = () => {
           </div>
         </section>
         <section className="mt-20 max-w-[780px] mx-auto flex justify-between  items-center max-[800px]:flex-col max-[800px]:gap-5 max-sm:px-5">
-          <Image
+          <img
             width={285}
             height={48}
             alt="image"
-            src="/image_2.png"
+            srcSet="/image_2.png 1x, /image_2@2x.png 2x"
             loading="lazy"
           />
-          <Image
+          <img
             width={178}
             height={48}
             alt="image"
-            src="/image_1.png"
+            srcSet="/image_1.png 1x, /image_1@2x.png 2x"
             loading="lazy"
           />
-          <Image
+          <img
             width={194}
             height={44}
             alt="image"
-            src="/image_3.png"
+            srcSet="/image_3.png 1x, /image_3@2x.png 2x"
             loading="lazy"
           />
         </section>
@@ -201,8 +201,8 @@ const page = () => {
               loading="lazy"
               alt=""
             />
-            <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-2 max-[500px]:relative max-[500px]:z-10">
-              <div className="text-lg  flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-4 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
+            <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-[0.15rem] max-[500px]:relative max-[500px]:z-10">
+              <div className="text-lg h-[57px] flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-4 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
                 Смотреть видео
               </div>
               <div className="bg-bg-custom_green rounded-xl w-[57px] h-[57px] flex items-center justify-center hover:bg-bg-hover_primary transition-all">
@@ -253,7 +253,7 @@ const page = () => {
           <div className="w-full flex justify-between gap-5 max-lg:flex-col">
             <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col max-sm:p-6">
               <Image
-                src="/image_6.png"
+                src="/image_6.svg"
                 width={484}
                 height={320}
                 loading="lazy"
@@ -279,7 +279,7 @@ const page = () => {
             </div>
             <div className="bg-bg-custom_gray rounded-3xl p-12 w-[50%] max-lg:w-full max-lg:flex max-lg:flex-col max-sm:p-6">
               <Image
-                src="/image_5.png"
+                src="/image_5.svg"
                 width={484}
                 height={320}
                 loading="lazy"
@@ -312,7 +312,7 @@ const page = () => {
             </div>
             <Image
               className="max-md:mt-6"
-              src="/image_4.png"
+              src="/image_4.svg"
               width={484}
               height={320}
               loading="lazy"
@@ -325,7 +325,7 @@ const page = () => {
             Преимущества
           </h3>
           <div>
-            <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
+            <div className="grid grid-cols-3 gap-x-5 gap-y-[60px] max-[1200px]:grid-cols-2 max-[810px]:grid-cols-1 max-[810px]:gap-y-[30px] max-[810px]:gap-x-0">
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
@@ -382,8 +382,6 @@ const page = () => {
                   которые встречались в публичных утечках.
                 </span>
               </div>
-            </div>
-            <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
               <div className="w-96 flex flex-col gap-[10px] mb-[14px] max-[385px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
