@@ -29,7 +29,7 @@ const page = (props: Props) => {
           isFormQuestion || (isCheckPass && "max-md:hidden")
         }`}
       >
-        <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between max-md:mx-3 max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
+        <section className="flex max-w-[1180px] max-[1180px]:px-5 mx-auto justify-between max-lg:flex-col-reverse max-lg:items-center max-sm:px-5">
           <div className="max-w-[680px] flex flex-col justify-center max-lg:text-center max-lg:mt-6 max-sm:max-w-full">
             <h1 className="text-6xl leading-[120%] font-bold max-lg:text-center max-md:text-3xl">
               Проверка <p>надежности пароля</p>
@@ -42,7 +42,7 @@ const page = (props: Props) => {
               onClick={() => setIsCheckPass(true)}
               className="flex items-center mt-10 max-lg:justify-center button-animation"
             >
-              <div className="w-72 h-14 text-text-hover flex items-center justify-center border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:w-64 max-md:text-base transition-all hover:text-text-hover_primary">
+              <div className="w-72 h-14 max-md:w-[93%] text-text-hover flex items-center justify-center border border-solid border-borderColor-custom rounded-xl text-lg font-semibold max-md:text-base transition-all hover:text-text-hover_primary">
                 Попробовать бесплатно
               </div>
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-text-hover transition-all">
@@ -87,7 +87,7 @@ const page = (props: Props) => {
             <div className="w-full mb-3">
               <div className=" h-[72px] w-[272px] max-sm:w-[174px] max-sm:h-[43px] max-sm:rounded-[15px] p-2 bg-white rounded-3xl flex items-center gap-3 ml-5">
                 <svg
-                className="max-sm:w-[29px] max-sm:h-[29px]"
+                  className="max-sm:w-[29px] max-sm:h-[29px]"
                   width="48"
                   height="48"
                   viewBox="0 0 48 48"
@@ -123,61 +123,93 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="max-w-[1180px] mx-auto mt-[120px] max-[1180px]:px-5 max-md:p-0">
+        <section className="max-w-[1180px] mx-auto mt-[120px] max-[1180px]:px-5">
           <div className="w-full grid grid-cols-4 gap-x-5 gap-y-10 max-[1150px]:grid-cols-2">
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-              <img alt="" className='w-12 h-12'  srcSet="electro.png x1, electro@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="electro.png x1, electro@2x.png 2x"
+              />
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Не зависит от того находится компьютер в домене или нет.
                 Работает автономно.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-              <img alt="" className='w-12 h-12'  srcSet="bd.png x1, bd@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="bd.png x1, bd@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Все проверки производятся локально на сервере и не требуют
                 доступа в Интернет.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img className='w-12 h-12' alt="" srcSet="pc.png x1, pc@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                className="w-12 h-12"
+                alt=""
+                srcSet="pc.png x1, pc@2x.png 2x"
+              />
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Не зависит от операционной системы.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img alt="" className='w-12 h-12'  srcSet="cross.png x1, cross@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="cross.png x1, cross@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Развертывание в собственной инфраструктуре.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img alt="" className='w-12 h-12'  srcSet="code.png x1, code@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="code.png x1, code@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Используются те же технологии и алгоритмы что и в Strongpass.
                 Проактивная защита.
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img alt="" className='w-12 h-12'  srcSet="branch.png x1, branch@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="branch.png x1, branch@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Можно использовать как самостоятельно, так и вместе с
                 "Strongpass. Проактивная защита".
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img alt="" className='w-12 h-12'  srcSet="study.png x1, study@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="study.png x1, study@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center ">
                 Простое обучение пользователей созданию надежных паролей
               </span>
             </div>
-            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-[224px] max-sm:items-center">
-            <img alt="" className='w-12 h-12'  srcSet="paint.png x1, paint@2x.png 2x" />
+            <div className="w-[280px] h-[155px] flex flex-col gap-5 max-[1150px]:mx-auto max-sm:w-[150px] max-sm:h-full max-sm:items-center">
+              <img
+                alt=""
+                className="w-12 h-12"
+                srcSet="paint.png x1, paint@2x.png 2x"
+              />
 
               <span className="text-lg font-medium leading-[160%] text-left max-sm:text-base max-sm:text-center">
                 Стилизация интерфейса для соответствия корпоративному стилю.
@@ -185,7 +217,45 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <BlockTestPass setIsCheckPass={setIsCheckPass} />
+        <section className="bg-[#262f33] rounded-[48px] p-16 mt-20 max-[1085px]:px-5 max-[1085px]:py-10 max-md:rounded-3xl">
+          <div className="flex justify-between max-[1085px]:flex-col max-[1085px]:items-center">
+            <div className="max-w-[580px] flex flex-col justify-between max-[1085px]:mb-[37px]">
+              <div>
+                <h3 className="font-semibold text-[35px] leading-[130%] text-white max-xl:text-[28px]">
+                  Проверьте пароль на надежность и соответствие требованиям
+                  парольных политик
+                </h3>
+                <br />
+                <span className="text-white text-lg text-left leading-[160%] max-[1085px]:text-base">
+                  Технологии Strongpass доступны онлайн.
+                </span>
+              </div>
+              <button
+                className="flex items-center max-[1085px]:mt-5"
+                onClick={() => setIsCheckPass(true)}
+              >
+                <div className="py-[14px] px-9 rounded-xl flex justify-center items-center border border-solid border-borderColor-custom_white font-semibold leading-[160%] text-lg text-white max-sm:text-base">
+                  Проверить пароль
+                </div>
+                <div className="rounded-xl bg-white w-[57px] h-[57px] flex items-center justify-center max-sm:h-[54px] max-sm:w-[54px]">
+                  <svg
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.5 16.3996L20.4705 16.3996L20.4705 9.96214L7.93261 22.5L6.5 21.0674L19.0379 8.52953L12.6004 8.52953L12.6004 6.5L22.5 6.50001L22.5 16.3996Z"
+                      fill="#408077"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <img srcSet="/pass.png 1x, /pass@2x.png 2x" alt="" />
+          </div>
+        </section>
         <From />
         <Carousel />
       </main>
