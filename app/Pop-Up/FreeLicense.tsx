@@ -9,7 +9,7 @@ type Props = {
 const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
   const Spoiler = () => {
     return (
-      <div className="absolute hidden group-hover:block shadow p-5 rounded-2xl bg-white w-[532px] -top-[25.7rem] -right-[30rem] max-md:-right-[31rem] max-[535px]:w-[300px]">
+      <div className="absolute hidden group-hover:block p-5 rounded-2xl shadow-lg bg-white w-[532px] -top-[25rem] max-md:-top-[25.5rem] max-[535px]:-top-[35.5rem] -right-[16.9rem] max-md:-right-[31rem] max-[535px]:w-[300px] max-[535px]:-right-[16rem]">
         <span className="font-normal text-base leading-[150%] max-[535px]:text-sm">
           Для расчета стоимости лицензии нам необходимо знать количество
           активных учетных записей, которые вы хотите защитить.
@@ -46,7 +46,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
         <div className="flex justify-between bg-[#f2f5f4] px-[12px] py-[6px] rounded-lg items-center mt-[10px]">
           <span className="font-normal text-base leading-[150%] max-w-[434px] max-[535px]:text-sm max-[535px]:max-w-[100px]">
             ldapsearch -h localhost -p 389 -D cn="Directory Manager" -W -b
-            ou=people,dc=[ваш_домен],dc=[ваш_домен] "uid=*" uid | grep uid: | wc
+            ou=people, <br className="hidden max-[535px]:block"/> dc=[ваш_домен],dc=[ваш_домен] "uid=*" uid | grep uid: | wc
             -l
           </span>
           <svg
@@ -65,7 +65,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
           </svg>
         </div>
         <svg
-          className="absolute right-[89.5%] bottom-[-19px] max-md:right-[92.5%]"
+          className="absolute right-[89.5%] bottom-[-19px]  max-md:right-[93%] max-[535px]:right-[83%]"
           width="28"
           height="20"
           viewBox="0 0 28 20"
