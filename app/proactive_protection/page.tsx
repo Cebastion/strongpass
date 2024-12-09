@@ -327,7 +327,7 @@ const page = () => {
           <div>
             <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/shield.png 1x, /shield@2x.png 2x"
                     width={36}
@@ -346,7 +346,7 @@ const page = () => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/internet.png 1x, /internet@2x.png 2x"
                     width={36}
@@ -364,7 +364,7 @@ const page = () => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/database.png 1x, /database@2x.png 2x"
                     width={36}
@@ -385,7 +385,7 @@ const page = () => {
             </div>
             <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
               <div className="w-96 flex flex-col gap-[10px] mb-[14px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/sliders.png 1x, /sliders@2x.png 2x"
                     width={36}
@@ -405,7 +405,7 @@ const page = () => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center max-sm:text-[22px]">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center max-sm:text-[22px]">
                   <img
                     srcSet="/pass-2.png 1x, /pass-2@2x.png 2x"
                     width={36}
@@ -424,7 +424,7 @@ const page = () => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green  mb-[14px] rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green  mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/laptop.png 1x, /laptop@2x.png 2x"
                     width={36}

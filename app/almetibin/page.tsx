@@ -188,7 +188,7 @@ const page = (props: Props) => {
           <div>
             <div className="flex justify-between max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center">
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px]  bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-1.png 1x, /feat-1@2x.png 2x"
                     width={36}
@@ -203,7 +203,7 @@ const page = (props: Props) => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px] bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-2.png 1x, /feat-2@2x.png 2x"
                     width={36}
@@ -221,7 +221,7 @@ const page = (props: Props) => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px] bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-3.png 1x, /feat-3@2x.png 2x"
                     width={36}
@@ -241,7 +241,7 @@ const page = (props: Props) => {
             </div>
             <div className="flex justify-between mt-16 max-[1160px]:flex-col max-[1160px]:gap-8 max-[1160px]:items-center max-[1160px]:mt-8">
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px] bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-4.png 1x, /feat-4@2x.png 2x"
                     width={36}
@@ -256,7 +256,7 @@ const page = (props: Props) => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px] bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-5.png 1x, /feat-5@2x.png 2x"
                     width={36}
@@ -272,7 +272,7 @@ const page = (props: Props) => {
                 </span>
               </div>
               <div className="w-96 flex flex-col gap-6 max-[385px]:w-full max-[1160px]:flex-row max-[1160px]:w-full">
-                <div className="w-20 h-20 bg-bg-custom_green rounded-2xl flex justify-center items-center">
+                <div className="w-20 h-20 max-md:w-[72px] max-md:h-[72px] bg-bg-custom_green rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/feat-6.png 1x, /feat-6@2x.png 2x"
                     width={36}
