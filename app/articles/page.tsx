@@ -53,6 +53,19 @@ const page = (props: Props) => {
       .then((data) => setArticleData(data));
   }, []);
 
+  useEffect(() => {
+    if (isFormQuestion) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion]);
+
   return (
     <>
       <Header

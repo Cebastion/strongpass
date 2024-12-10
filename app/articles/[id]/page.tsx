@@ -35,6 +35,19 @@ const page = () => {
         console.log(err);
       });
   }, [id]);
+
+  useEffect(() => {
+    if (isFormQuestion) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion]);
   return (
     <>
       <Header
