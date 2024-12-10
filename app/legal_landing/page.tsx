@@ -18,7 +18,7 @@ const page = (props: Props) => {
       />
       {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
       <main
-        className={`flex-1 my-14 mt-16 ${
+        className={`flex-1 my-14 mt-16 max-md:mt-10 ${
           isFormQuestion || (isFormQuestion && "max-md:hidden")
         }`}
       >

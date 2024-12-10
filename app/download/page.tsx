@@ -43,7 +43,7 @@ const page = (props: Props) => {
         <FreeLicense setIsFormFreeLicense={setIsFormFreeLicense} />
       )}
       <main
-        className={`flex-1 my-14  mt-16 container max-w-[1300px] mx-auto max-[1180px]:px-5 ${
+        className={`flex-1 my-14  mt-16 max-md:mt-10 container max-w-[1300px] mx-auto max-[1180px]:px-5 ${
           isFormQuestion || (isFormFreeLicense && "max-md:hidden")
         }`}
       >
