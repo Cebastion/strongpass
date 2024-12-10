@@ -9,6 +9,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { ArticlePage } from "@/app/markdown/template/ArticlePage";
 import Link from "next/link";
 import '../../config/scroll.css'
+import FormQuestion from "@/app/Pop-Up/FormQuestion";
 
 const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
@@ -54,6 +55,7 @@ const page = () => {
         isFormQuestion={isFormQuestion}
         setIsFormQuestion={setIsFormQuestion}
       />
+      {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
       <main
         className={`flex-1 container max-w-[1300px] mx-auto my-14 max-md:mx-0 ${
           isFormQuestion && "max-md:hidden"
