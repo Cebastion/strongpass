@@ -101,7 +101,7 @@ const page = (props: Props) => {
             <h4 className="font-semibold text-[32px] leading-[130%] text-center max-sm:text-[22px]">Форма обратной связи</h4>
         <form
           onSubmit={handleSubmit}
-          className="p-9 flex flex-col gap-y-5 max-lg:gap-[8px] mx-auto max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] max-lg:mx-auto max-[580px]:w-full max-[580px]:h-h-auto"
+          className="p-9 flex flex-col gap-y-5 mx-auto max-lg:m-0 rounded-[48px] max-sm:p-4 max-sm:rounded-3xl bg-white w-[580px] max-lg:mx-auto max-[580px]:w-full max-[580px]:h-h-auto"
         >
           <input
             required
