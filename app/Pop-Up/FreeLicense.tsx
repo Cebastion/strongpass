@@ -175,7 +175,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
           />
         </svg>
       </div>
-      <div className="fixed top-1/2 max-h-[930px] max-[780px]:max-h-full sclrollbar overflow-y-scroll z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 py-5 w-[780px] max-[780px]:rounded-none max-[780px]:w-full max-[780px]:h-full max-[780px]:p-5 max-[780px]:overflow-y-scroll ">
+      <div className="fixed top-1/2 h-full max-[780px]:max-h-full sclrollbar overflow-y-scroll z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 py-5 w-[780px] max-[780px]:rounded-none max-[780px]:w-full max-[780px]:h-full max-[780px]:p-5 max-[780px]:overflow-y-scroll ">
       <div
         className="fixed hidden max-md:flex top-24 z-[70] right-0 w-[57px] h-[57px] justify-center items-center cursor-pointer"
         onClick={() => setIsFormFreeLicense(false)}
