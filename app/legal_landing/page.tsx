@@ -70,7 +70,7 @@ const page = (props: Props) => {
               и блокировки атакующего.
             </li>
           </ul>
-          <div className="max-w-[780px] max-[785px]:px-5 pl-[5px] w-full mx-auto mt-10 max-sm:px-5">
+          <div className="max-w-[780px] max-[785px]:px-5 pl-[5px] w-full mx-auto mt-10 max-md:px-0">
           <h5 className="mb-5 text-2xl font-semibold leading-[140%] max-sm:text-[20px]">
             Документы
           </h5>
