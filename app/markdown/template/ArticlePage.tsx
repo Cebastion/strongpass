@@ -104,7 +104,7 @@ export const Anchor = ({
           setActiveId(targetId); // Устанавливаем активный ID
         }
       },
-      { threshold:0.9 }
+      { threshold:0.7 }
     );
 
     const element = document.getElementById(targetId);
@@ -174,7 +174,7 @@ export const AnchorList = ({
         });
       },
       {
-        threshold: 1,
+        threshold: 0.7,
         root: null,
       }
     );
