@@ -6,6 +6,7 @@ import FormQuestion from "../Pop-Up/FormQuestion";
 import Link from "next/link";
 import Image from "next/image";
 import "../animation/animation.css";
+import '../config/scroll.css'
 
 type Props = {};
 

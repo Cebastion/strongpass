@@ -5,6 +5,7 @@ import FormQuestion from "../Pop-Up/FormQuestion";
 import Footer from "../components/Footer";
 import FreeLicense from "../Pop-Up/FreeLicense";
 import '../animation/button.css'
+import '../config/scroll.css'
 
 type Props = {};
 

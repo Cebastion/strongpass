@@ -7,6 +7,7 @@ import Carousel from "../components/Carousel";
 import BlockTestPass from "../components/BlockTestPass";
 import CheckPass from "../Pop-Up/CheckPass";
 import FormQuestion from "../Pop-Up/FormQuestion";
+import '../config/scroll.css'
 
 type Props = {};
 

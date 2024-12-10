@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FormQuestion from "../Pop-Up/FormQuestion";
-
+import '../config/scroll.css'
 type Props = {};
 
 const page = (props: Props) => {

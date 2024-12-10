@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../config/start.css";
 import FormQuestion from "../Pop-Up/FormQuestion";
+import '../config/scroll.css'
 
 type Props = {};
 

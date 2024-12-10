@@ -8,6 +8,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { ArticlePage } from "@/app/markdown/template/ArticlePage";
 import Link from "next/link";
+import '../../config/scroll.css'
 
 const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);

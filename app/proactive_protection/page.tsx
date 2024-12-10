@@ -10,6 +10,7 @@ import BlockTestPass from "../components/BlockTestPass";
 import CheckPass from "../Pop-Up/CheckPass";
 import '../config/scrollbar.css'
 import '../animation/button.css'
+import '../config/scroll.css'
 import FreeLicense from "../Pop-Up/FreeLicense";
 
 const Negative = () => {

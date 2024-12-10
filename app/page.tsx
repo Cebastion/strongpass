@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './config/scrollbar.css'
 import Carousel from "./components/Carousel";
+import '../config/scroll.css'
 
 
 
