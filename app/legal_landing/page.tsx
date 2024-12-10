@@ -36,7 +36,7 @@ const page = (props: Props) => {
           isFormQuestion || (isFormQuestion && "max-md:hidden")
         }`}
       >
-        <h2 className="text-7xl max-[1200px]:px-5  text-center leading-[120%] font-bold max-sm:text-[42px]">
+        <h2 className="text-7xl max-[1200px]:px-5  text-center leading-[120%] font-bold max-sm:text-[30px]">
           Проактивная защита <br /> от использования <br /> слабых паролей
         </h2>
         <span className="text-lg max-[1200px]:px-5  leading-[160%] font-normal block mt-[60px] max-w-[780px] w-full mx-auto max-sm:text-base max-sm:px-5 max-sm:mt-10">

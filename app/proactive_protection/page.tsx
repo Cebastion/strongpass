@@ -206,7 +206,7 @@ const page = () => {
           />
         </section>
         <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse   max-sm:px-5">
-          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[300px] max-[500px]:h-[320px]">
+          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-[30px] max-[500px]:w-100% max-[500px]:h-[320px]">
             <img
               className="absolute top-10 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-6 max-[500px]:left-6"
               srcSet="/bg_2.png x1, /bg_2@2x.png 2x"
@@ -532,7 +532,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem]  max-[805px]:py-[1rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет использования пароля из публичных утечек
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -577,7 +577,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem]  max-[805px]:py-[1rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Собственный список запрещенных слов
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -622,7 +622,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
-                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem]  max-[805px]:py-[1rem] text-lg max-lg:text-base font-normal leading-[160%] max-md:max-w-[264px] max-md:pr-5 bg-bg-custom_gray">
                       Запрет повторяющихся символов («1111», «bbbb» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">
@@ -667,7 +667,7 @@ const page = () => {
                     </td>
                   </tr>
                   <tr className="border-b border-[#000000] border-opacity-[0.1] bg-bg-custom_gray">
-                    <td className="py-[1.4rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
+                    <td className="py-[1.4rem]  max-[805px]:py-[1rem] text-lg max-lg:text-base font-normal max-md:max-w-[264px] leading-[160%] max-md:pr-5 bg-bg-custom_gray">
                       Запрет последовательных символов («1234», «abcd» и т.д.)
                     </td>
                     <td className="py-4 px-6 text-center bg-bg-custom_green  text-green-600">

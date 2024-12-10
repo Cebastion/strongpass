@@ -138,7 +138,7 @@ const page = (props: Props) => {
           <input
             type="tel"
             name="phone"
-            placeholder="Телефон"
+            placeholder="+7 (___) ___-__-__"
             value={formData.phone}
             onChange={handleChange}
             className={`w-full py-3 px-6 rounded-xl border text-lg font-normal text-text-form target:border-borderColor-custom

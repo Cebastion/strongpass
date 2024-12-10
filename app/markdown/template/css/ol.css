@@ -1,18 +1,28 @@
-/* Класс для нумерации с ведущими нулями и зелёным цветом */
 .custom-ol {
   list-style-type: none; /* Убираем стандартную нумерацию */
-  counter-reset: list-item; /* Инициализируем счётчик */
+  counter-reset: list-item 0; /* Устанавливаем начальное значение счётчика */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем внутренние отступы */
 }
 
 .custom-ol li {
   counter-increment: list-item; /* Увеличиваем счётчик для каждого li */
+  margin-bottom: 10px; /* Отступ между элементами списка */
 }
 
 .custom-ol li::before {
-  content: "0" counter(list-item, decimal) "."; /* Форматируем вывод числа с ведущим нулём */
-  color: #408077; /* Зеленый цвет нумерации */
+  content: counter(list-item, decimal); /* Выводим номер */
+  color: #408077; /* Зелёный цвет нумерации */
   margin-right: 10px; /* Отступ между номером и текстом */
   font-weight: 600; /* Жирный шрифт для номера */
-  line-height: 160%;
-  font-size: 18px;
+  line-height: 160%; /* Высота строки */
+  font-size: 18px; /* Размер шрифта */
+}
+
+.custom-ol li:first-child::before {
+  content: "01."; /* Устанавливаем первый элемент вручную */
+}
+
+.custom-ol li:nth-child(n+2)::before {
+  content: "0" counter(list-item, decimal) ".";; /* Добавляем ведущий ноль */
 }

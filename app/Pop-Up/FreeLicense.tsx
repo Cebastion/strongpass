@@ -205,11 +205,11 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
         </span>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col sclrollbar gap-[0.75rem] mt-8 max-[355px]:w-[290px] overflow-y-scroll"
+          className="flex flex-col sclrollbar gap-4 mt-8 max-[355px]:w-[290px] overflow-y-scroll"
         >
           <div className="flex justify-between gap-x-5 max-[780px]:flex-col">
             <div className="flex flex-col w-full ">
-              <span className="text-base leading-[150%] font-normal pb-[8px]">
+              <span className="text-base leading-[150%] font-normal pb-[6px]">
                 Контактное лицо <span className="start">*</span>
               </span>
               <input
@@ -227,8 +227,8 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
               />
             </div>
 
-            <div className="flex flex-col w-full">
-              <span className="text-base leading-[150%] font-normal pb-[8px]">
+            <div className="flex flex-col w-full max-[780px]:mt-5">
+              <span className="text-base leading-[150%] font-normal pb-[6px]">
                 Компания <span className="start">*</span>
               </span>
               <input
@@ -249,7 +249,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
 
           <div className="flex justify-between gap-x-5 max-[780px]:flex-col">
             <div className="flex flex-col w-full">
-              <span className="text-base leading-[150%] font-normal pb-[8px]">
+              <span className="text-base leading-[150%] font-normal pb-[6px]">
                 Электронная почта <span className="start">*</span>
               </span>
               <input
@@ -267,8 +267,8 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
               />
             </div>
 
-            <div className="flex flex-col w-full">
-              <span className="text-base leading-[150%] font-normal pb-[8px]">
+            <div className="flex flex-col w-full  max-[780px]:mt-5">
+              <span className="text-base leading-[150%] font-normal pb-[6px]">
                 Телефон
               </span>
               <input
@@ -283,7 +283,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
           </div>
 
           <div className="flex flex-col w-full">
-            <span className="text-base leading-[150%] font-normal pb-[8px]">
+            <span className="text-base leading-[150%] font-normal pb-[6px]">
               Кол-во учетных записей <span className="start">*</span>
             </span>
             <input
@@ -322,7 +322,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
           </div>
 
           <div className="flex flex-col w-full">
-            <span className="text-base leading-[150%] font-normal pb-[8px]">
+            <span className="text-base leading-[150%] font-normal pb-[6px]">
               Комментарий <span className="start">*</span>
             </span>
             <textarea

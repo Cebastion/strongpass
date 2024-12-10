@@ -131,7 +131,7 @@ export const Anchor = ({
   return (
     <div
       onClick={handleClick}
-      className={`cursor-pointer ${isActive ? "bg-bg-custom_green rounded-2xl px-6 py-4" : ""}`}
+      className={`cursor-pointer ${isActive ? "bg-bg-custom_green rounded-2xl px-6 py-4 max-sm:py-0 max-sm:flex max-sm:items-center max-sm:h-[48px]" : ""}`}
     >
       <span className={`text-2xl font-semibold leading-[140%] ${isActive ? "text-white" : "text-[#7a7e80]"} max-md:text-[20px]`}>
         {children}
@@ -213,7 +213,7 @@ export const AnchorList = ({
       <div
         onClick={() => handleClick(targetId)}
         className={`cursor-pointer ${
-          activeId === targetId ? "bg-bg-custom_green rounded-2xl px-6 py-4" : ""
+          activeId === targetId ? "bg-bg-custom_green rounded-2xl px-6 py-4 max-sm:py-0 max-sm:flex max-sm:items-center max-sm:h-[48px]" : ""
         }`}
       >
         <span
@@ -232,7 +232,7 @@ export const AnchorList = ({
             onClick={() => handleClick(item.targetId)}
             className={`px-4 cursor-pointer ${
               activeId === item.targetId
-                ? "bg-bg-custom_green rounded-2xl px-4 py-2 before:bg-white before:top-[52%] before:left-[5px]"
+                ? "bg-bg-custom_green rounded-2xl px-4 py-2 max-sm:h-[48px] before:bg-white before:top-[52%] before:left-[5px]"
                 : "before:bg-[#7a7e80] before:top-[57%] before:left-0"
             }`}
           >

@@ -81,7 +81,7 @@ const page = (props: Props) => {
         <h1 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[42px]">
           Статьи
         </h1>
-        <section className="grid grid-cols-2 max-w-[1180px] mx-auto gap-5 mt-[60px] max-[1185px]:grid-cols-1 max-[1185px]:justify-items-center">
+        <section className="grid grid-cols-2 max-w-[1180px] mx-auto gap-5 max-md:gap-[10px] mt-[60px] max-[1185px]:grid-cols-1 max-[1185px]:justify-items-center">
           {articleData?.slice(0, ShowElement).map((article, index) => (
             <div
               key={index}
@@ -97,7 +97,7 @@ const page = (props: Props) => {
               />
               <div className="rounded-3xl bg-bg-custom_gray p-9 max-[500px]:p-4 relative bottom-8 max-[350px]:bottom-4 max-w-[580px] flex flex-col gap-3 max-[1030px]:max-w-full">
                 <span className="text-base text-gray-400 max-sm:text-sm">{article.date}</span>
-                <h3 className="text-2xl font-medium max-md:text-[20px] line-clamp-2">
+                <h3 className="text-2xl font-[550] max-md:text-[20px] line-clamp-2">
                   {article.title}
                 </h3>
                 <span className="text-lg font-[275] text-text-custom_gray_second line-clamp-2 max-sm:text-base">

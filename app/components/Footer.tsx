@@ -27,8 +27,8 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
       <footer
         className={` w-full max-[1200px]:px-5 border-t border-[#e3e5e5] pb-5 `}
       >
-        <div className="flex flex-col gap-[2.25rem] max-w-[1180px] mx-auto pt-[60px]">
-          <div className="flex justify-between flex-wrap max-[500px]:justify-between">
+        <div className="flex flex-col gap-[2.25rem] max-w-[1180px] mx-auto pt-[30px]">
+          <div className="flex justify-between flex-wrap max-[500px]:justify-start">
             <Link className="max-lg:hidden" href="/">
               <Image
                 src="/logo-gray.svg"
@@ -58,7 +58,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 <Link href="/almetibin">Almetibin.</Link>
               </li>
             </ul>
-            <ul className="flex-col flex gap-[0.6rem] pr-4 max-md:pr-0 max-sm:pr-10">
+            <ul className="flex-col flex gap-[0.6rem] pl-4 max-md:pr-0 max-sm:pl-10">
               <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
                 Информация
               </li>
@@ -149,7 +149,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
       <footer
         className={`flex container max-[1200px]:px-5 flex-col pt-[60px] max-md:pt-10 gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5`}
       >
-        <div className="flex justify-between flex-wrap max-[500px]:justify-between">
+        <div className="flex justify-between flex-wrap max-[500px]:justify-start">
           <Link className="max-lg:hidden" href="/">
             <Image
               src="/logo-gray.svg"
@@ -178,7 +178,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               <Link href="/almetibin">Almetibin.</Link>
             </li>
           </ul>
-          <ul className="flex-col flex gap-[0.6rem] pr-4 max-md:pr-0 max-sm:pr-10">
+          <ul className="flex-col flex gap-[0.6rem] pl-4 max-md:pr-0 max-sm:pl-10">
             <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Информация
             </li>
