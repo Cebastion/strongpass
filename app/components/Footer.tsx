@@ -38,7 +38,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 loading="lazy"
               />
             </Link>
-            <ul className="flex flex-col gap-2 pl-14 max-lg:p-0">
+            <ul className="flex flex-col gap-2 pl-[4.5rem] max-lg:p-0">
               <li className="text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
                 Продукты и решения
               </li>
@@ -58,7 +58,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 <Link href="/almetibin">Almetibin.</Link>
               </li>
             </ul>
-            <ul className="flex-col flex gap-[0.6rem] max-sm:pr-10">
+            <ul className="flex-col flex gap-[0.6rem] pr-4 max-sm:pr-10">
               <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
                 Информация
               </li>
@@ -125,7 +125,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
             </span>
             <a
               href="/privacy_policy"
-              className="max-lg:text-sm hover:opacity-[0.8] mr-[5.2rem] max-lg:mr-0 transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
+              className="max-lg:text-sm hover:opacity-[0.8] mr-[6rem] max-lg:mr-0 transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
             >
               Политика конфиденциальности
             </a>
@@ -159,7 +159,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               loading="lazy"
             />
           </Link>
-          <ul className="flex flex-col gap-2 pl-14 max-lg:p-0">
+          <ul className="flex flex-col gap-2 pl-[4.5rem] max-lg:p-0">
             <li className="text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Продукты и решения
             </li>
@@ -178,7 +178,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               <Link href="/almetibin">Almetibin.</Link>
             </li>
           </ul>
-          <ul className="flex-col flex gap-[0.6rem] max-sm:pr-10">
+          <ul className="flex-col flex gap-[0.6rem] pr-4 max-sm:pr-10">
             <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Информация
             </li>
@@ -245,7 +245,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
           </span>
           <a
             href="/privacy_policy"
-            className="max-lg:text-sm hover:opacity-[0.8] ml-[5.2rem] max-lg:ml-0 transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
+            className="max-lg:text-sm hover:opacity-[0.8] ml-[6rem] max-lg:ml-0 transition-all text-text-gray_custom underline inline-block w-[55%] text-left max-lg:text-center"
           >
             Политика конфиденциальности
           </a>
