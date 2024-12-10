@@ -3,7 +3,7 @@
 			Created with Pixso.
 	</desc>
 	<defs/>
-	<path id="Rectangle 9" d="M334 36L334 117L36 117L36 72C36 52.11 52.11 36 72 36L334 36Z" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
-	<path id="Exclude" d="M298 36C317.882 36 334 19.8822 334 0L334 36L298 36Z" clip-rule="evenodd" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
-	<path id="Exclude" d="M0 117C19.8823 117 36 100.882 36 81L36 117L0 117Z" clip-rule="evenodd" fill="#FAFCFC" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Rectangle 9" d="M334 36L334 117L36 117L36 72C36 52.11 52.11 36 72 36L334 36Z" fill="#fff" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Exclude" d="M298 36C317.882 36 334 19.8822 334 0L334 36L298 36Z" clip-rule="evenodd" fill="#fff" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Exclude" d="M0 117C19.8823 117 36 100.882 36 81L36 117L0 117Z" clip-rule="evenodd" fill="#fff" fill-opacity="1.000000" fill-rule="evenodd"/>
 </svg>
