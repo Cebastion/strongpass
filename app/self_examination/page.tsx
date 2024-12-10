@@ -231,7 +231,7 @@ const page = (props: Props) => {
             </div>
           </div>
         </section>
-        <section className="bg-[#262f33] rounded-[48px] p-16 mt-20 max-[1085px]:px-5 max-[1085px]:py-10 max-md:rounded-3xl">
+        <section className="bg-[#262f33] rounded-[48px] p-16 mt-[120px] max-md:mt-20 max-[1085px]:px-5 max-[1085px]:py-10 max-md:rounded-3xl">
           <div className="flex justify-between max-[1085px]:flex-col max-[1085px]:items-center">
             <div className="max-w-[580px] flex flex-col justify-between max-[1085px]:mb-[37px]">
               <div>
