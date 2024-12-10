@@ -339,8 +339,8 @@ const page = () => {
             Преимущества
           </h3>
           <div>
-            <div className="grid grid-cols-3 gap-x-5 gap-y-[60px] max-[1200px]:grid-cols-2 max-[810px]:grid-cols-1 max-[810px]:gap-y-[30px] max-[810px]:gap-x-0">
-              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+            <div className="grid grid-cols-3 gap-x-5 gap-y-[60px] max-[1200px]:grid-cols-2 max-[810px]:grid-cols-1 max-[810px]:justify-items-center max-[810px]:gap-y-[30px] max-[810px]:gap-x-0">
+              <div className="w-96 flex flex-col gap-[10px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/shield.png 1x, /shield@2x.png 2x"
@@ -359,7 +359,7 @@ const page = () => {
                   требованиям
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/internet.png 1x, /internet@2x.png 2x"
@@ -377,7 +377,7 @@ const page = () => {
                   сервисов. Пароли никогда не покидают ваши сервера.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/database.png 1x, /database@2x.png 2x"
@@ -396,7 +396,7 @@ const page = () => {
                   которые встречались в публичных утечках.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-[10px] mb-[14px] max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] mb-[14px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/sliders.png 1x, /sliders@2x.png 2x"
@@ -416,7 +416,7 @@ const page = () => {
                   управление.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green mb-[14px] rounded-2xl flex justify-center items-center max-sm:text-[22px]">
                   <img
                     srcSet="/pass-2.png 1x, /pass-2@2x.png 2x"
@@ -435,7 +435,7 @@ const page = () => {
                   пользователей, паролей, групп пользователей.
                 </span>
               </div>
-              <div className="w-96 flex flex-col gap-[10px] max-[385px]:w-full">
+              <div className="w-96 flex flex-col gap-[10px] max-[810px]:w-full">
                 <div className="w-20 h-20 max-md:w-16 max-md:h-16 bg-bg-custom_green  mb-[14px] rounded-2xl flex justify-center items-center">
                   <img
                     srcSet="/laptop.png 1x, /laptop@2x.png 2x"
