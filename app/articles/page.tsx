@@ -78,7 +78,7 @@ const page = (props: Props) => {
           isFormQuestion && "max-md:hidden"
         }`}
       >
-        <h1 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[30px]">
+        <h1 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[42px]">
           Статьи
         </h1>
         <section className="grid grid-cols-2 max-w-[1180px] mx-auto gap-5 mt-[60px] max-[1185px]:grid-cols-1 max-[1185px]:justify-items-center">

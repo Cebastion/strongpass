@@ -64,7 +64,7 @@ const page = (props: Props) => {
         <h2 className="text-7xl text-center mb-10 leading-[120%] font-bold max-sm:text-[42px] max-md:mb-5">
           Скачать
         </h2>
-        <span className="text-lg font-normal leading-[160%] text-center block max-w-[780px] mx-auto max-sm:text-base">
+        <span className="text-lg font-normal leading-[160%] text-center block max-w-[780px] mx-auto max-sm:text-lg">
           Если у вас нет купленной лицензии Strongpass, пожалуйста{" "}
           <span
             className="text-text-hover underline cursor-pointer hover:text-text-hover_primary transition-all"

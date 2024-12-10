@@ -82,7 +82,7 @@ const page = (props: Props) => {
         <h2 className="text-7xl font-bold leading-[120%] text-center mb-10 max-sm:text-[42px] max-sm:px-5 max-sm:mb-5">
         Контакты
         </h2>
-        <span className="text-lg font-normal leading-[160%] text-center block max-w-[580px] mx-auto max-sm:px-5 max-sm:text-base">
+        <span className="text-lg font-normal leading-[160%] text-center block max-w-[580px] mx-auto max-sm:px-5 max-sm:text-lg">
         Мы будем благодарны за любую обратную связь и предложения! Вы можете связаться с нами по контактам или заполнив форму.
         </span>
         <div className="max-w-[580px] w-full flex justify-between mx-auto mt-10 max-[500px]:flex-col max-[500px]:gap-y-5 max-[500px]:items-center">

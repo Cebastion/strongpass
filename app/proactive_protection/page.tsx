@@ -257,7 +257,7 @@ const page = () => {
             </span>
           </div>
         </section>
-        <section className="max-w-[1180px] max-[1200px]:px-5 mx-auto mt-20 max-sm:px-3">
+        <section className="max-w-[1180px] max-[1200px]:px-5 max-[1200px]:mx-0 mx-auto mt-20 max-sm:px-5">
           <h3 className="text-6xl font-bold leading-[120%] text-left tracking-[4%] mb-16 max-md:text-3xl max-md:mb-7">
             Почему нужен{" "}
             <p className="text-text-hover">
