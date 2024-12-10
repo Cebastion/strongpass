@@ -172,7 +172,7 @@ const page = (props: Props) => {
           </div>
         </section>
         <section className="mt-[120px] max-[1200px]:px-5 flex justify-between items-center max-w-[1180px] mx-auto max-[1100px]:flex-col-reverse   max-sm:px-5">
-          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-4 max-[500px]:w-[300px] max-[500px]:h-[320px]">
+          <div className="flex justify-end items-end h-[580px] w-full max-w-[580px] relative bg-gray-100 rounded-[36px] overflow-hidden max-[1100px]:mt-[30px] max-[500px]:w-full max-[500px]:h-[320px]">
             <img
               className="absolute top-1/2 translate-y-[-50%] max-[500px]:translate-y-0 left-16 w-[866px] h-[460px] max-[500px]:w-[478px] max-[500px]:h-[253px] max-[500px]:top-9 max-[500px]:left-6"
               srcSet="/almetibin_bg.png x1, /almetibin_bg@2x.png 2x"
