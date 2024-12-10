@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import "../config/li.css";
 import "../config/shadowBlock.css";
+import "../config/scrollbar.css"
 
 type Props = {
   setIsCheckPass: React.Dispatch<React.SetStateAction<boolean>>;
@@ -317,8 +318,8 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
           />
         </svg>
       </div>
-      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[5.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
-        <div className=" max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
+      <div className="fixed top-1/2 overflow-y-scroll sclrollbar h-full max-h-[665px] max-md:max-h-full  z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 max-w-[1300px] w-full flex gap-16 max-md:rounded-none max-md:w-full max-md:h-full max-sm:p-0 max-sm:pt-[5.75rem] max-md:pt-[7.75rem] max-[1180px]:flex-col max-[1180px]:items-center max-[1180px]:h-[80%]">
+        <div className="max-[1180px]:overflow-y-scroll flex gap-16 max-[1180px]:flex-col max-[1180px]:items-center hidden-overflow-y-scroll max-[1180px]:gap-10 max-sm:p-5">
         <div className="max-w-[560px] w-[560px] pl-[2px] flex flex-col justify-between max-sm:w-full max-sm:max-w-full ">
         <div
         className="relative hidden max-md:flex top-0 right-[-90%] z-[70] w-[30px] h-[30px] justify-center items-center cursor-pointer"
@@ -407,7 +408,7 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
             </div>
           </div>
         </div>
-        <div className="p-9  h-full shadowblock rounded-[36px] max-w-[560px] w-full bg-[#f2f5f4] overflow-hidden max-[1180px]:overflow-visible max-[1180px]:h-full max-sm:w-full  max-sm:p-5">
+        <div className="p-9  h-[545px] shadowblock rounded-[36px] max-w-[560px] w-full bg-[#f2f5f4] overflow-hidden max-[1180px]:overflow-visible max-[1180px]:h-full max-sm:w-full  max-sm:p-5">
           <div className="h-full pb-[70px] max-h-[500px] overflow-y-auto hidden-overflow-y-scroll max-[1180px]:h-full max-[1180px]:max-h-full max-[1180px]:pb-0 ">
             <h6 className="flex text-lg font-semibold leading-[160%] mb-[10px] max-sm:text-base max-sm:leading-[150%]">
               <Warning /> Мы никак не собираем и не храним пароли, которые

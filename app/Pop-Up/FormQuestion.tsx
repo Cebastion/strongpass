@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react";
+import "../config/scrollbar.css"
 
 type Props = {
   setIsFormQuestion: React.Dispatch<React.SetStateAction<boolean>>;
@@ -66,7 +67,7 @@ const FormQuestion: FC<Props> = ({ setIsFormQuestion }) => {
           />
         </svg>
       </div>
-      <div className="fixed top-1/2 z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 w-[580px] max-md:rounded-none max-md:w-full max-md:h-full max-md:p-5 max-md:overflow-y-scroll">
+      <div className="fixed top-1/2 overflow-y-scroll sclrollbar max-h-[836px] h-full max-md:max-h-full z-[60] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[36px] p-16 w-[580px] max-md:rounded-none max-md:w-full max-md:h-full max-md:p-5 max-md:overflow-y-scroll">
         <div
           className="fixed hidden max-md:flex top-24 z-[70] right-0 w-[57px] h-[57px] justify-center items-center cursor-pointer"
           onClick={() => setIsFormQuestion(false)}
