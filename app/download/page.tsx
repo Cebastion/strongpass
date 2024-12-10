@@ -61,7 +61,7 @@ const page = (props: Props) => {
           isFormQuestion || (isFormFreeLicense && "max-md:hidden")
         }`}
       >
-        <h2 className="text-7xl text-center mb-10 leading-[120%] font-bold max-sm:text-[30px] max-md:mb-5">
+        <h2 className="text-7xl text-center mb-10 leading-[120%] font-bold max-sm:text-[42px] max-md:mb-5">
           Скачать
         </h2>
         <span className="text-lg font-normal leading-[160%] text-center block max-w-[780px] mx-auto max-sm:text-base">
