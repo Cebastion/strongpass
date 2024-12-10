@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import From from "../components/From";
 import Carousel from "../components/Carousel";
 import FormQuestion from "../Pop-Up/FormQuestion";
 import FreeLicense from "../Pop-Up/FreeLicense";
+import '../config/scroll.css'
 
 type Props = {};
 
@@ -81,6 +82,19 @@ const page = (props: Props) => {
   const toggleFAQ = (index: any) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  useEffect(() => {
+    if (isFormQuestion || isFormFreeLicense) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion, isFormFreeLicense]);
 
   return (
     <>

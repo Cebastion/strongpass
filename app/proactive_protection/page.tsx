@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel";
 import From from "../components/From";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormQuestion from "../Pop-Up/FormQuestion";
 import BlockTestPass from "../components/BlockTestPass";
 import CheckPass from "../Pop-Up/CheckPass";
@@ -52,6 +52,19 @@ const page = () => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isCheckPass, setIsCheckPass] = useState(false);
   const [isFormFreeLicense, setIsFormFreeLicense] = useState(false);
+
+  useEffect(() => {
+    if (isFormQuestion || isCheckPass || isFormFreeLicense) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion, isCheckPass, isFormFreeLicense]);
 
   return (
     <>

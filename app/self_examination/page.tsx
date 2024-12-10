@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import From from "../components/From";
@@ -13,6 +13,19 @@ type Props = {};
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isCheckPass, setIsCheckPass] = useState(false);
+
+  useEffect(() => {
+    if (isFormQuestion || isCheckPass) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion, isCheckPass]);
 
   return (
     <>

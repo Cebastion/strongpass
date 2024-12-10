@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import '../config/start.css'
@@ -207,6 +207,19 @@ const page = (props: Props) => {
     const formattedValue = formatPhoneNumber(e.target.value);
     setFormData({ ...formData, phone: formattedValue });
   };
+
+  useEffect(() => {
+    if (isFormQuestion) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion]);
 
   return (
     <>

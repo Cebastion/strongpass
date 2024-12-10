@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import FormQuestion from "../Pop-Up/FormQuestion";
 import Footer from "../components/Footer";
@@ -29,6 +29,19 @@ const GreenIconDownload = () => {
 const page = (props: Props) => {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
   const [isFormFreeLicense, setIsFormFreeLicense] = useState(false);
+
+  useEffect(() => {
+    if (isFormQuestion || isFormFreeLicense) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion, isFormFreeLicense]);
 
   return (
     <>

@@ -2,7 +2,7 @@
 import From from "./components/From";
 import './animation/button.css'
 import FormQuestion from "./Pop-Up/FormQuestion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './config/scrollbar.css'
@@ -13,6 +13,19 @@ import Carousel from "./components/Carousel";
 
 export default function Home() {
   const [isFormQuestion, setIsFormQuestion] = useState(false);
+
+  useEffect(() => {
+    if (isFormQuestion) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isFormQuestion]);
 
 
   return (
