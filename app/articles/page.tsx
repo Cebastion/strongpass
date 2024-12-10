@@ -85,7 +85,7 @@ const page = (props: Props) => {
           {articleData?.slice(0, ShowElement).map((article, index) => (
             <div
               key={index}
-              className={` max-w-[580px] max-h-[531px] max-[500px]:max-h-[363px] max-lg:mx-auto`}
+              className={` max-w-[580px] max-h-[531px] max-[500px]:h-auto max-[405px]:h-[363px] max-[500px]:max-h-full max-lg:mx-auto`}
             >
               <img
                 className="rounded-tl-[36px] rounded-tr-[36px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
