@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import "../animation/button.css";
 
 type Props = {
@@ -35,6 +35,19 @@ const Header: FC<Props> = ({
   const handleToggle = () => {
     SetActive(!Active);
   };
+
+  useEffect(() => {
+    if (Active) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Убираем класс при размонтировании компонента
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [Active]);
 
   return (
     <header
