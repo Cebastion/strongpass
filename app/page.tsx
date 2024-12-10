@@ -33,8 +33,8 @@ export default function Home() {
     <Header isFormQuestion={isFormQuestion} setIsFormQuestion={setIsFormQuestion} />
     {isFormQuestion && <FormQuestion setIsFormQuestion={setIsFormQuestion} />}
     <main className={`flex-1 container max-w-[1300px] mx-auto my-14 max-md:mx-0 ${isFormQuestion && "max-md:hidden"}`}>
-      <h1 className="text-7xl max-[1200px]:px-5  relative bottom-[-1rem] max-[1060px]:bottom-0 mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
-      <span className=" mx-auto max-[1200px]:px-5  max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
+      <h1 className="text-7xl max-[1200px]:px-5 max-[380px]:px-0 relative bottom-[-1rem] max-[1060px]:bottom-0 mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
+      <span className=" mx-auto max-[1200px]:px-5 max-[380px]:px-0  max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
       <section className="relative mx-auto max-[1200px]:w-[98%]  bg-[url('/bg_big.png')] max-md:w-[90%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
         <span
