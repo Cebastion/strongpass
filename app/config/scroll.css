@@ -1,8 +1,5 @@
 .no-scroll {
     overflow: hidden;
-    position: fixed; /* Фиксируем страницу */
-    width: 100%; /* Для предотвращения сдвига страницы */
-    height: 100%; /* Блокируем вертикальную прокрутку */
     touch-action: none;
   }
   
