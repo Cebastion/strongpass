@@ -25,7 +25,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
   ) {
     return (
       <footer
-        className={` w-full max-[1200px]:px-5 border-t border-[#e3e5e5] pb-5  max-sm:px-5`}
+        className={` w-full max-[1200px]:px-5 border-t border-[#e3e5e5] pb-5 `}
       >
         <div className="flex flex-col gap-[2.25rem] max-w-[1180px] mx-auto pt-[60px]">
           <div className="flex justify-between flex-wrap max-[500px]:justify-between">
@@ -99,7 +99,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               </li>
             </ul>
           </div>
-          <ul className="hidden text-right max-lg:flex flex-col w-full p-4 bg-bg-custom_gray items-center justify-center rounded-lg">
+          <ul className="hidden text-right max-lg:flex flex-col w-full py-4 bg-bg-custom_gray items-center justify-center rounded-lg">
             <li className="text-base font-medium text-text-gray_custom mb-[4px] max-lg:text-[12px]">
               Коммерческие вопросы:
             </li>
@@ -147,7 +147,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
   } else {
     return (
       <footer
-        className={`flex container max-[1200px]:px-5 flex-col pt-[60px] max-md:pt-10 gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5 max-lg:px-3 max-sm:px-5`}
+        className={`flex container max-[1200px]:px-5 flex-col pt-[60px] max-md:pt-10 gap-[2.25rem] w-full max-w-[1180px] mx-auto pb-5`}
       >
         <div className="flex justify-between flex-wrap max-[500px]:justify-between">
           <Link className="max-lg:hidden" href="/">
@@ -219,7 +219,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
             </li>
           </ul>
         </div>
-        <ul className="hidden text-right max-lg:flex flex-col w-full p-4 bg-bg-custom_gray items-center justify-center rounded-lg">
+        <ul className="hidden text-right max-lg:flex flex-col w-full py-4 bg-bg-custom_gray items-center justify-center rounded-lg">
           <li className="text-base font-medium text-text-gray_custom mb-[4px] max-lg:text-[12px]">
             Коммерческие вопросы:
           </li>

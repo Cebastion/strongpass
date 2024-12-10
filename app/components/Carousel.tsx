@@ -31,7 +31,7 @@ const Carousel = () => {
   return (
     <section className="mt-32 max-w-[1180px] max-[1200px]:px-5 mx-auto max-md:mt-20 max-md:px-5">
       <div className="flex justify-between items-center">
-        <h2 className="text-6xl font-bold max-lg:text-3xl">Статьи</h2>
+        <h2 className="text-[clamp(30px,5vw,60px)] font-bold max-sm:text-3xl">Статьи</h2>
         <div className="flex gap-2 items-center max-md:hidden">
           <button className="h-[61px] px-9 border border-solid border-[rgb(227, 229, 230)] rounded-xl text-lg text-text-hover font-medium transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary" onClick={() => window.location.href = "/articles"}>
             Смотреть все
@@ -95,7 +95,7 @@ const Carousel = () => {
         {articleData && articleData.map((article, index) => (
           <SwiperSlide key={index}>
           <div
-            className={`flex-shrink-0 max-h-[531px] transition-transform duration-500 ease-in-out max-lg:mx-auto`}
+            className={`flex-shrink-0 transition-transform duration-500 ease-in-out max-lg:mx-auto`}
           >
             <img
               className="rounded-tl-[36px] rounded-tr-[36px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
