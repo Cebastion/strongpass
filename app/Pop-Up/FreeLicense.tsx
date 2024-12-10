@@ -205,7 +205,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
         </span>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-[0.75rem] mt-8 max-[355px]:w-[290px] overflow-y-scroll"
+          className="flex flex-col sclrollbar gap-[0.75rem] mt-8 max-[355px]:w-[290px] overflow-y-scroll"
         >
           <div className="flex justify-between gap-x-5 max-[780px]:flex-col">
             <div className="flex flex-col w-full ">
