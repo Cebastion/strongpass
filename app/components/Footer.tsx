@@ -58,7 +58,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
                 <Link href="/almetibin">Almetibin.</Link>
               </li>
             </ul>
-            <ul className="flex-col flex gap-[0.6rem] pr-4 max-sm:pr-10">
+            <ul className="flex-col flex gap-[0.6rem] pr-4 max-md:pr-0 max-sm:pr-10">
               <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
                 Информация
               </li>
@@ -178,7 +178,7 @@ const Footer: FC<Props> = ({ setIsFormQuestion }) => {
               <Link href="/almetibin">Almetibin.</Link>
             </li>
           </ul>
-          <ul className="flex-col flex gap-[0.6rem] pr-4 max-sm:pr-10">
+          <ul className="flex-col flex gap-[0.6rem] pr-4 max-md:pr-0 max-sm:pr-10">
             <li className="hidden max-lg:block text-base font-medium text-text-gray_custom mb-2 max-lg:text-sm">
               Информация
             </li>
