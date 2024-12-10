@@ -81,11 +81,11 @@ const page = (props: Props) => {
         <h1 className="text-7xl text-center leading-[120%] font-bold max-sm:text-[42px]">
           Статьи
         </h1>
-        <section className="grid grid-cols-2 max-w-[1180px] mx-auto gap-5 max-md:gap-[10px] mt-[60px] max-[1185px]:grid-cols-1 max-[1185px]:justify-items-center">
+        <section className="grid grid-cols-2 max-w-[1180px] mx-auto gap-5 max-md:gap-[0px] mt-[60px] max-[1185px]:grid-cols-1 max-[1185px]:justify-items-center">
           {articleData?.slice(0, ShowElement).map((article, index) => (
             <div
               key={index}
-              className={` max-w-[580px] max-h-[531px] max-lg:mx-auto`}
+              className={` max-w-[580px] max-sm:max-h-[363px] max-lg:mx-auto`}
             >
               <img
                 className="rounded-tl-[36px] rounded-tr-[36px] object-cover w-full max-sm:rounded-tl-3xl max-sm:rounded-tr-3xl"
