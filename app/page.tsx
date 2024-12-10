@@ -37,7 +37,7 @@ export default function Home() {
       <h1 className="text-7xl max-[1200px]:px-5 max-[380px]:px-0 relative bottom-[-1rem] max-[1060px]:bottom-0 mx-auto max-w-[1180px] max-[1190px]:text-6xl font-bold max-md:mx-[15px] leading-[120%] max-[530px]:leading-[130%] max-lg:text-5xl max-lg:mb-4 max-[350px]:mx-[6px]">Ваша безопасность <p>начинается с паролей</p></h1>
       <span className=" mx-auto max-[1200px]:px-5 max-[380px]:px-0  max-w-[1180px]  text-lg max-md:mx-[15px] font-normal hidden max-lg:inline-block max-lg:text-base max-[880px]:mb-5 max-[615px]:mb-0">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span>
 
-      <section className="relative mx-auto max-[1200px]:w-[98%]  bg-[url('/bg_big.png')] max-md:w-[95%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
+      <section className="relative mx-auto max-[1200px]:w-[98%]  bg-[url('/bg_big.png')] max-md:w-[90%] max-lg:bg-[url('/bg.png')] w-full max-w-[1180px] z-[-1] bg-cover bg-center rounded-[48px] h-[560px] flex flex-col justify-between max-lg:mt-4 max-[500px]:h-[380px]">
         <span
           className="absolute top-[-2px] left-[-2px] w-full max-[1060px]:h-[70%] max-[850px]:w-[90%] max-[850px]:h-[50%] max-md:w-[75%] max-md:h-[30%] h-[90%] bg-white bg-cover z-[0] max-sm:hidden"
           style={{
@@ -80,7 +80,7 @@ export default function Home() {
         ></span>
         <div className="flex justify-between z-10 ">
           <div className=" relative top-2 pl-[15px] rounded-xl w-[90%] h-14 flex items-center"><span className=" text-lg font-normal max-[1150px]:text-base max-lg:hidden">Снизьте риска взлома инфраструктуры из-за слабых или украденных паролей.</span></div>
-          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-10px] max-[1080px]:top-[-30px] max-lg:right-[-3px] max-lg:w-[40%] z-0 max-[880px]:top-[-30px] max-[630px]:top-[-20px] max-[630px]:w-[60%] max-[350px]:right-[-16px]" src="___.svg" />
+          <img className="relative top-[-50px] right-[-40px] max-[1250px]:right-[-15px] max-[1080px]:top-[-30px] max-lg:right-[-18px] max-lg:w-[40%] z-0 max-[880px]:top-[-30px] max-[630px]:top-[-20px] max-[630px]:w-[60%] max-[350px]:right-[-16px]" src="___.svg" />
         </div>
         <div className="bg-white flex justify-between items-center p-4 w-60 mx-auto mb-3 rounded-[28px] z-10">
           <div className="w-16 h-16 flex items-center justify-center bg-bg-custom_green rounded-[16px]">
