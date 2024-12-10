@@ -217,7 +217,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
                 name="name"
                 placeholder="Фамилия Имя Отчество"
                 value={formData.name}
-                onChange={handleChange}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className={`w-full py-3 px-6 rounded-xl border text-lg font-normal text-text-form target:border-borderColor-custom ${
                   errors.name
                     ? "border-[#E54545] text-[#E54545] placeholder-[#E54545]"
@@ -236,7 +236,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
                 name="email"
                 placeholder="Название или ссылка на сайт"
                 value={formData.company}
-                onChange={handleChange}
+                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                 className={`w-full py-3 px-6 rounded-xl border text-lg  text-text-form font-normal target:border-borderColor-custom ${
                   errors.company
                     ? "border-[#E54545] text-[#E54545] placeholder-[#E54545]"
@@ -257,7 +257,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
                 name="name"
                 placeholder="example@mail.ru"
                 value={formData.email}
-                onChange={handleChange}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className={`w-full py-3 px-6 rounded-xl border text-lg font-normal text-text-form target:border-borderColor-custom ${
                   errors.email
                     ? "border-[#E54545] text-[#E54545] placeholder-[#E54545]"
@@ -291,7 +291,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
               name="name"
               placeholder="10"
               value={formData.account}
-              onChange={handleChange}
+              onChange={(e) => setFormData({ ...formData, account: e.target.value })}
               className={`w-full py-3 px-6 rounded-xl border text-lg font-normal text-text-form target:border-borderColor-custom ${
                 errors.account
                   ? "border-[#E54545] text-[#E54545] placeholder-[#E54545]"
@@ -329,7 +329,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
               name="comment"
               placeholder="Дополнительная информация"
               value={formData.comment}
-              onChange={handleChange}
+              onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
               className={`w-full resize-none h-[146px] py-3 px-6 text-text-form rounded-xl border text-lg font-normal target:border-borderColor-custom ${
                 errors.comment
                   ? "border-[#E54545] text-[#E54545] placeholder-[#E54545]"
