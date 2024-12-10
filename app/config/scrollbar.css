@@ -1,7 +1,6 @@
 .sclrollbar {
-  overflow-x: auto; /* Используйте auto для появления полосы прокрутки только при необходимости */
-  -ms-overflow-style: none; /* Для IE и Edge */
-  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Убирает полосу прокрутки для IE и Edge */
+    scrollbar-width: none; /* Убирает полосу прокрутки для Firefox */
 }
 
 .sclrollbar::-webkit-scrollbar {
