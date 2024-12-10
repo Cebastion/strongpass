@@ -70,8 +70,7 @@ const page = (props: Props) => {
               и блокировки атакующего.
             </li>
           </ul>
-        </span>
-        <div className="max-w-[780px] max-[785px]:px-5  w-full mx-auto mt-10 max-sm:px-5">
+          <div className="max-w-[780px] max-[785px]:px-5 pl-[5px] w-full mx-auto mt-10 max-sm:px-5">
           <h5 className="mb-5 text-2xl font-semibold leading-[140%] max-sm:text-[20px]">
             Документы
           </h5>
@@ -81,6 +80,7 @@ const page = (props: Props) => {
           </a>
           <a href="/#" className="font-normal text-text-hover text-lg leading-[160%] underline max-sm:text-base">Информация о процессах разработки и поддержки</a>
         </div>
+        </span>
       </main>
       <Footer setIsFormQuestion={setIsFormQuestion} />
     </>
