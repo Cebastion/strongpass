@@ -10,7 +10,7 @@ type Props = {
 const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
   const Spoiler = () => {
     return (
-      <div className="absolute hidden group-hover:block p-5 rounded-2xl shadow-lg bg-white w-[532px] -top-[25rem] max-md:-top-[25.5rem] max-[535px]:-top-[35.5rem] -right-[16.9rem] max-md:-right-[31rem] max-[535px]:w-[300px] max-[535px]:-right-[16rem]">
+      <div className="absolute hidden group-hover:block p-5 rounded-2xl shadow-lg bg-white w-[532px] -top-[25.5rem] max-md:-top-[25.5rem] max-[535px]:-top-[35.5rem] -right-[29.9rem] max-md:-right-[31rem] max-[535px]:w-[300px] max-[535px]:-right-[16rem]">
         <span className="font-normal text-base leading-[150%] max-[535px]:text-sm">
           Для расчета стоимости лицензии нам необходимо знать количество
           активных учетных записей, которые вы хотите защитить.
@@ -205,7 +205,7 @@ const FreeLicense: FC<Props> = ({ setIsFormFreeLicense }) => {
         </span>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col sclrollbar gap-4 mt-8 max-[355px]:w-[290px] overflow-y-scroll"
+          className="flex flex-col sclrollbar gap-4 mt-8 max-[355px]:w-[290px]"
         >
           <div className="flex justify-between gap-x-5 max-[780px]:flex-col">
             <div className="flex flex-col w-full ">

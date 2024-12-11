@@ -259,6 +259,7 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
   const [validLowercase, setValidLowercase] = useState(false);
   const [validNumber, setValidNumber] = useState(false);
   const [validSpecialChar, setValidSpecialChar] = useState(false);
+  const [ShowError, setShowError] = useState(false);
 
   const checkPassword = () => {
     const validChecks: number[] = [];
@@ -300,6 +301,11 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
   useEffect(() => {
     checkPassword()
   },[password])
+
+  useEffect(() => {
+    if(password.trim())
+    setShowError(true)
+  }, [password]);
 
   return (
     <>
@@ -349,7 +355,7 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
           <div className="mt-8 mb-5 w-full flex justify-between items-center gap-5 max-sm:flex-col">
             <div className="relative max-sm:w-full">
               <input
-                className="relative border border-[#e3e5e5] rounded-2xl py-[14px] px-5 w-[371px] h-[57px] font-medium text-lg max-sm:w-full max-sm:max-w-full "
+                className="relative border pr-[50px] border-[#e3e5e5] rounded-2xl py-[14px] px-5 w-[371px] h-[57px] font-medium text-lg max-sm:w-full max-sm:max-w-full "
                 type={ShowPass ? "text" : "password"}
                 placeholder="Ваш пароль"
                 value={password}
@@ -371,7 +377,7 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
             </button>
           </div>
           <div className="p-[10px] border border-[#e3e5e5] rounded-2xl flex justify-between items-center gap-8 max-sm:flex-col ">
-            {result && (
+            {result && result?.length !== 0 && (
               <div className="flex flex-col justify-center items-center px-5 py-[25px] w-full max-w-[255px] bg-[#f2f5f4] rounded-[10px] max-sm:w-full max-sm:max-w-full ">
               <CircularProgress
                 current={result.length}
@@ -380,6 +386,18 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
               />
               <div>
                 <Text current={result.length} />
+              </div>
+            </div>
+            )}
+            {result && ShowError && result?.length === 0 && (
+              <div className="flex flex-col justify-center items-center px-5 py-[25px] w-full max-w-[255px] bg-[#f2f5f4] rounded-[10px] max-sm:w-full max-sm:max-w-full ">
+              <CircularProgress
+                current={0}
+                total={5}
+                color={Color}
+              />
+              <div>
+                <Text current={0} />
               </div>
             </div>
             )}
