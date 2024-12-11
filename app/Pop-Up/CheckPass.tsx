@@ -253,6 +253,7 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
   const [ShowPass, setShowPass] = useState(false);
   const [password, setPassword] = useState("");
   const [result, setResult] = useState<number[]>();
+  const [resultOverView, setResultOverView] = useState<number[]>();
   const [Color, setColor] = useState("#e54545");
   const [validLength, setValidLength] = useState(false);
   const [validUppercase, setValidUppercase] = useState(false);
@@ -299,7 +300,40 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
   };
 
   useEffect(() => {
-    checkPassword()
+    const validChecks: number[] = [];
+
+    // Условия проверки
+    if (password.length >= 9 && password.length !== 0) validChecks.push(1); // Пароль длиной 9+
+    if (/[\p{Lu}]/u.test(password)) validChecks.push(2); // Есть заглавная буква
+    if (/[\p{Ll}]/u.test(password)) validChecks.push(3); // Есть строчная буква
+    if (/[0-9]/.test(password)) validChecks.push(4); // Есть число
+    if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) validChecks.push(5); // Есть спецсимвол
+
+    setValidLength(password.length >= 9);
+
+    // Проверка наличия заглавной буквы
+    setValidUppercase(/[\p{Lu}]/u.test(password));
+
+    // Проверка наличия строчной буквы
+    setValidLowercase(/[\p{Ll}]/u.test(password));
+
+    // Проверка наличия цифры
+    setValidNumber(/[0-9]/.test(password));
+
+    // Проверка наличия спецсимвола
+    setValidSpecialChar(/[!@#$%^&*(),.?":{}|<>]/.test(password));
+
+    if (validChecks.length <= 3 && validChecks.length !== 1) {
+      setColor("#f0c800");
+    }
+    if (validChecks.length <= 5 && validChecks.length > 3) {
+      setColor("#408077");
+    }
+    if (validChecks.length <= 1) {
+      setColor("#e54545");
+    }
+
+    setResultOverView(validChecks);
   },[password])
 
   useEffect(() => {
@@ -368,9 +402,10 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
               )}
             </div>
             <button
-            disabled={result?.length !== 5}
+            onClick={checkPassword}
+            disabled={resultOverView?.length !== 5}
             className={`py-[14px] px-9 rounded-xl flex justify-center items-center transition-all bg-bg-custom_green duration-500 font-semibold leading-[160%] text-lg text-white max-sm:w-full ${
-              result?.length === 5 ? 'cursor-pointer hover:bg-[#1b6b60]' : 'cursor-not-allowed'
+              resultOverView?.length === 5 ? 'cursor-pointer hover:bg-[#1b6b60]' : 'cursor-not-allowed'
             }`}
             >
               Проверить
@@ -386,18 +421,6 @@ const CheckPass:FC<Props> = ({setIsCheckPass}) => {
               />
               <div>
                 <Text current={result.length} />
-              </div>
-            </div>
-            )}
-            {result && ShowError && result?.length === 0 && (
-              <div className="flex flex-col justify-center items-center px-5 py-[25px] w-full max-w-[255px] bg-[#f2f5f4] rounded-[10px] max-sm:w-full max-sm:max-w-full ">
-              <CircularProgress
-                current={0}
-                total={5}
-                color={Color}
-              />
-              <div>
-                <Text current={0} />
               </div>
             </div>
             )}
