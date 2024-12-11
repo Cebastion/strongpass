@@ -121,7 +121,7 @@ const page = () => {
               </div>
             </button>
           </div>
-          <div className="w-96 h-[540px] bg-[url('/bg2.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
+          <div className="w-96 h-[540px] bg-[url('/bg2@2x.png')] max-md:bg-[url('/bg2.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
               <div className="bg-[url('/mask/mask_2.svg')] max-sm:bg-[url('/mask/mask_2_bg.svg')] w-[171px] h-[116px] max-sm:w-[46%] max-sm:h-[93%] bg-cover bg-center ">
                 <svg
@@ -215,7 +215,7 @@ const page = () => {
               loading="lazy"
               alt=""
             />
-            <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-[0.15rem] max-[500px]:relative max-[500px]:z-10">
+            <button className="h-[117px] button-animation w-[334px] bg-[url('/mask/mask_3.svg')] flex justify-end items-end pr-3 pb-[0.3rem] max-[500px]:relative max-[500px]:z-10">
               <div className="text-lg h-[57px] flex items-center justify-center font-semibold text-text-hover leading-[160%] border border-solid border-borderColor-hover rounded-xl px-5 py-4 transition-all hover:text-text-hover_primary hover:border-borderColor-hover_primary">
                 Смотреть видео
               </div>

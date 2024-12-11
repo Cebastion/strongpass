@@ -20,9 +20,9 @@ const BlockTestPass:FC<Props> = ({setIsCheckPass}) => {
               Технологии Strongpass доступны онлайн.
             </span>
           </div>
-          <button className="flex items-center max-[1085px]:mt-5" onClick={() => setIsCheckPass(true)}>
-            <div className="py-[14px] px-9 rounded-xl flex justify-center items-center border border-solid border-borderColor-custom_white font-semibold leading-[160%] text-lg text-white max-sm:text-base">Проверить пароль</div>
-            <div className="rounded-xl bg-white w-[57px] h-[57px] flex items-center justify-center max-sm:h-[54px] max-sm:w-[54px]">
+          <button className="flex items-center max-[1085px]:mt-5 group" onClick={() => setIsCheckPass(true)}>
+            <div className="group-hover:opacity-[0.8] transition-all py-[14px] px-9 rounded-xl flex justify-center items-center border border-solid border-borderColor-custom_white font-semibold leading-[160%] text-lg text-white max-sm:text-base">Проверить пароль</div>
+            <div className="group-hover:opacity-[0.8] transition-all rounded-xl bg-white w-[57px] h-[57px] flex items-center justify-center max-sm:h-[54px] max-sm:w-[54px]">
               <svg
                 width="29"
                 height="29"

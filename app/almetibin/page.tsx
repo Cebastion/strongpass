@@ -151,7 +151,7 @@ const page = (props: Props) => {
               </div>
             </button>
           </div>
-          <div className="w-[395px] h-[540px] bg-[url('/almetibin.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-[328px]">
+          <div className="w-[395px] h-[540px] bg-[url('/almetibin@2x.png')] max-md:bg-[url('/almetibin.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-[328px]">
             <div className="flex justify-start items-start">
               <div className="bg-[url('/mask/mask_4.svg')] w-[116px] h-[171px] max-sm:w-[70px] max-sm:h-[103px] bg-cover bg-center ">
                 <svg

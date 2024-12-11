@@ -80,7 +80,7 @@ const page = (props: Props) => {
               </div>
             </button>
           </div>
-          <div className="w-96 h-[480px] bg-[url('/bg_3.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
+          <div className="w-96 h-[480px] bg-[url('/bg_3@2x.png')] max-md:bg-[url('/bg_3.png')] bg-cover bg-center rounded-3xl flex flex-col justify-between max-sm:w-60 max-sm:h-80">
             <div className="flex justify-start items-start">
               <div className="bg-[url('/mask/mask_4.svg')] max-sm:bg-[url('/mask/mask_4_bg.svg')] w-[116px] h-[171px] max-sm:w-[70px] max-sm:h-[103px] bg-cover bg-center ">
                 <svg
