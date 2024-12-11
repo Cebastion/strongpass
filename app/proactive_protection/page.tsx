@@ -466,7 +466,7 @@ const page = () => {
 
             {/* Таблица */}
             <div className="max-[1250px]:overflow-x-scroll max-[1250px]:sclrollbar">
-              <table className="w-[1180px]  max-md:w-[664px] border-collapse bg-white rounded-lg">
+              <table className="w-[1180px]  max-md:w-[664px] border-collapse rounded-lg">
                 {/* Заголовок таблицы */}
                 <thead>
                   <tr className="bg-bg-custom_gray border-[#000000] border-opacity-[0.1] border-b bg-bg-custom_gray">
